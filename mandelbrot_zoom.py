@@ -469,6 +469,7 @@ def main() -> None:
     n_tour = NUM_IN_TOUR
     loop_forever = False
     doubles_pct = 25
+    doublec_pct = 25
     for a in sys.argv[1:]:
         if a == "--scan":
             for f in (CACHE_FILE, DOUBLES_CACHE_FILE):
@@ -485,18 +486,23 @@ def main() -> None:
             loop_forever = True
         elif a.startswith("--doubles="):
             doubles_pct = int(a.split("=", 1)[1])
+        elif a.startswith("--doublec="):
+            doublec_pct = int(a.split("=", 1)[1])
         elif a.isdigit():
             n_tour = int(a)
 
     targets, doubles = load_or_scan()
     print(f"cached: {len(targets)} singles, {len(doubles)} doubles; "
-          f"tour of {n_tour}, doubles={doubles_pct}%", flush=True)
+          f"tour of {n_tour}, doubles={doubles_pct}%, "
+          f"doublec={doublec_pct}%", flush=True)
 
     print(f"priming {IP}...", flush=True)
     prime()
 
     pic_id = 1
     loop_n = 0
+    single_n = 0
+    dc_pct = max(0, min(100, doublec_pct))
     while True:
         tour = build_tour(targets, doubles, n_tour, doubles_pct)
         for i, (kind, t) in enumerate(tour):
@@ -508,7 +514,15 @@ def main() -> None:
                                      pname, palette, pic_id)
             else:
                 name, cx, cy, end_half, _period = t
-                pname, palette = PALETTES[(i + loop_n) % len(PALETTES)]
+                use_dc = (single_n * dc_pct) // 100 < \
+                    ((single_n + 1) * dc_pct) // 100
+                if use_dc:
+                    pname, palette = DOUBLE_PALETTES[
+                        (single_n + loop_n) % len(DOUBLE_PALETTES)]
+                else:
+                    pname, palette = PALETTES[
+                        (single_n + loop_n) % len(PALETTES)]
+                single_n += 1
                 pic_id = zoom_target(name, cx, cy, end_half, pname, palette,
                                      pic_id)
         if not loop_forever:
