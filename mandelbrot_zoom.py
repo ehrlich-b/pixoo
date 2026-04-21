@@ -14,6 +14,7 @@ import json
 import os
 import random
 import sys
+import threading
 import time
 import urllib.request
 from typing import Tuple
@@ -362,34 +363,101 @@ def push_frame(pic_id: int, frame: bytes) -> float:
     return time.monotonic() - t0
 
 
-def zoom_target(name: str, cx: float, cy: float, end_half: float,
-                palette_name: str, palette: np.ndarray,
-                start_pic_id: int) -> int:
-    print(f"\n── {name} ({cx:+.6f}, {cy:+.6f}) palette={palette_name} ──",
-          flush=True)
-    ratio = (end_half / START_HALF_WIDTH) ** (1.0 / (FRAMES_PER_TARGET - 1))
+def _params_target(t: float, cx: float, cy: float, end_half: float):
+    half = START_HALF_WIDTH * ((end_half / START_HALF_WIDTH) ** t)
+    zoom_factor = START_HALF_WIDTH / half
+    max_iter = int(80 + 120 * np.log10(max(1.0, zoom_factor)))
+    return cx, cy, half, max_iter
+
+
+def _params_double(t: float,
+                   pcx: float, pcy: float, ph: float,
+                   ccx: float, ccy: float, chh: float,
+                   t_pre: float, t_pan: float):
+    if t < t_pre:
+        u = t / t_pre
+        half = START_HALF_WIDTH * ((ph / START_HALF_WIDTH) ** u)
+        cx, cy = pcx, pcy
+    elif t < t_pan:
+        u = (t - t_pre) / (t_pan - t_pre)
+        u = u * u * (3.0 - 2.0 * u)
+        half = ph
+        cx = pcx + u * (ccx - pcx)
+        cy = pcy + u * (ccy - pcy)
+    else:
+        u = (t - t_pan) / max(1e-9, 1.0 - t_pan)
+        half = ph * ((chh / ph) ** u)
+        cx, cy = ccx, ccy
+    zoom_factor = START_HALF_WIDTH / half
+    max_iter = int(80 + 120 * np.log10(max(1.0, zoom_factor)))
+    return cx, cy, half, max_iter
+
+
+def run_decoupled(params_at, duration: float, palette: np.ndarray,
+                  start_pic_id: int) -> int:
+    """Render in one thread, push in another. Motion advances by wall clock.
+
+    Renderer computes frames as fast as it can and stores the latest in a
+    shared buffer. Pusher samples the buffer at TARGET_FPS cadence. Slow
+    renders look like brief holds; slow pushes don't delay motion.
+    """
+    lock = threading.Lock()
+    latest: list[bytes | None] = [None]
+    start = time.monotonic()
+    stop = threading.Event()
+
+    def renderer() -> None:
+        while not stop.is_set():
+            t = min(1.0, (time.monotonic() - start) / duration)
+            cx, cy, half, max_iter = params_at(t)
+            frame = render(cx, cy, half, max_iter, palette)
+            with lock:
+                latest[0] = frame
+            if t >= 1.0:
+                return
+
+    rt = threading.Thread(target=renderer, daemon=True)
+    rt.start()
+    while True:
+        with lock:
+            if latest[0] is not None:
+                break
+        time.sleep(0.005)
+
     target_dt = 1.0 / TARGET_FPS
+    deadline = time.monotonic()
     pic_id = start_pic_id
-    next_deadline = time.monotonic()
-
-    for i in range(FRAMES_PER_TARGET):
-        half = START_HALF_WIDTH * (ratio ** i)
-        zoom_factor = START_HALF_WIDTH / half
-        max_iter = int(80 + 120 * np.log10(max(1.0, zoom_factor)))
-
-        frame = render(cx, cy, half, max_iter, palette)
+    while True:
+        with lock:
+            frame = latest[0]
         if pic_id > 1 and pic_id % 32 == 1:
             post({"Command": "Draw/ResetHttpGifId"})
             pic_id = 1
         push_frame(pic_id, frame)
         pic_id += 1
-        next_deadline += target_dt
-        sleep = next_deadline - time.monotonic()
+        elapsed = time.monotonic() - start
+        if elapsed >= duration:
+            break
+        deadline += target_dt
+        sleep = deadline - time.monotonic()
         if sleep > 0:
             time.sleep(sleep)
         else:
-            next_deadline = time.monotonic()
+            deadline = time.monotonic()
+    stop.set()
+    rt.join(timeout=2.0)
     return pic_id
+
+
+def zoom_target(name: str, cx: float, cy: float, end_half: float,
+                palette_name: str, palette: np.ndarray,
+                start_pic_id: int) -> int:
+    print(f"\n── {name} ({cx:+.6f}, {cy:+.6f}) palette={palette_name} ──",
+          flush=True)
+    return run_decoupled(
+        lambda t: _params_target(t, cx, cy, end_half),
+        SECONDS_PER_TARGET, palette, start_pic_id,
+    )
 
 
 def zoom_double(name: str,
@@ -399,52 +467,23 @@ def zoom_double(name: str,
                 start_pic_id: int) -> int:
     """Two-phase zoom: approach parent, pan to child, zoom into child.
 
-    Frame budget split ~half/pan/half so the parent is clearly visible at
-    the midpoint (fully in-frame at `parent_half`), then a brief smooth
-    pan re-targets to the child, then the zoom continues into the child.
+    Time budget split ~half/pan/half so the parent is fully in-frame at the
+    midpoint, then a brief smooth pan re-targets to the child, then the
+    zoom continues into the child.
     """
     print(f"\n── DOUBLE {name} parent=({parent_cx:+.6f},{parent_cy:+.6f}) "
           f"→ child=({child_cx:+.6f},{child_cy:+.6f}) "
           f"palette={palette_name} ──", flush=True)
-    N = FRAMES_PER_TARGET
-    N_pan = 8
-    N_pre = (N - N_pan) // 2
-    N_post = N - N_pre - N_pan
-    target_dt = 1.0 / TARGET_FPS
-    pic_id = start_pic_id
-    next_deadline = time.monotonic()
-
-    for i in range(N):
-        if i < N_pre:
-            t = i / max(1, N_pre - 1)
-            half = START_HALF_WIDTH * ((parent_half / START_HALF_WIDTH) ** t)
-            cx, cy = parent_cx, parent_cy
-        elif i < N_pre + N_pan:
-            s = (i - N_pre) / max(1, N_pan - 1)
-            s = s * s * (3.0 - 2.0 * s)        # smoothstep
-            half = parent_half
-            cx = parent_cx + s * (child_cx - parent_cx)
-            cy = parent_cy + s * (child_cy - parent_cy)
-        else:
-            t = (i - N_pre - N_pan) / max(1, N_post - 1)
-            half = parent_half * ((child_half / parent_half) ** t)
-            cx, cy = child_cx, child_cy
-
-        zoom_factor = START_HALF_WIDTH / half
-        max_iter = int(80 + 120 * np.log10(max(1.0, zoom_factor)))
-
-        frame = render(cx, cy, half, max_iter, palette)
-        if pic_id > 1 and pic_id % 32 == 1:
-            post({"Command": "Draw/ResetHttpGifId"})
-            pic_id = 1
-        push_frame(pic_id, frame)
-        pic_id += 1
-        next_deadline += target_dt
-        sleep = next_deadline - time.monotonic()
-        if sleep > 0:
-            time.sleep(sleep)
-        else:
-            next_deadline = time.monotonic()
+    t_pre = 0.46
+    t_pan = 0.54
+    return run_decoupled(
+        lambda t: _params_double(
+            t, parent_cx, parent_cy, parent_half,
+            child_cx, child_cy, child_half,
+            t_pre, t_pan,
+        ),
+        SECONDS_PER_TARGET, palette, start_pic_id,
+    )
     return pic_id
 
 
