@@ -30,6 +30,14 @@ START_HALF_WIDTH = 1.8
 END_HALF_WIDTH = 1e-5
 NUM_IN_TOUR = 10
 
+# Bursty renderer: hold up to 40 min of frames, refill when down to 10 min.
+# Each refill adds ~30 min of content in ~1 min of hot CPU; then the renderer
+# sleeps ~29 min. Trades ~150MB RAM for a near-idle laptop most of the time.
+MAX_BUFFER_MINUTES = 40.0
+REFILL_THRESHOLD_MINUTES = 10.0
+MAX_BUFFER_FRAMES = int(MAX_BUFFER_MINUTES * 60 * TARGET_FPS)
+REFILL_THRESHOLD_FRAMES = int(REFILL_THRESHOLD_MINUTES * 60 * TARGET_FPS)
+
 CACHE_FILE = "/tmp/mandelbrot_targets.json"
 DOUBLES_CACHE_FILE = "/tmp/mandelbrot_doublebrots_v3.json"
 SCAN_SAMPLES = 2000
@@ -393,104 +401,140 @@ def _params_double(t: float,
     return cx, cy, half, max_iter
 
 
-def run_decoupled(params_at, duration: float, palette: np.ndarray,
-                  start_pic_id: int) -> int:
-    """One-frame lookahead: renderer pre-computes frame N+1 while pusher
-    is uploading frame N. Queue(maxsize=1) keeps them lockstepped — the
-    renderer blocks on put() once a frame is queued and the pusher hasn't
-    consumed it yet, so CPU is only spent computing the next frame during
-    the push window, then both sleep until the next deadline.
-    """
-    import queue as _queue
-    q: _queue.Queue = _queue.Queue(maxsize=1)
-    stop = threading.Event()
+def generate_tour_frames(targets, doubles, n_tour: int, doubles_pct: int,
+                         doublec_pct: int, loop_forever: bool):
+    """Yield (frame_bytes, header_or_none) across the whole tour. `header`
+    is a preformatted log line carried on the first frame of each target
+    and None for the rest, so the pusher can announce targets as they
+    actually appear on-screen (not when they're rendered, which may be
+    tens of minutes earlier)."""
+    loop_n = 0
+    single_n = 0
+    dc_pct = max(0, min(100, doublec_pct))
     target_dt = 1.0 / TARGET_FPS
-    total = max(1, int(round(duration / target_dt)))
+    total = max(1, int(round(SECONDS_PER_TARGET / target_dt)))
+    while True:
+        tour = build_tour(targets, doubles, n_tour, doubles_pct)
+        for i, (kind, t) in enumerate(tour):
+            if kind == "double":
+                name, pcx, pcy, ph, ccx, ccy, chh, _p = t
+                pname, palette = DOUBLE_PALETTES[
+                    (i + loop_n) % len(DOUBLE_PALETTES)]
+                header = (f"\n── DOUBLE {name} "
+                          f"parent=({pcx:+.6f},{pcy:+.6f}) → "
+                          f"child=({ccx:+.6f},{ccy:+.6f}) "
+                          f"palette={pname} ──")
+                t_pre, t_pan = 0.46, 0.54
+                for n in range(total + 1):
+                    t_u = min(1.0, n * target_dt / SECONDS_PER_TARGET)
+                    cx_, cy_, half, mi = _params_double(
+                        t_u, pcx, pcy, ph, ccx, ccy, chh, t_pre, t_pan)
+                    frame = render(cx_, cy_, half, mi, palette)
+                    yield frame, (header if n == 0 else None)
+            else:
+                name, cx, cy, end_half, _p = t
+                use_dc = (single_n * dc_pct) // 100 < \
+                    ((single_n + 1) * dc_pct) // 100
+                if use_dc:
+                    pname, palette = DOUBLE_PALETTES[
+                        (single_n + loop_n) % len(DOUBLE_PALETTES)]
+                else:
+                    pname, palette = PALETTES[
+                        (single_n + loop_n) % len(PALETTES)]
+                single_n += 1
+                header = (f"\n── {name} ({cx:+.6f}, {cy:+.6f}) "
+                          f"palette={pname} ──")
+                for n in range(total + 1):
+                    t_u = min(1.0, n * target_dt / SECONDS_PER_TARGET)
+                    cx_, cy_, half, mi = _params_target(
+                        t_u, cx, cy, end_half)
+                    frame = render(cx_, cy_, half, mi, palette)
+                    yield frame, (header if n == 0 else None)
+        if not loop_forever:
+            return
+        loop_n += 1
+
+
+def run_pipeline(gen) -> None:
+    """Bursty producer/consumer. Renderer fills the queue up to
+    MAX_BUFFER_FRAMES as fast as the CPU allows, then blocks on an event
+    until the pusher has drained the queue down to REFILL_THRESHOLD_FRAMES.
+    Pusher always runs at TARGET_FPS, doing nothing but pop + HTTP POST.
+
+    Laptop CPU profile: ~1 min hot (filling 30 min of frames) per ~30 min
+    of playback."""
+    import queue as _queue
+    q: _queue.Queue = _queue.Queue(maxsize=MAX_BUFFER_FRAMES)
+    stop = threading.Event()
+    refill = threading.Event()
+    refill.set()  # kick the first burst immediately
 
     def renderer() -> None:
-        for n in range(total + 1):
+        it = iter(gen)
+        exhausted = False
+        while not exhausted and not stop.is_set():
+            refill.wait()
+            refill.clear()
             if stop.is_set():
                 return
-            t = min(1.0, (n * target_dt) / duration)
-            cx, cy, half, max_iter = params_at(t)
-            frame = render(cx, cy, half, max_iter, palette)
-            while not stop.is_set():
+            burst_start = time.monotonic()
+            produced = 0
+            while q.qsize() < MAX_BUFFER_FRAMES and not stop.is_set():
                 try:
-                    q.put(frame, timeout=0.25)
+                    item = next(it)
+                except StopIteration:
+                    exhausted = True
                     break
-                except _queue.Full:
-                    continue
+                while not stop.is_set():
+                    try:
+                        q.put(item, timeout=5.0)
+                        break
+                    except _queue.Full:
+                        continue
+                produced += 1
+            if produced > 0:
+                dt = time.monotonic() - burst_start
+                mins = q.qsize() / TARGET_FPS / 60.0
+                print(f"  [renderer] burst {produced} frames in "
+                      f"{dt:.1f}s ({produced / max(dt, 0.01):.0f} fps) → "
+                      f"buffer {q.qsize()} frames ({mins:.1f} min) — "
+                      "sleeping", flush=True)
 
     rt = threading.Thread(target=renderer, daemon=True)
     rt.start()
 
-    pic_id = start_pic_id
-    start = time.monotonic()
-    deadline = start
-    for n in range(total + 1):
-        try:
-            frame = q.get(timeout=5.0)
-        except Exception:
-            break
-        if pic_id > 1 and pic_id % 32 == 1:
-            post({"Command": "Draw/ResetHttpGifId"})
-            pic_id = 1
-        push_frame(pic_id, frame)
-        pic_id += 1
-        elapsed = time.monotonic() - start
-        if elapsed >= duration:
-            break
-        deadline += target_dt
-        sleep = deadline - time.monotonic()
-        if sleep > 0:
-            time.sleep(sleep)
-        else:
-            deadline = time.monotonic()
-    stop.set()
+    pic_id = 1
+    target_dt = 1.0 / TARGET_FPS
+    deadline = time.monotonic()
     try:
-        q.get_nowait()
-    except Exception:
-        pass
-    rt.join(timeout=2.0)
-    return pic_id
-
-
-def zoom_target(name: str, cx: float, cy: float, end_half: float,
-                palette_name: str, palette: np.ndarray,
-                start_pic_id: int) -> int:
-    print(f"\n── {name} ({cx:+.6f}, {cy:+.6f}) palette={palette_name} ──",
-          flush=True)
-    return run_decoupled(
-        lambda t: _params_target(t, cx, cy, end_half),
-        SECONDS_PER_TARGET, palette, start_pic_id,
-    )
-
-
-def zoom_double(name: str,
-                parent_cx: float, parent_cy: float, parent_half: float,
-                child_cx: float, child_cy: float, child_half: float,
-                palette_name: str, palette: np.ndarray,
-                start_pic_id: int) -> int:
-    """Two-phase zoom: approach parent, pan to child, zoom into child.
-
-    Time budget split ~half/pan/half so the parent is fully in-frame at the
-    midpoint, then a brief smooth pan re-targets to the child, then the
-    zoom continues into the child.
-    """
-    print(f"\n── DOUBLE {name} parent=({parent_cx:+.6f},{parent_cy:+.6f}) "
-          f"→ child=({child_cx:+.6f},{child_cy:+.6f}) "
-          f"palette={palette_name} ──", flush=True)
-    t_pre = 0.46
-    t_pan = 0.54
-    return run_decoupled(
-        lambda t: _params_double(
-            t, parent_cx, parent_cy, parent_half,
-            child_cx, child_cy, child_half,
-            t_pre, t_pan,
-        ),
-        SECONDS_PER_TARGET, palette, start_pic_id,
-    )
-    return pic_id
+        while True:
+            try:
+                item = q.get(timeout=30.0)
+            except _queue.Empty:
+                if not rt.is_alive():
+                    break
+                continue
+            frame, header = item
+            if header:
+                print(header, flush=True)
+            if pic_id > 1 and pic_id % 32 == 1:
+                post({"Command": "Draw/ResetHttpGifId"})
+                pic_id = 1
+            push_frame(pic_id, frame)
+            pic_id += 1
+            if (q.qsize() <= REFILL_THRESHOLD_FRAMES
+                    and not refill.is_set()):
+                refill.set()
+            deadline += target_dt
+            sleep = deadline - time.monotonic()
+            if sleep > 0:
+                time.sleep(sleep)
+            else:
+                deadline = time.monotonic()
+    finally:
+        stop.set()
+        refill.set()
+        rt.join(timeout=2.0)
 
 
 def build_tour(targets: list, doubles: list, n: int, doubles_pct: int = 25
@@ -539,40 +583,18 @@ def main() -> None:
     targets, doubles = load_or_scan()
     print(f"cached: {len(targets)} singles, {len(doubles)} doubles; "
           f"tour of {n_tour}, doubles={doubles_pct}%, "
-          f"doublec={doublec_pct}%", flush=True)
+          f"doublec={doublec_pct}%; buffer "
+          f"{MAX_BUFFER_MINUTES:.0f}min / refill at "
+          f"{REFILL_THRESHOLD_MINUTES:.0f}min "
+          f"({MAX_BUFFER_FRAMES}/{REFILL_THRESHOLD_FRAMES} frames)",
+          flush=True)
 
     print(f"priming {IP}...", flush=True)
     prime()
 
-    pic_id = 1
-    loop_n = 0
-    single_n = 0
-    dc_pct = max(0, min(100, doublec_pct))
-    while True:
-        tour = build_tour(targets, doubles, n_tour, doubles_pct)
-        for i, (kind, t) in enumerate(tour):
-            if kind == "double":
-                name, pcx, pcy, ph, ccx, ccy, ch, _period = t
-                pname, palette = DOUBLE_PALETTES[
-                    (i + loop_n) % len(DOUBLE_PALETTES)]
-                pic_id = zoom_double(name, pcx, pcy, ph, ccx, ccy, ch,
-                                     pname, palette, pic_id)
-            else:
-                name, cx, cy, end_half, _period = t
-                use_dc = (single_n * dc_pct) // 100 < \
-                    ((single_n + 1) * dc_pct) // 100
-                if use_dc:
-                    pname, palette = DOUBLE_PALETTES[
-                        (single_n + loop_n) % len(DOUBLE_PALETTES)]
-                else:
-                    pname, palette = PALETTES[
-                        (single_n + loop_n) % len(PALETTES)]
-                single_n += 1
-                pic_id = zoom_target(name, cx, cy, end_half, pname, palette,
-                                     pic_id)
-        if not loop_forever:
-            break
-        loop_n += 1
+    gen = generate_tour_frames(targets, doubles, n_tour, doubles_pct,
+                               doublec_pct, loop_forever)
+    run_pipeline(gen)
 
 
 if __name__ == "__main__":
