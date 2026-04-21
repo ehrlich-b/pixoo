@@ -395,41 +395,43 @@ def _params_double(t: float,
 
 def run_decoupled(params_at, duration: float, palette: np.ndarray,
                   start_pic_id: int) -> int:
-    """Render in one thread, push in another. Motion advances by wall clock.
-
-    Renderer computes frames as fast as it can and stores the latest in a
-    shared buffer. Pusher samples the buffer at TARGET_FPS cadence. Slow
-    renders look like brief holds; slow pushes don't delay motion.
+    """One-frame lookahead: renderer pre-computes frame N+1 while pusher
+    is uploading frame N. Queue(maxsize=1) keeps them lockstepped — the
+    renderer blocks on put() once a frame is queued and the pusher hasn't
+    consumed it yet, so CPU is only spent computing the next frame during
+    the push window, then both sleep until the next deadline.
     """
-    lock = threading.Lock()
-    latest: list[bytes | None] = [None]
-    start = time.monotonic()
+    import queue as _queue
+    q: _queue.Queue = _queue.Queue(maxsize=1)
     stop = threading.Event()
+    target_dt = 1.0 / TARGET_FPS
+    total = max(1, int(round(duration / target_dt)))
 
     def renderer() -> None:
-        while not stop.is_set():
-            t = min(1.0, (time.monotonic() - start) / duration)
+        for n in range(total + 1):
+            if stop.is_set():
+                return
+            t = min(1.0, (n * target_dt) / duration)
             cx, cy, half, max_iter = params_at(t)
             frame = render(cx, cy, half, max_iter, palette)
-            with lock:
-                latest[0] = frame
-            if t >= 1.0:
-                return
+            while not stop.is_set():
+                try:
+                    q.put(frame, timeout=0.25)
+                    break
+                except _queue.Full:
+                    continue
 
     rt = threading.Thread(target=renderer, daemon=True)
     rt.start()
-    while True:
-        with lock:
-            if latest[0] is not None:
-                break
-        time.sleep(0.005)
 
-    target_dt = 1.0 / TARGET_FPS
-    deadline = time.monotonic()
     pic_id = start_pic_id
-    while True:
-        with lock:
-            frame = latest[0]
+    start = time.monotonic()
+    deadline = start
+    for n in range(total + 1):
+        try:
+            frame = q.get(timeout=5.0)
+        except Exception:
+            break
         if pic_id > 1 and pic_id % 32 == 1:
             post({"Command": "Draw/ResetHttpGifId"})
             pic_id = 1
@@ -445,6 +447,10 @@ def run_decoupled(params_at, duration: float, palette: np.ndarray,
         else:
             deadline = time.monotonic()
     stop.set()
+    try:
+        q.get_nowait()
+    except Exception:
+        pass
     rt.join(timeout=2.0)
     return pic_id
 

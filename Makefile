@@ -35,3 +35,6 @@ watch:
 	@$(MAKE) restart
 	@echo "watching $(SCRIPT) — save to auto-restart (ctrl-c to exit)"
 	@fswatch -o $(SCRIPT) | while read _; do echo "--- change detected ---"; $(MAKE) restart; done
+
+stress: stop on
+	python3 programs/frame_stress.py
