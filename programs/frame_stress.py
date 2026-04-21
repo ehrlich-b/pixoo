@@ -16,7 +16,6 @@ from pixoolib.anim import upload_animation
 from pixoolib.client import PixooClient
 from pixoolib.digits import draw_text, text_width
 from pixoolib.frame import Frame
-from pixoolib.state import load_state  # noqa: F401  (ok if absent)
 
 
 def labeled_frame(idx: int, n: int) -> Frame:
