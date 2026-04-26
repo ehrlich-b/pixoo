@@ -121,6 +121,8 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/pendulum_wave.py` — N detuned pendulums beat in/out of phase.
 - [x] `programs/ising.py` — 2D Ising model cycles disorder ↔ ferromagnetism.
 - [x] `programs/hilbert.py` — order-6 Hilbert curve drawn in rainbow.
+- [x] `programs/moire.py` — two rotating sine grids beat into shifting patterns.
+- [x] `programs/worm.py` — segmented rainbow body wandering torus screen.
 
 ## Infra / ergonomics backlog
 
