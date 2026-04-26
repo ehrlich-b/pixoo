@@ -35,7 +35,7 @@ the brainstorm universe; this file is the work list.
 ## Batch 3 — algorithms
 
 - [x] `programs/sort_viz.py` — cycle sorting algorithms.
-- [ ] `programs/defrag.py` — 4×4 tile defragmenter.
+- [x] `programs/defrag.py` — 4×4 tile defragmenter.
 - [x] `programs/maze.py` — generate → solve → repeat.
 - [x] `programs/pathfind.py` — A*/Dijkstra frontier.
 - [x] `programs/tsp.py` — 2-opt / SA untangler on 20 cities.
@@ -74,7 +74,7 @@ the brainstorm universe; this file is the work list.
 ## Batch 8 — ambient / data
 
 - [x] `programs/clock.py` — analog clock.
-- [ ] `programs/dot.py` — arrow-key smoke test (if we decide ball isn't it).
+- [x] `programs/dot.py` — arrow-key smoke test (if we decide ball isn't it).
 - [ ] `programs/ping_heatmap.py` — LAN ping latency grid.
 - [ ] `programs/weather.py` — icon + temperature (needs API key).
 
@@ -86,9 +86,9 @@ the brainstorm universe; this file is the work list.
 
 ## Batch 10 — demoscene deeper cuts
 
-- [ ] `programs/tunnel.py` — textured tunnel.
-- [ ] `programs/rotozoom.py` — rotozoomer.
-- [ ] `programs/raymarch.py` — SDF sphere + plane.
+- [x] `programs/tunnel.py` — textured tunnel.
+- [x] `programs/rotozoom.py` — rotozoomer.
+- [x] `programs/raymarch.py` — SDF sphere + plane.
 - [x] `programs/waves.py` — 2D wave equation.
 - [x] `programs/heat.py` — heat diffusion.
 - [x] `programs/spring_mesh.py` — cloth sim.
