@@ -114,6 +114,10 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/harmonograph.py` — coupled-pendulum traces with reseed.
 - [x] `programs/lightning.py` — recursive bolts over storm-sky + rain.
 - [x] `programs/cube3d.py` — rotating wireframe cube with depth shading.
+- [x] `programs/aurora.py` — green/magenta night-sky curtains.
+- [x] `programs/string_art.py` — modular i→i*k cardioid curves.
+- [x] `programs/spirograph.py` — hypotrochoid traces, reseed each phase.
+- [x] `programs/mosaic.py` — drifting tile colors with sparkles.
 
 ## Infra / ergonomics backlog
 
