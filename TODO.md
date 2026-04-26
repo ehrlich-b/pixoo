@@ -110,6 +110,10 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/voronoi.py` — drifting sites + edge highlights.
 - [x] `programs/phyllotaxis.py` — golden-angle sunflower spiral grows.
 - [x] `programs/truchet.py` — quarter-arc tiles flow into curves.
+- [x] `programs/fireworks.py` — rocket bursts with colored particles.
+- [x] `programs/harmonograph.py` — coupled-pendulum traces with reseed.
+- [x] `programs/lightning.py` — recursive bolts over storm-sky + rain.
+- [x] `programs/cube3d.py` — rotating wireframe cube with depth shading.
 
 ## Infra / ergonomics backlog
 
