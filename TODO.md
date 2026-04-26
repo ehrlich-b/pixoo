@@ -69,7 +69,7 @@ the brainstorm universe; this file is the work list.
       cycle famous games.
 - [x] `programs/snake_ai.py` — BFS self-player.
 - [x] `programs/pong_ai.py` — two AIs forever.
-- [ ] `programs/tetris_ai.py` — Dellacherie heuristic placer.
+- [x] `programs/tetris_ai.py` — Dellacherie heuristic placer.
 
 ## Batch 8 — ambient / data
 
