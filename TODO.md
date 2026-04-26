@@ -18,62 +18,62 @@ the brainstorm universe; this file is the work list.
 
 ## Batch 1 — quick wins (pure stdlib, no deps)
 
-- [ ] `programs/life.py` — Conway's Game of Life, cycle seeds.
-- [ ] `programs/langton.py` — Langton's ant, many steps/frame.
-- [ ] `programs/eca.py` — elementary CA, cycle iconic rules.
-- [ ] `programs/starfield.py` — demoscene starfield.
-- [ ] `programs/fire.py` — classic fire effect.
+- [x] `programs/life.py` — Conway's Game of Life, cycle seeds.
+- [x] `programs/langton.py` — Langton's ant, many steps/frame.
+- [x] `programs/eca.py` — elementary CA, cycle iconic rules.
+- [x] `programs/starfield.py` — demoscene starfield.
+- [x] `programs/fire.py` — classic fire effect.
 
 ## Batch 2 — physics
 
-- [ ] `programs/pendulum.py` — double pendulum with trail.
-- [ ] `programs/cradle.py` — Newton's cradle.
-- [ ] `programs/galton.py` — bean machine, Gaussian pile.
+- [x] `programs/pendulum.py` — double pendulum with trail.
+- [x] `programs/cradle.py` — Newton's cradle.
+- [x] `programs/galton.py` — bean machine, Gaussian pile.
 - [x] `programs/nbody.py` — 2D gravity, Chenciner-Montgomery figure-8.
-- [ ] `programs/sand.py` — falling-sand powder toy, mouse to paint.
+- [x] `programs/sand.py` — falling-sand powder toy.
 
 ## Batch 3 — algorithms
 
-- [ ] `programs/sort_viz.py` — cycle sorting algorithms.
+- [x] `programs/sort_viz.py` — cycle sorting algorithms.
 - [ ] `programs/defrag.py` — 4×4 tile defragmenter.
-- [ ] `programs/maze.py` — generate → solve → repeat.
-- [ ] `programs/pathfind.py` — A*/Dijkstra frontier.
-- [ ] `programs/tsp.py` — 2-opt / SA untangler on 20 cities.
+- [x] `programs/maze.py` — generate → solve → repeat.
+- [x] `programs/pathfind.py` — A*/Dijkstra frontier.
+- [x] `programs/tsp.py` — 2-opt / SA untangler on 20 cities.
 
 ## Batch 4 — generative / mesmerizing
 
-- [ ] `programs/flow_field.py` — Perlin flow field with trailing particles.
-- [ ] `programs/plasma.py` — sine-field plasma.
-- [ ] `programs/matrix.py` — green glyph rain.
-- [ ] `programs/metaballs.py` — threshold-contoured metaballs.
-- [ ] `programs/dla.py` — diffusion-limited aggregation.
+- [x] `programs/flow_field.py` — sine-field flow with trailing particles.
+- [x] `programs/plasma.py` — sine-field plasma.
+- [x] `programs/matrix.py` — green glyph rain.
+- [x] `programs/metaballs.py` — threshold-contoured metaballs.
+- [x] `programs/dla.py` — diffusion-limited aggregation.
 
 ## Batch 5 — emergent math
 
-- [ ] `programs/sandpile.py` — abelian sandpile.
-- [ ] `programs/ulam.py` — Ulam prime spiral.
-- [ ] `programs/schelling.py` — segregation model.
-- [ ] `programs/boids.py` — flocking.
+- [x] `programs/sandpile.py` — abelian sandpile.
+- [x] `programs/ulam.py` — Ulam prime spiral.
+- [x] `programs/schelling.py` — segregation model.
+- [x] `programs/boids.py` — flocking.
 - [ ] `programs/reaction.py` — Gray-Scott reaction-diffusion (numpy).
 
 ## Batch 6 — fractals & L-systems
 
-- [ ] `programs/julia.py` — Julia set with drifting `c`.
-- [ ] `programs/newton.py` — Newton basins.
-- [ ] `programs/ifs.py` — Barnsley fern / chaos-game Sierpinski.
-- [ ] `programs/lsystem.py` — L-system tree / Koch / dragon.
+- [x] `programs/julia.py` — Julia set with drifting `c`.
+- [x] `programs/newton.py` — Newton basins.
+- [x] `programs/ifs.py` — Barnsley fern / chaos-game Sierpinski.
+- [x] `programs/lsystem.py` — L-system tree / Koch / dragon.
 
 ## Batch 7 — chess / self-playing
 
 - [ ] `programs/chess_games.py` — 56×56 board + 8-row eval gauge,
       cycle famous games.
-- [ ] `programs/snake_ai.py` — Hamiltonian / BFS self-player.
-- [ ] `programs/pong_ai.py` — two AIs forever.
+- [x] `programs/snake_ai.py` — BFS self-player.
+- [x] `programs/pong_ai.py` — two AIs forever.
 - [ ] `programs/tetris_ai.py` — Dellacherie heuristic placer.
 
 ## Batch 8 — ambient / data
 
-- [ ] `programs/clock.py` — analog clock.
+- [x] `programs/clock.py` — analog clock.
 - [ ] `programs/dot.py` — arrow-key smoke test (if we decide ball isn't it).
 - [ ] `programs/ping_heatmap.py` — LAN ping latency grid.
 - [ ] `programs/weather.py` — icon + temperature (needs API key).
@@ -89,9 +89,20 @@ the brainstorm universe; this file is the work list.
 - [ ] `programs/tunnel.py` — textured tunnel.
 - [ ] `programs/rotozoom.py` — rotozoomer.
 - [ ] `programs/raymarch.py` — SDF sphere + plane.
-- [ ] `programs/waves.py` — 2D wave equation.
-- [ ] `programs/heat.py` — heat diffusion.
-- [ ] `programs/spring_mesh.py` — cloth sim.
+- [x] `programs/waves.py` — 2D wave equation.
+- [x] `programs/heat.py` — heat diffusion.
+- [x] `programs/spring_mesh.py` — cloth sim.
+
+## Batch 11 — bonus from IDEAS
+
+- [x] `programs/forest_fire.py` — growth + lightning CA.
+- [x] `programs/wireworld.py` — copper rings + electron pulses.
+- [x] `programs/magnet_pendulum.py` — basin map of attractor.
+- [x] `programs/solar_system.py` — top-down 8 planets at scaled periods.
+- [x] `programs/random_walks.py` — many 1D walkers + histogram.
+- [x] `programs/buffon.py` — needles for π.
+- [x] `programs/bear.py` — four-season animated scene with cub + papa.
+- [x] `programs/unicorn.py` — sky + rainbow + walking unicorn.
 
 ## Infra / ergonomics backlog
 
