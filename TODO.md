@@ -103,6 +103,10 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/buffon.py` — needles for π.
 - [x] `programs/bear.py` — four-season animated scene with cub + papa.
 - [x] `programs/unicorn.py` — sky + rainbow + walking unicorn.
+- [x] `programs/attractors.py` — Lorenz attractor with rotating viewpoint.
+- [x] `programs/kaleidoscope.py` — 6-fold mirrored sine field.
+- [x] `programs/clt_sums.py` — sum of N uniforms approaching Gaussian.
+- [x] `programs/life_zoo.py` — curated Life patterns (gun, pulsar, acorn).
 
 ## Infra / ergonomics backlog
 
