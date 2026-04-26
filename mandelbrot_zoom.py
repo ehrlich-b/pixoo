@@ -380,22 +380,22 @@ def _params_target(t: float, cx: float, cy: float, end_half: float):
 
 def _params_double(t: float,
                    pcx: float, pcy: float, ph: float,
-                   ccx: float, ccy: float, chh: float,
-                   t_pre: float, t_pan: float):
-    if t < t_pre:
-        u = t / t_pre
+                   ccx: float, ccy: float, chh: float):
+    """Continuous zoom with parent→child pan baked into the orbit. Zoom is
+    two-phase geometric — START→ph by t=0.5 (parent's landing), ph→chh by
+    t=1.0 (child's landing). Pan is smoothstep-eased over the same first
+    half so camera slides from parent to child while we zoom in, with
+    zero velocity at both endpoints. No discrete pan phase."""
+    if t < 0.5:
+        u = t * 2.0
         half = START_HALF_WIDTH * ((ph / START_HALF_WIDTH) ** u)
-        cx, cy = pcx, pcy
-    elif t < t_pan:
-        u = (t - t_pre) / (t_pan - t_pre)
-        u = u * u * (3.0 - 2.0 * u)
-        half = ph
-        cx = pcx + u * (ccx - pcx)
-        cy = pcy + u * (ccy - pcy)
     else:
-        u = (t - t_pan) / max(1e-9, 1.0 - t_pan)
+        u = (t - 0.5) * 2.0
         half = ph * ((chh / ph) ** u)
-        cx, cy = ccx, ccy
+    pan_t = min(1.0, t * 2.0)
+    s = pan_t * pan_t * (3.0 - 2.0 * pan_t)
+    cx = pcx + s * (ccx - pcx)
+    cy = pcy + s * (ccy - pcy)
     zoom_factor = START_HALF_WIDTH / half
     max_iter = int(80 + 120 * np.log10(max(1.0, zoom_factor)))
     return cx, cy, half, max_iter
@@ -424,11 +424,10 @@ def generate_tour_frames(targets, doubles, n_tour: int, doubles_pct: int,
                           f"parent=({pcx:+.6f},{pcy:+.6f}) → "
                           f"child=({ccx:+.6f},{ccy:+.6f}) "
                           f"palette={pname} ──")
-                t_pre, t_pan = 0.46, 0.54
                 for n in range(total + 1):
                     t_u = min(1.0, n * target_dt / SECONDS_PER_TARGET)
                     cx_, cy_, half, mi = _params_double(
-                        t_u, pcx, pcy, ph, ccx, ccy, chh, t_pre, t_pan)
+                        t_u, pcx, pcy, ph, ccx, ccy, chh)
                     frame = render(cx_, cy_, half, mi, palette)
                     yield frame, (header if n == 0 else None)
             else:

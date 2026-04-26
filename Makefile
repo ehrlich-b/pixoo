@@ -37,4 +37,4 @@ watch:
 	@fswatch -o $(SCRIPT) | while read _; do echo "--- change detected ---"; $(MAKE) restart; done
 
 stress: stop on
-	python3 programs/frame_stress.py
+	python3 probes/frame_stress.py

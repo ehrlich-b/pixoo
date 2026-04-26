@@ -29,7 +29,16 @@ class Driver(Protocol):
 
 
 class Program:
-    """Override update() / render(). setup() is optional."""
+    """Override update() / render(). setup() is optional.
+
+    Programs receive CLI --arg KEY=VALUE pairs as a plain str→str dict on
+    self.params. Use `int(self.params.get("n", default))` etc in setup().
+    Keeping the parsing on the program side keeps the CLI type-agnostic."""
+
+    DESCRIPTION: str = ""
+
+    def __init__(self, **params: str) -> None:
+        self.params: dict[str, str] = params
 
     def setup(self) -> None:
         pass

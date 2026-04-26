@@ -6,6 +6,7 @@ from pixoolib.runtime import Program
 
 
 class Ball(Program):
+    DESCRIPTION = "bouncing ball at 45 degrees — smoke test for the runtime"
     speed = 20.0  # px/sec on each axis → 45 degrees
 
     def setup(self) -> None:

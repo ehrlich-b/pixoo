@@ -29,6 +29,12 @@ class PixooClient:
     def all_conf(self) -> dict:
         return self.post({"Command": "Channel/GetAllConf"})
 
+    def weather_info(self) -> dict:
+        return self.post({"Command": "Device/GetWeatherInfo"})
+
+    def device_time(self) -> dict:
+        return self.post({"Command": "Device/GetDeviceTime"})
+
     def set_channel(self, idx: int) -> dict:
         return self.post({"Command": "Channel/SetIndex", "SelectIndex": idx})
 

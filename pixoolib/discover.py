@@ -53,6 +53,48 @@ def discover() -> list[dict]:
     return found
 
 
+def _arp_map() -> dict[str, str]:
+    """Best-effort IP→MAC map from the host ARP cache. Empty dict on failure."""
+    import subprocess
+    try:
+        out = subprocess.run(["arp", "-an"], capture_output=True, text=True,
+                             timeout=2).stdout
+    except (OSError, subprocess.SubprocessError):
+        return {}
+    m: dict[str, str] = {}
+    for line in out.splitlines():
+        # macOS: "? (10.0.0.1) at aa:bb:cc:dd:ee:ff on en0 ..."
+        if "(" not in line or ") at " not in line:
+            continue
+        ip = line.split("(", 1)[1].split(")", 1)[0]
+        mac = line.split(") at ", 1)[1].split(" ", 1)[0]
+        if mac != "(incomplete)":
+            m[ip] = mac
+    return m
+
+
+def enrich_verbose(devices: list[dict]) -> list[dict]:
+    """For each discovered device, pull weather + device time, and attach MAC."""
+    def _fill(d: dict) -> dict:
+        c = PixooClient(d["ip"])
+        try:
+            d["weather"] = c.weather_info()
+        except Exception:
+            d["weather"] = None
+        try:
+            d["device_time"] = c.device_time()
+        except Exception:
+            d["device_time"] = None
+        return d
+
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        enriched = list(ex.map(_fill, devices))
+    macs = _arp_map()
+    for d in enriched:
+        d["mac"] = macs.get(d["ip"])
+    return enriched
+
+
 def pick(devices: list[dict]) -> dict:
     if not devices:
         print("no Pixoos found on this LAN", file=sys.stderr)
