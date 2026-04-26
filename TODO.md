@@ -123,6 +123,8 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/hilbert.py` — order-6 Hilbert curve drawn in rainbow.
 - [x] `programs/moire.py` — two rotating sine grids beat into shifting patterns.
 - [x] `programs/worm.py` — segmented rainbow body wandering torus screen.
+- [x] `programs/tron.py` — two AI light cycles play to the death.
+- [x] `programs/galaxy.py` — slowly rotating 3-arm spiral of stars.
 
 ## Infra / ergonomics backlog
 
