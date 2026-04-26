@@ -125,6 +125,8 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/worm.py` — segmented rainbow body wandering torus screen.
 - [x] `programs/tron.py` — two AI light cycles play to the death.
 - [x] `programs/galaxy.py` — slowly rotating 3-arm spiral of stars.
+- [x] `programs/snowflake.py` — 6-fold symmetric crystal grows.
+- [x] `programs/bouncy.py` — N gravity balls with elastic ball-ball collisions.
 
 ## Infra / ergonomics backlog
 
