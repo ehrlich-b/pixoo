@@ -118,6 +118,9 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/string_art.py` — modular i→i*k cardioid curves.
 - [x] `programs/spirograph.py` — hypotrochoid traces, reseed each phase.
 - [x] `programs/mosaic.py` — drifting tile colors with sparkles.
+- [x] `programs/pendulum_wave.py` — N detuned pendulums beat in/out of phase.
+- [x] `programs/ising.py` — 2D Ising model cycles disorder ↔ ferromagnetism.
+- [x] `programs/hilbert.py` — order-6 Hilbert curve drawn in rainbow.
 
 ## Infra / ergonomics backlog
 
