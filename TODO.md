@@ -107,6 +107,9 @@ the brainstorm universe; this file is the work list.
 - [x] `programs/kaleidoscope.py` — 6-fold mirrored sine field.
 - [x] `programs/clt_sums.py` — sum of N uniforms approaching Gaussian.
 - [x] `programs/life_zoo.py` — curated Life patterns (gun, pulsar, acorn).
+- [x] `programs/voronoi.py` — drifting sites + edge highlights.
+- [x] `programs/phyllotaxis.py` — golden-angle sunflower spiral grows.
+- [x] `programs/truchet.py` — quarter-arc tiles flow into curves.
 
 ## Infra / ergonomics backlog
 
