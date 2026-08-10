@@ -1,4 +1,10 @@
-"""Hilbert — order-6 Hilbert space-filling curve drawn in rainbow over time."""
+"""Hilbert — order-6 Hilbert space-filling curve drawn in rainbow over time.
+
+Optional params (all deterministic; defaults reproduce classic rainbow):
+    seed              int — hue index offset for the rainbow start
+    steps             int — pre-draw this many curve points in setup()
+    grow_per_frame    int — points drawn per update() (default GROW_PER_FRAME)
+"""
 from __future__ import annotations
 
 from pixoolib.frame import HEIGHT, WIDTH, Frame
@@ -53,7 +59,11 @@ class Hilbert(Program):
 
     def setup(self) -> None:
         self._points = [_d2xy(WIDTH, i) for i in range(N_POINTS)]
-        self._n = 0
+        self._hue0 = int(self.params.get("seed", 0) or 0) % N_POINTS
+        self._gpf = int(self.params.get("grow_per_frame", GROW_PER_FRAME))
+        self._n = int(self.params.get("steps", 0) or 0)
+        if self._n < 0:
+            self._n = 0
         self._hold = 0
 
     def update(self, dt: float, events) -> None:
@@ -63,14 +73,14 @@ class Hilbert(Program):
                 self._n = 0
                 self._hold = 0
             return
-        self._n = min(N_POINTS, self._n + GROW_PER_FRAME)
+        self._n = min(N_POINTS, self._n + self._gpf)
 
     def render(self) -> Frame:
         f = Frame.black()
         n = self._n
         for i in range(n):
             x, y = self._points[i]
-            hue = (i / N_POINTS) % 1.0
+            hue = ((self._hue0 + i) % N_POINTS) / N_POINTS
             f.set(x, y, _hsv(hue, 0.85, 0.95))
         # Highlight the leading "pen tip" so the growth is visible.
         if n > 0 and n < N_POINTS:
