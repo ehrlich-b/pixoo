@@ -3,7 +3,7 @@ LOG    := /tmp/mandelbrot_run.log
 ARGS   := --loop --doubles=25 --doublec=25 20
 IP     := 192.168.4.111
 
-.PHONY: restart stop logs status watch on off
+.PHONY: restart stop logs status watch on off test
 
 restart: stop on
 	@nohup python3 $(SCRIPT) $(ARGS) > $(LOG) 2>&1 &
@@ -38,3 +38,6 @@ watch:
 
 stress: stop on
 	python3 probes/frame_stress.py
+
+test:
+	python3 -m unittest discover -s tests -v

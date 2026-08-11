@@ -8,20 +8,48 @@ import urllib.request
 PROBE_TIMEOUT = 0.6
 CMD_TIMEOUT = 3.0
 
+# PROTOCOL.md, "Per-request size limits": "never send more than ~16KB in one
+# POST." One 64x64 RGB frame is exactly 16384 base64 chars; the JSON envelope
+# brings a single-frame body to ~16.5KB on the wire. This constant is that
+# one-frame ceiling with room for the envelope — anything larger is a packed
+# multi-frame body (the documented "crashes past ~16KB" case) and is refused
+# client-side, before the fetch path.
+MAX_POST_BYTES = 16 * 1024 + 512  # ~16.5KB: one frame + JSON envelope
+
+
+class PixooProtocolError(Exception):
+    """Raised when a request violates the Pixoo protocol (see PROTOCOL.md)."""
+
+
+def _urllib_post(url: str, body: bytes, timeout: float) -> dict:
+    req = urllib.request.Request(
+        url,
+        data=body,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read())
+
 
 class PixooClient:
-    def __init__(self, ip: str):
+    def __init__(self, ip: str, poster=None):
+        """Poster is the HTTP transport: `poster(url, body_bytes, timeout) -> dict`.
+
+        Defaults to the urllib path; tests substitute a FakeDevice.
+        """
         self.ip = ip
+        self._poster = _urllib_post if poster is None else poster
 
     def post(self, payload: dict, timeout: float = CMD_TIMEOUT) -> dict:
-        req = urllib.request.Request(
-            f"http://{self.ip}/post",
-            data=json.dumps(payload).encode(),
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read())
+        body = json.dumps(payload).encode()
+        if len(body) > MAX_POST_BYTES:
+            raise PixooProtocolError(
+                f"refusing to send {len(body)}-byte body: PROTOCOL.md caps a "
+                f"POST at ~16KB (one 64x64 RGB frame is 16384 base64 chars); "
+                f"this request was not sent"
+            )
+        return self._poster(f"http://{self.ip}/post", body, timeout)
 
     def channel_index(self) -> dict:
         return self.post({"Command": "Channel/GetIndex"}, timeout=PROBE_TIMEOUT)
