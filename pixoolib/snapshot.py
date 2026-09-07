@@ -28,21 +28,16 @@ def _chunk(tag: bytes, data: bytes) -> bytes:
 
 def write_png(path: str, frame: Frame, scale: int = 8) -> None:
     """Write `frame` as a PNG at `path`, nearest-neighbor upscaled by `scale`."""
+    if not isinstance(scale, int) or isinstance(scale, bool) or scale < 1:
+        raise ValueError("PNG scale must be a positive integer")
     ow, oh = WIDTH * scale, HEIGHT * scale
     src = frame.pixels
-    raw = bytearray(oh * (1 + ow * 3))
-    o = 0
-    for y in range(oh):
-        raw[o] = 0  # PNG filter byte: None
-        o += 1
-        sy = y // scale
-        row_src = sy * WIDTH * 3
-        for x in range(ow):
-            si = row_src + (x // scale) * 3
-            raw[o] = src[si]
-            raw[o + 1] = src[si + 1]
-            raw[o + 2] = src[si + 2]
-            o += 3
+    rows = []
+    for y in range(HEIGHT):
+        row = src[y * WIDTH * 3:(y + 1) * WIDTH * 3]
+        expanded = b"".join(bytes(row[x:x + 3]) * scale for x in range(0, len(row), 3))
+        rows.append((b"\0" + expanded) * scale)
+    raw = b"".join(rows)
     sig = b"\x89PNG\r\n\x1a\n"
     ihdr = struct.pack(">IIBBBBB", ow, oh, 8, 2, 0, 0, 0)
     png = (
@@ -65,7 +60,8 @@ class SnapshotDriver:
         self._last = 0.0
 
     def start(self) -> None:
-        pass
+        from pathlib import Path
+        Path(self.path).parent.mkdir(parents=True, exist_ok=True)
 
     def stop(self) -> None:
         pass

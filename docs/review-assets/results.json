@@ -1,0 +1,5048 @@
+{
+  "python": "3.14.6",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "seed": 12345,
+  "note": "Offline synthetic dt; clock uses wall time; no device or terminal I/O in timings.",
+  "results": [
+    {
+      "name": "attractors",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "attractors-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "attractors-30fps-30.png",
+          "lit_pixels": 84
+        },
+        {
+          "seconds": 5.0,
+          "image": "attractors-30fps-150.png",
+          "lit_pixels": 28
+        },
+        {
+          "seconds": 15.0,
+          "image": "attractors-30fps-450.png",
+          "lit_pixels": 5
+        }
+      ],
+      "description": "Lorenz attractor \u2014 phase trail with rotating viewpoint",
+      "setup_ms": 0.002,
+      "mean_ms": 0.12,
+      "p95_ms": 0.126,
+      "max_ms": 0.238,
+      "unique_frames": 447,
+      "frames": 451
+    },
+    {
+      "name": "attractors",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "attractors-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "attractors-5fps-5.png",
+          "lit_pixels": 13
+        },
+        {
+          "seconds": 5.0,
+          "image": "attractors-5fps-25.png",
+          "lit_pixels": 103
+        },
+        {
+          "seconds": 15.0,
+          "image": "attractors-5fps-75.png",
+          "lit_pixels": 159
+        }
+      ],
+      "description": "Lorenz attractor \u2014 phase trail with rotating viewpoint",
+      "setup_ms": 0.002,
+      "mean_ms": 0.106,
+      "p95_ms": 0.127,
+      "max_ms": 0.175,
+      "unique_frames": 72,
+      "frames": 76
+    },
+    {
+      "name": "aurora",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "aurora-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "aurora-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "aurora-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "aurora-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Aurora \u2014 green/magenta curtains shimmer in night sky",
+      "setup_ms": 0.028,
+      "mean_ms": 3.614,
+      "p95_ms": 5.584,
+      "max_ms": 7.872,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "aurora",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "aurora-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "aurora-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "aurora-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "aurora-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Aurora \u2014 green/magenta curtains shimmer in night sky",
+      "setup_ms": 0.019,
+      "mean_ms": 3.379,
+      "p95_ms": 4.44,
+      "max_ms": 5.001,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "ball",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ball-30fps-0.png",
+          "lit_pixels": 15
+        },
+        {
+          "seconds": 1.0,
+          "image": "ball-30fps-30.png",
+          "lit_pixels": 25
+        },
+        {
+          "seconds": 5.0,
+          "image": "ball-30fps-150.png",
+          "lit_pixels": 28
+        },
+        {
+          "seconds": 15.0,
+          "image": "ball-30fps-450.png",
+          "lit_pixels": 28
+        }
+      ],
+      "description": "bouncing ball at 45 degrees \u2014 smoke test for the runtime",
+      "setup_ms": 0.001,
+      "mean_ms": 0.011,
+      "p95_ms": 0.012,
+      "max_ms": 0.035,
+      "unique_frames": 190,
+      "frames": 451
+    },
+    {
+      "name": "ball",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ball-5fps-0.png",
+          "lit_pixels": 15
+        },
+        {
+          "seconds": 1.0,
+          "image": "ball-5fps-5.png",
+          "lit_pixels": 25
+        },
+        {
+          "seconds": 5.0,
+          "image": "ball-5fps-25.png",
+          "lit_pixels": 25
+        },
+        {
+          "seconds": 15.0,
+          "image": "ball-5fps-75.png",
+          "lit_pixels": 25
+        }
+      ],
+      "description": "bouncing ball at 45 degrees \u2014 smoke test for the runtime",
+      "setup_ms": 0.001,
+      "mean_ms": 0.011,
+      "p95_ms": 0.013,
+      "max_ms": 0.065,
+      "unique_frames": 32,
+      "frames": 76
+    },
+    {
+      "name": "bear",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "bear-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "bear-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "bear-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "bear-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "12-min year, 8 days, diurnal bear with weather & seasons",
+      "setup_ms": 0.008,
+      "mean_ms": 0.78,
+      "p95_ms": 0.923,
+      "max_ms": 1.474,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "bear",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "bear-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "bear-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "bear-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "bear-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "12-min year, 8 days, diurnal bear with weather & seasons",
+      "setup_ms": 0.008,
+      "mean_ms": 0.794,
+      "p95_ms": 0.932,
+      "max_ms": 1.423,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "boids",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "boids-30fps-0.png",
+          "lit_pixels": 71
+        },
+        {
+          "seconds": 1.0,
+          "image": "boids-30fps-30.png",
+          "lit_pixels": 72
+        },
+        {
+          "seconds": 5.0,
+          "image": "boids-30fps-150.png",
+          "lit_pixels": 72
+        },
+        {
+          "seconds": 15.0,
+          "image": "boids-30fps-450.png",
+          "lit_pixels": 72
+        }
+      ],
+      "description": "Flocking boids \u2014 separation, alignment, cohesion",
+      "setup_ms": 0.035,
+      "mean_ms": 0.275,
+      "p95_ms": 0.317,
+      "max_ms": 0.584,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "boids",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "boids-5fps-0.png",
+          "lit_pixels": 72
+        },
+        {
+          "seconds": 1.0,
+          "image": "boids-5fps-5.png",
+          "lit_pixels": 71
+        },
+        {
+          "seconds": 5.0,
+          "image": "boids-5fps-25.png",
+          "lit_pixels": 72
+        },
+        {
+          "seconds": 15.0,
+          "image": "boids-5fps-75.png",
+          "lit_pixels": 71
+        }
+      ],
+      "description": "Flocking boids \u2014 separation, alignment, cohesion",
+      "setup_ms": 0.032,
+      "mean_ms": 0.273,
+      "p95_ms": 0.319,
+      "max_ms": 0.682,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "bouncy",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "bouncy-30fps-0.png",
+          "lit_pixels": 300
+        },
+        {
+          "seconds": 1.0,
+          "image": "bouncy-30fps-30.png",
+          "lit_pixels": 306
+        },
+        {
+          "seconds": 5.0,
+          "image": "bouncy-30fps-150.png",
+          "lit_pixels": 305
+        },
+        {
+          "seconds": 15.0,
+          "image": "bouncy-30fps-450.png",
+          "lit_pixels": 305
+        }
+      ],
+      "description": "Bouncy \u2014 N balls under gravity with elastic collisions",
+      "setup_ms": 0.021,
+      "mean_ms": 0.087,
+      "p95_ms": 0.099,
+      "max_ms": 0.375,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "bouncy",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "bouncy-5fps-0.png",
+          "lit_pixels": 300
+        },
+        {
+          "seconds": 1.0,
+          "image": "bouncy-5fps-5.png",
+          "lit_pixels": 305
+        },
+        {
+          "seconds": 5.0,
+          "image": "bouncy-5fps-25.png",
+          "lit_pixels": 306
+        },
+        {
+          "seconds": 15.0,
+          "image": "bouncy-5fps-75.png",
+          "lit_pixels": 289
+        }
+      ],
+      "description": "Bouncy \u2014 N balls under gravity with elastic collisions",
+      "setup_ms": 0.02,
+      "mean_ms": 0.083,
+      "p95_ms": 0.096,
+      "max_ms": 0.107,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "buffon",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "buffon-30fps-0.png",
+          "lit_pixels": 512
+        },
+        {
+          "seconds": 1.0,
+          "image": "buffon-30fps-30.png",
+          "lit_pixels": 1275
+        },
+        {
+          "seconds": 5.0,
+          "image": "buffon-30fps-150.png",
+          "lit_pixels": 1795
+        },
+        {
+          "seconds": 15.0,
+          "image": "buffon-30fps-450.png",
+          "lit_pixels": 1773
+        }
+      ],
+      "description": "Buffon's needle \u2014 \u03c0 estimate emerges as needles drop",
+      "setup_ms": 0.001,
+      "mean_ms": 0.413,
+      "p95_ms": 0.509,
+      "max_ms": 0.789,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "buffon",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "buffon-5fps-0.png",
+          "lit_pixels": 512
+        },
+        {
+          "seconds": 1.0,
+          "image": "buffon-5fps-5.png",
+          "lit_pixels": 658
+        },
+        {
+          "seconds": 5.0,
+          "image": "buffon-5fps-25.png",
+          "lit_pixels": 1155
+        },
+        {
+          "seconds": 15.0,
+          "image": "buffon-5fps-75.png",
+          "lit_pixels": 1757
+        }
+      ],
+      "description": "Buffon's needle \u2014 \u03c0 estimate emerges as needles drop",
+      "setup_ms": 0.001,
+      "mean_ms": 0.3,
+      "p95_ms": 0.432,
+      "max_ms": 0.455,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "clock",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "clock-30fps-0.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 1.0,
+          "image": "clock-30fps-30.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 5.0,
+          "image": "clock-30fps-150.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 15.0,
+          "image": "clock-30fps-450.png",
+          "lit_pixels": 120
+        }
+      ],
+      "description": "Analog wall clock \u2014 hour/minute/second hands",
+      "setup_ms": 0.001,
+      "mean_ms": 0.103,
+      "p95_ms": 0.19,
+      "max_ms": 0.53,
+      "unique_frames": 1,
+      "frames": 451
+    },
+    {
+      "name": "clock",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "clock-5fps-0.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 1.0,
+          "image": "clock-5fps-5.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 5.0,
+          "image": "clock-5fps-25.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 15.0,
+          "image": "clock-5fps-75.png",
+          "lit_pixels": 120
+        }
+      ],
+      "description": "Analog wall clock \u2014 hour/minute/second hands",
+      "setup_ms": 0.0,
+      "mean_ms": 0.112,
+      "p95_ms": 0.279,
+      "max_ms": 0.428,
+      "unique_frames": 1,
+      "frames": 76
+    },
+    {
+      "name": "clt_sums",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "clt_sums-30fps-0.png",
+          "lit_pixels": 73
+        },
+        {
+          "seconds": 1.0,
+          "image": "clt_sums-30fps-30.png",
+          "lit_pixels": 2876
+        },
+        {
+          "seconds": 5.0,
+          "image": "clt_sums-30fps-150.png",
+          "lit_pixels": 3301
+        },
+        {
+          "seconds": 15.0,
+          "image": "clt_sums-30fps-450.png",
+          "lit_pixels": 1601
+        }
+      ],
+      "description": "Central limit theorem \u2014 N uniforms summed approach a Gaussian",
+      "setup_ms": 0.001,
+      "mean_ms": 0.664,
+      "p95_ms": 1.014,
+      "max_ms": 1.21,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "clt_sums",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "clt_sums-5fps-0.png",
+          "lit_pixels": 73
+        },
+        {
+          "seconds": 1.0,
+          "image": "clt_sums-5fps-5.png",
+          "lit_pixels": 2143
+        },
+        {
+          "seconds": 5.0,
+          "image": "clt_sums-5fps-25.png",
+          "lit_pixels": 977
+        },
+        {
+          "seconds": 15.0,
+          "image": "clt_sums-5fps-75.png",
+          "lit_pixels": 1003
+        }
+      ],
+      "description": "Central limit theorem \u2014 N uniforms summed approach a Gaussian",
+      "setup_ms": 0.002,
+      "mean_ms": 0.575,
+      "p95_ms": 0.844,
+      "max_ms": 0.916,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "cradle",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "cradle-30fps-0.png",
+          "lit_pixels": 348
+        },
+        {
+          "seconds": 1.0,
+          "image": "cradle-30fps-30.png",
+          "lit_pixels": 367
+        },
+        {
+          "seconds": 5.0,
+          "image": "cradle-30fps-150.png",
+          "lit_pixels": 369
+        },
+        {
+          "seconds": 15.0,
+          "image": "cradle-30fps-450.png",
+          "lit_pixels": 357
+        }
+      ],
+      "description": "Newton's cradle \u2014 Verlet chain, 1/2/3 ball kicks",
+      "setup_ms": 0.019,
+      "mean_ms": 0.508,
+      "p95_ms": 0.553,
+      "max_ms": 0.62,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "cradle",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "cradle-5fps-0.png",
+          "lit_pixels": 348
+        },
+        {
+          "seconds": 1.0,
+          "image": "cradle-5fps-5.png",
+          "lit_pixels": 367
+        },
+        {
+          "seconds": 5.0,
+          "image": "cradle-5fps-25.png",
+          "lit_pixels": 369
+        },
+        {
+          "seconds": 15.0,
+          "image": "cradle-5fps-75.png",
+          "lit_pixels": 357
+        }
+      ],
+      "description": "Newton's cradle \u2014 Verlet chain, 1/2/3 ball kicks",
+      "setup_ms": 0.011,
+      "mean_ms": 0.855,
+      "p95_ms": 0.911,
+      "max_ms": 0.936,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "cube3d",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "cube3d-30fps-0.png",
+          "lit_pixels": 180
+        },
+        {
+          "seconds": 1.0,
+          "image": "cube3d-30fps-30.png",
+          "lit_pixels": 149
+        },
+        {
+          "seconds": 5.0,
+          "image": "cube3d-30fps-150.png",
+          "lit_pixels": 159
+        },
+        {
+          "seconds": 15.0,
+          "image": "cube3d-30fps-450.png",
+          "lit_pixels": 166
+        }
+      ],
+      "description": "Cube3D \u2014 rotating wireframe with depth-shaded edges",
+      "setup_ms": 0.0,
+      "mean_ms": 0.039,
+      "p95_ms": 0.041,
+      "max_ms": 0.054,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "cube3d",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "cube3d-5fps-0.png",
+          "lit_pixels": 180
+        },
+        {
+          "seconds": 1.0,
+          "image": "cube3d-5fps-5.png",
+          "lit_pixels": 149
+        },
+        {
+          "seconds": 5.0,
+          "image": "cube3d-5fps-25.png",
+          "lit_pixels": 159
+        },
+        {
+          "seconds": 15.0,
+          "image": "cube3d-5fps-75.png",
+          "lit_pixels": 166
+        }
+      ],
+      "description": "Cube3D \u2014 rotating wireframe with depth-shaded edges",
+      "setup_ms": 0.005,
+      "mean_ms": 0.039,
+      "p95_ms": 0.041,
+      "max_ms": 0.059,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "defrag",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "defrag-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "defrag-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "defrag-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "defrag-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Defragmenter \u2014 scrambled rainbow tiles sort with R/W heads",
+      "setup_ms": 0.026,
+      "mean_ms": 0.63,
+      "p95_ms": 0.699,
+      "max_ms": 0.992,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "defrag",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "defrag-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "defrag-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "defrag-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "defrag-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Defragmenter \u2014 scrambled rainbow tiles sort with R/W heads",
+      "setup_ms": 0.027,
+      "mean_ms": 0.625,
+      "p95_ms": 0.652,
+      "max_ms": 0.667,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "dla",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "dla-30fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "dla-30fps-30.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 5.0,
+          "image": "dla-30fps-150.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 15.0,
+          "image": "dla-30fps-450.png",
+          "lit_pixels": 1
+        }
+      ],
+      "description": "Diffusion-limited aggregation \u2014 walkers grow a fractal",
+      "setup_ms": 0.001,
+      "mean_ms": 56.492,
+      "p95_ms": 124.806,
+      "max_ms": 624.871,
+      "unique_frames": 215,
+      "frames": 451
+    },
+    {
+      "name": "dla",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "dla-5fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "dla-5fps-5.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 5.0,
+          "image": "dla-5fps-25.png",
+          "lit_pixels": 1049
+        },
+        {
+          "seconds": 15.0,
+          "image": "dla-5fps-75.png",
+          "lit_pixels": 1
+        }
+      ],
+      "description": "Diffusion-limited aggregation \u2014 walkers grow a fractal",
+      "setup_ms": 0.001,
+      "mean_ms": 55.004,
+      "p95_ms": 124.659,
+      "max_ms": 149.039,
+      "unique_frames": 37,
+      "frames": 76
+    },
+    {
+      "name": "dot",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "dot-30fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "dot-30fps-30.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 5.0,
+          "image": "dot-30fps-150.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 15.0,
+          "image": "dot-30fps-450.png",
+          "lit_pixels": 1
+        }
+      ],
+      "description": "Smoke test \u2014 arrow-key-driven pixel",
+      "setup_ms": 0.001,
+      "mean_ms": 0.001,
+      "p95_ms": 0.001,
+      "max_ms": 0.004,
+      "unique_frames": 1,
+      "frames": 451
+    },
+    {
+      "name": "dot",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "dot-5fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "dot-5fps-5.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 5.0,
+          "image": "dot-5fps-25.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 15.0,
+          "image": "dot-5fps-75.png",
+          "lit_pixels": 1
+        }
+      ],
+      "description": "Smoke test \u2014 arrow-key-driven pixel",
+      "setup_ms": 0.001,
+      "mean_ms": 0.001,
+      "p95_ms": 0.001,
+      "max_ms": 0.002,
+      "unique_frames": 1,
+      "frames": 76
+    },
+    {
+      "name": "eca",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "eca-30fps-0.png",
+          "lit_pixels": 27
+        },
+        {
+          "seconds": 1.0,
+          "image": "eca-30fps-30.png",
+          "lit_pixels": 981
+        },
+        {
+          "seconds": 5.0,
+          "image": "eca-30fps-150.png",
+          "lit_pixels": 2006
+        },
+        {
+          "seconds": 15.0,
+          "image": "eca-30fps-450.png",
+          "lit_pixels": 0
+        }
+      ],
+      "description": "Elementary cellular automaton \u2014 cycles rules 30/90/110/54/73/150",
+      "setup_ms": 0.006,
+      "mean_ms": 0.198,
+      "p95_ms": 0.378,
+      "max_ms": 0.422,
+      "unique_frames": 337,
+      "frames": 451
+    },
+    {
+      "name": "eca",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "eca-5fps-0.png",
+          "lit_pixels": 27
+        },
+        {
+          "seconds": 1.0,
+          "image": "eca-5fps-5.png",
+          "lit_pixels": 981
+        },
+        {
+          "seconds": 5.0,
+          "image": "eca-5fps-25.png",
+          "lit_pixels": 2006
+        },
+        {
+          "seconds": 15.0,
+          "image": "eca-5fps-75.png",
+          "lit_pixels": 0
+        }
+      ],
+      "description": "Elementary cellular automaton \u2014 cycles rules 30/90/110/54/73/150",
+      "setup_ms": 0.005,
+      "mean_ms": 0.217,
+      "p95_ms": 0.376,
+      "max_ms": 0.385,
+      "unique_frames": 57,
+      "frames": 76
+    },
+    {
+      "name": "fire",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "fire-30fps-0.png",
+          "lit_pixels": 64
+        },
+        {
+          "seconds": 1.0,
+          "image": "fire-30fps-30.png",
+          "lit_pixels": 2126
+        },
+        {
+          "seconds": 5.0,
+          "image": "fire-30fps-150.png",
+          "lit_pixels": 1953
+        },
+        {
+          "seconds": 15.0,
+          "image": "fire-30fps-450.png",
+          "lit_pixels": 2193
+        }
+      ],
+      "description": "classic Doom fire \u2014 bottom row ignites, flames lick upward",
+      "setup_ms": 0.013,
+      "mean_ms": 1.484,
+      "p95_ms": 1.609,
+      "max_ms": 1.74,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "fire",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "fire-5fps-0.png",
+          "lit_pixels": 64
+        },
+        {
+          "seconds": 1.0,
+          "image": "fire-5fps-5.png",
+          "lit_pixels": 2017
+        },
+        {
+          "seconds": 5.0,
+          "image": "fire-5fps-25.png",
+          "lit_pixels": 2234
+        },
+        {
+          "seconds": 15.0,
+          "image": "fire-5fps-75.png",
+          "lit_pixels": 1965
+        }
+      ],
+      "description": "classic Doom fire \u2014 bottom row ignites, flames lick upward",
+      "setup_ms": 0.011,
+      "mean_ms": 1.443,
+      "p95_ms": 1.517,
+      "max_ms": 1.584,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "fireworks",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "fireworks-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "fireworks-30fps-30.png",
+          "lit_pixels": 51
+        },
+        {
+          "seconds": 5.0,
+          "image": "fireworks-30fps-150.png",
+          "lit_pixels": 745
+        },
+        {
+          "seconds": 15.0,
+          "image": "fireworks-30fps-450.png",
+          "lit_pixels": 864
+        }
+      ],
+      "description": "Fireworks \u2014 rockets ascend and burst into showers",
+      "setup_ms": 0.007,
+      "mean_ms": 0.593,
+      "p95_ms": 0.667,
+      "max_ms": 0.924,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "fireworks",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "fireworks-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "fireworks-5fps-5.png",
+          "lit_pixels": 36
+        },
+        {
+          "seconds": 5.0,
+          "image": "fireworks-5fps-25.png",
+          "lit_pixels": 895
+        },
+        {
+          "seconds": 15.0,
+          "image": "fireworks-5fps-75.png",
+          "lit_pixels": 780
+        }
+      ],
+      "description": "Fireworks \u2014 rockets ascend and burst into showers",
+      "setup_ms": 0.006,
+      "mean_ms": 0.601,
+      "p95_ms": 0.661,
+      "max_ms": 0.674,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "flow_field",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "flow_field-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "flow_field-30fps-30.png",
+          "lit_pixels": 1464
+        },
+        {
+          "seconds": 5.0,
+          "image": "flow_field-30fps-150.png",
+          "lit_pixels": 1090
+        },
+        {
+          "seconds": 15.0,
+          "image": "flow_field-30fps-450.png",
+          "lit_pixels": 1083
+        }
+      ],
+      "description": "Flow field \u2014 particles trace a sine-noise vector field",
+      "setup_ms": 0.019,
+      "mean_ms": 0.404,
+      "p95_ms": 0.482,
+      "max_ms": 0.655,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "flow_field",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "flow_field-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "flow_field-5fps-5.png",
+          "lit_pixels": 448
+        },
+        {
+          "seconds": 5.0,
+          "image": "flow_field-5fps-25.png",
+          "lit_pixels": 1383
+        },
+        {
+          "seconds": 15.0,
+          "image": "flow_field-5fps-75.png",
+          "lit_pixels": 1752
+        }
+      ],
+      "description": "Flow field \u2014 particles trace a sine-noise vector field",
+      "setup_ms": 0.019,
+      "mean_ms": 0.427,
+      "p95_ms": 0.501,
+      "max_ms": 0.504,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "forest_fire",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "forest_fire-30fps-0.png",
+          "lit_pixels": 1207
+        },
+        {
+          "seconds": 1.0,
+          "image": "forest_fire-30fps-30.png",
+          "lit_pixels": 1723
+        },
+        {
+          "seconds": 5.0,
+          "image": "forest_fire-30fps-150.png",
+          "lit_pixels": 1558
+        },
+        {
+          "seconds": 15.0,
+          "image": "forest_fire-30fps-450.png",
+          "lit_pixels": 1377
+        }
+      ],
+      "description": "Forest fire CA \u2014 trees grow, lightning strikes, fire spreads",
+      "setup_ms": 0.124,
+      "mean_ms": 1.058,
+      "p95_ms": 1.369,
+      "max_ms": 1.455,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "forest_fire",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "forest_fire-5fps-0.png",
+          "lit_pixels": 1207
+        },
+        {
+          "seconds": 1.0,
+          "image": "forest_fire-5fps-5.png",
+          "lit_pixels": 1374
+        },
+        {
+          "seconds": 5.0,
+          "image": "forest_fire-5fps-25.png",
+          "lit_pixels": 1752
+        },
+        {
+          "seconds": 15.0,
+          "image": "forest_fire-5fps-75.png",
+          "lit_pixels": 1353
+        }
+      ],
+      "description": "Forest fire CA \u2014 trees grow, lightning strikes, fire spreads",
+      "setup_ms": 0.122,
+      "mean_ms": 1.147,
+      "p95_ms": 1.45,
+      "max_ms": 1.482,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "galaxy",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "galaxy-30fps-0.png",
+          "lit_pixels": 219
+        },
+        {
+          "seconds": 1.0,
+          "image": "galaxy-30fps-30.png",
+          "lit_pixels": 224
+        },
+        {
+          "seconds": 5.0,
+          "image": "galaxy-30fps-150.png",
+          "lit_pixels": 222
+        },
+        {
+          "seconds": 15.0,
+          "image": "galaxy-30fps-450.png",
+          "lit_pixels": 221
+        }
+      ],
+      "description": "Galaxy \u2014 slowly rotating 3-arm spiral of stars",
+      "setup_ms": 0.124,
+      "mean_ms": 0.206,
+      "p95_ms": 0.217,
+      "max_ms": 0.264,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "galaxy",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "galaxy-5fps-0.png",
+          "lit_pixels": 219
+        },
+        {
+          "seconds": 1.0,
+          "image": "galaxy-5fps-5.png",
+          "lit_pixels": 224
+        },
+        {
+          "seconds": 5.0,
+          "image": "galaxy-5fps-25.png",
+          "lit_pixels": 222
+        },
+        {
+          "seconds": 15.0,
+          "image": "galaxy-5fps-75.png",
+          "lit_pixels": 221
+        }
+      ],
+      "description": "Galaxy \u2014 slowly rotating 3-arm spiral of stars",
+      "setup_ms": 0.149,
+      "mean_ms": 0.204,
+      "p95_ms": 0.211,
+      "max_ms": 0.215,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "galton",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "galton-30fps-0.png",
+          "lit_pixels": 266
+        },
+        {
+          "seconds": 1.0,
+          "image": "galton-30fps-30.png",
+          "lit_pixels": 291
+        },
+        {
+          "seconds": 5.0,
+          "image": "galton-30fps-150.png",
+          "lit_pixels": 306
+        },
+        {
+          "seconds": 15.0,
+          "image": "galton-30fps-450.png",
+          "lit_pixels": 328
+        }
+      ],
+      "description": "Galton board \u2014 beads bounce through pegs into Gaussian pile",
+      "setup_ms": 0.002,
+      "mean_ms": 0.128,
+      "p95_ms": 0.147,
+      "max_ms": 0.156,
+      "unique_frames": 436,
+      "frames": 451
+    },
+    {
+      "name": "galton",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "galton-5fps-0.png",
+          "lit_pixels": 266
+        },
+        {
+          "seconds": 1.0,
+          "image": "galton-5fps-5.png",
+          "lit_pixels": 275
+        },
+        {
+          "seconds": 5.0,
+          "image": "galton-5fps-25.png",
+          "lit_pixels": 315
+        },
+        {
+          "seconds": 15.0,
+          "image": "galton-5fps-75.png",
+          "lit_pixels": 319
+        }
+      ],
+      "description": "Galton board \u2014 beads bounce through pegs into Gaussian pile",
+      "setup_ms": 0.002,
+      "mean_ms": 0.124,
+      "p95_ms": 0.146,
+      "max_ms": 0.147,
+      "unique_frames": 73,
+      "frames": 76
+    },
+    {
+      "name": "harmonograph",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "harmonograph-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "harmonograph-30fps-30.png",
+          "lit_pixels": 157
+        },
+        {
+          "seconds": 5.0,
+          "image": "harmonograph-30fps-150.png",
+          "lit_pixels": 255
+        },
+        {
+          "seconds": 15.0,
+          "image": "harmonograph-30fps-450.png",
+          "lit_pixels": 148
+        }
+      ],
+      "description": "Harmonograph \u2014 coupled pendulums trace patterns, then reseed",
+      "setup_ms": 0.006,
+      "mean_ms": 0.238,
+      "p95_ms": 0.279,
+      "max_ms": 0.301,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "harmonograph",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "harmonograph-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "harmonograph-5fps-5.png",
+          "lit_pixels": 18
+        },
+        {
+          "seconds": 5.0,
+          "image": "harmonograph-5fps-25.png",
+          "lit_pixels": 126
+        },
+        {
+          "seconds": 15.0,
+          "image": "harmonograph-5fps-75.png",
+          "lit_pixels": 31
+        }
+      ],
+      "description": "Harmonograph \u2014 coupled pendulums trace patterns, then reseed",
+      "setup_ms": 0.004,
+      "mean_ms": 0.124,
+      "p95_ms": 0.236,
+      "max_ms": 0.252,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "heat",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "heat-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "heat-30fps-30.png",
+          "lit_pixels": 255
+        },
+        {
+          "seconds": 5.0,
+          "image": "heat-30fps-150.png",
+          "lit_pixels": 1287
+        },
+        {
+          "seconds": 15.0,
+          "image": "heat-30fps-450.png",
+          "lit_pixels": 2742
+        }
+      ],
+      "description": "Heat equation \u2014 diffusing hotspots in iron-glow",
+      "setup_ms": 0.006,
+      "mean_ms": 0.715,
+      "p95_ms": 0.874,
+      "max_ms": 0.92,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "heat",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "heat-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "heat-5fps-5.png",
+          "lit_pixels": 101
+        },
+        {
+          "seconds": 5.0,
+          "image": "heat-5fps-25.png",
+          "lit_pixels": 584
+        },
+        {
+          "seconds": 15.0,
+          "image": "heat-5fps-75.png",
+          "lit_pixels": 1891
+        }
+      ],
+      "description": "Heat equation \u2014 diffusing hotspots in iron-glow",
+      "setup_ms": 0.006,
+      "mean_ms": 0.592,
+      "p95_ms": 0.736,
+      "max_ms": 0.755,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "hilbert",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "hilbert-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "hilbert-30fps-30.png",
+          "lit_pixels": 841
+        },
+        {
+          "seconds": 5.0,
+          "image": "hilbert-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "hilbert-30fps-450.png",
+          "lit_pixels": 393
+        }
+      ],
+      "description": "Hilbert \u2014 order-6 space-filling curve drawn in rainbow",
+      "setup_ms": 2.414,
+      "mean_ms": 1.099,
+      "p95_ms": 1.748,
+      "max_ms": 1.786,
+      "unique_frames": 148,
+      "frames": 451
+    },
+    {
+      "name": "hilbert",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "hilbert-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "hilbert-5fps-5.png",
+          "lit_pixels": 142
+        },
+        {
+          "seconds": 5.0,
+          "image": "hilbert-5fps-25.png",
+          "lit_pixels": 702
+        },
+        {
+          "seconds": 15.0,
+          "image": "hilbert-5fps-75.png",
+          "lit_pixels": 2101
+        }
+      ],
+      "description": "Hilbert \u2014 order-6 space-filling curve drawn in rainbow",
+      "setup_ms": 3.368,
+      "mean_ms": 0.435,
+      "p95_ms": 0.828,
+      "max_ms": 0.873,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "ifs",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ifs-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "ifs-30fps-30.png",
+          "lit_pixels": 1784
+        },
+        {
+          "seconds": 5.0,
+          "image": "ifs-30fps-150.png",
+          "lit_pixels": 1792
+        },
+        {
+          "seconds": 15.0,
+          "image": "ifs-30fps-450.png",
+          "lit_pixels": 1064
+        }
+      ],
+      "description": "IFS chaos game \u2014 Barnsley fern + Sierpinski triangle",
+      "setup_ms": 0.006,
+      "mean_ms": 0.65,
+      "p95_ms": 1.274,
+      "max_ms": 1.54,
+      "unique_frames": 121,
+      "frames": 451
+    },
+    {
+      "name": "ifs",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ifs-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "ifs-5fps-5.png",
+          "lit_pixels": 1650
+        },
+        {
+          "seconds": 5.0,
+          "image": "ifs-5fps-25.png",
+          "lit_pixels": 1781
+        },
+        {
+          "seconds": 15.0,
+          "image": "ifs-5fps-75.png",
+          "lit_pixels": 1792
+        }
+      ],
+      "description": "IFS chaos game \u2014 Barnsley fern + Sierpinski triangle",
+      "setup_ms": 0.006,
+      "mean_ms": 1.128,
+      "p95_ms": 1.298,
+      "max_ms": 1.306,
+      "unique_frames": 61,
+      "frames": 76
+    },
+    {
+      "name": "ising",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ising-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "ising-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "ising-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "ising-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Ising model \u2014 cooling from disorder to magnetic domains",
+      "setup_ms": 0.181,
+      "mean_ms": 3.543,
+      "p95_ms": 3.642,
+      "max_ms": 4.051,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "ising",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ising-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "ising-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "ising-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "ising-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Ising model \u2014 cooling from disorder to magnetic domains",
+      "setup_ms": 0.166,
+      "mean_ms": 3.508,
+      "p95_ms": 3.612,
+      "max_ms": 3.677,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "julia",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "julia-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "julia-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "julia-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "julia-30fps-450.png",
+          "lit_pixels": 3828
+        }
+      ],
+      "description": "Julia set \u2014 drifting c parameter, fractal breathes",
+      "setup_ms": 0.0,
+      "mean_ms": 2.771,
+      "p95_ms": 5.143,
+      "max_ms": 5.964,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "julia",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "julia-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "julia-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "julia-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "julia-5fps-75.png",
+          "lit_pixels": 3828
+        }
+      ],
+      "description": "Julia set \u2014 drifting c parameter, fractal breathes",
+      "setup_ms": 0.001,
+      "mean_ms": 2.757,
+      "p95_ms": 5.061,
+      "max_ms": 5.201,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "kaleidoscope",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "kaleidoscope-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "kaleidoscope-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "kaleidoscope-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "kaleidoscope-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Kaleidoscope \u2014 6-fold mirrored sine field",
+      "setup_ms": 0.792,
+      "mean_ms": 2.752,
+      "p95_ms": 3.144,
+      "max_ms": 7.604,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "kaleidoscope",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "kaleidoscope-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "kaleidoscope-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "kaleidoscope-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "kaleidoscope-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Kaleidoscope \u2014 6-fold mirrored sine field",
+      "setup_ms": 0.786,
+      "mean_ms": 2.754,
+      "p95_ms": 3.047,
+      "max_ms": 3.639,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "langton",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "langton-30fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "langton-30fps-30.png",
+          "lit_pixels": 262
+        },
+        {
+          "seconds": 5.0,
+          "image": "langton-30fps-150.png",
+          "lit_pixels": 1039
+        },
+        {
+          "seconds": 15.0,
+          "image": "langton-30fps-450.png",
+          "lit_pixels": 1309
+        }
+      ],
+      "description": "Langton's ant \u2014 highway emerges after ~11k steps, then resets",
+      "setup_ms": 0.005,
+      "mean_ms": 0.229,
+      "p95_ms": 0.359,
+      "max_ms": 0.695,
+      "unique_frames": 250,
+      "frames": 451
+    },
+    {
+      "name": "langton",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "langton-5fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "langton-5fps-5.png",
+          "lit_pixels": 63
+        },
+        {
+          "seconds": 5.0,
+          "image": "langton-5fps-25.png",
+          "lit_pixels": 242
+        },
+        {
+          "seconds": 15.0,
+          "image": "langton-5fps-75.png",
+          "lit_pixels": 534
+        }
+      ],
+      "description": "Langton's ant \u2014 highway emerges after ~11k steps, then resets",
+      "setup_ms": 0.005,
+      "mean_ms": 0.158,
+      "p95_ms": 0.272,
+      "max_ms": 0.34,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "life",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "life-30fps-0.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 1.0,
+          "image": "life-30fps-30.png",
+          "lit_pixels": 11
+        },
+        {
+          "seconds": 5.0,
+          "image": "life-30fps-150.png",
+          "lit_pixels": 64
+        },
+        {
+          "seconds": 15.0,
+          "image": "life-30fps-450.png",
+          "lit_pixels": 214
+        }
+      ],
+      "description": "Conway's Game of Life \u2014 cycles classic seeds, resets on stasis",
+      "setup_ms": 0.005,
+      "mean_ms": 0.046,
+      "p95_ms": 0.204,
+      "max_ms": 0.386,
+      "unique_frames": 151,
+      "frames": 451
+    },
+    {
+      "name": "life",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "life-5fps-0.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 1.0,
+          "image": "life-5fps-5.png",
+          "lit_pixels": 11
+        },
+        {
+          "seconds": 5.0,
+          "image": "life-5fps-25.png",
+          "lit_pixels": 64
+        },
+        {
+          "seconds": 15.0,
+          "image": "life-5fps-75.png",
+          "lit_pixels": 214
+        }
+      ],
+      "description": "Conway's Game of Life \u2014 cycles classic seeds, resets on stasis",
+      "setup_ms": 0.006,
+      "mean_ms": 0.198,
+      "p95_ms": 0.396,
+      "max_ms": 0.494,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "life_zoo",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "life_zoo-30fps-0.png",
+          "lit_pixels": 36
+        },
+        {
+          "seconds": 1.0,
+          "image": "life_zoo-30fps-30.png",
+          "lit_pixels": 151
+        },
+        {
+          "seconds": 5.0,
+          "image": "life_zoo-30fps-150.png",
+          "lit_pixels": 191
+        },
+        {
+          "seconds": 15.0,
+          "image": "life_zoo-30fps-450.png",
+          "lit_pixels": 291
+        }
+      ],
+      "description": "Game of Life \u2014 gun, pulsar, acorn, R-pent, diehard, LWSS",
+      "setup_ms": 0.046,
+      "mean_ms": 0.44,
+      "p95_ms": 0.72,
+      "max_ms": 0.801,
+      "unique_frames": 226,
+      "frames": 451
+    },
+    {
+      "name": "life_zoo",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "life_zoo-5fps-0.png",
+          "lit_pixels": 36
+        },
+        {
+          "seconds": 1.0,
+          "image": "life_zoo-5fps-5.png",
+          "lit_pixels": 87
+        },
+        {
+          "seconds": 5.0,
+          "image": "life_zoo-5fps-25.png",
+          "lit_pixels": 183
+        },
+        {
+          "seconds": 15.0,
+          "image": "life_zoo-5fps-75.png",
+          "lit_pixels": 191
+        }
+      ],
+      "description": "Game of Life \u2014 gun, pulsar, acorn, R-pent, diehard, LWSS",
+      "setup_ms": 0.039,
+      "mean_ms": 0.738,
+      "p95_ms": 0.79,
+      "max_ms": 0.808,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "lightning",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "lightning-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "lightning-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "lightning-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "lightning-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Lightning \u2014 bolts split through stormy sky",
+      "setup_ms": 0.018,
+      "mean_ms": 1.111,
+      "p95_ms": 1.215,
+      "max_ms": 2.134,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "lightning",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "lightning-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "lightning-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "lightning-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "lightning-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Lightning \u2014 bolts split through stormy sky",
+      "setup_ms": 0.014,
+      "mean_ms": 1.161,
+      "p95_ms": 1.23,
+      "max_ms": 1.26,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "lsystem",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "lsystem-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "lsystem-30fps-30.png",
+          "lit_pixels": 360
+        },
+        {
+          "seconds": 5.0,
+          "image": "lsystem-30fps-150.png",
+          "lit_pixels": 611
+        },
+        {
+          "seconds": 15.0,
+          "image": "lsystem-30fps-450.png",
+          "lit_pixels": 502
+        }
+      ],
+      "description": "L-systems \u2014 Koch, plant, dragon, Sierpinski",
+      "setup_ms": 0.956,
+      "mean_ms": 0.517,
+      "p95_ms": 0.86,
+      "max_ms": 1.421,
+      "unique_frames": 157,
+      "frames": 451
+    },
+    {
+      "name": "lsystem",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "lsystem-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "lsystem-5fps-5.png",
+          "lit_pixels": 79
+        },
+        {
+          "seconds": 5.0,
+          "image": "lsystem-5fps-25.png",
+          "lit_pixels": 307
+        },
+        {
+          "seconds": 15.0,
+          "image": "lsystem-5fps-75.png",
+          "lit_pixels": 611
+        }
+      ],
+      "description": "L-systems \u2014 Koch, plant, dragon, Sierpinski",
+      "setup_ms": 0.907,
+      "mean_ms": 0.379,
+      "p95_ms": 0.608,
+      "max_ms": 0.621,
+      "unique_frames": 55,
+      "frames": 76
+    },
+    {
+      "name": "magnet_pendulum",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "magnet_pendulum-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "magnet_pendulum-30fps-30.png",
+          "lit_pixels": 3840
+        },
+        {
+          "seconds": 5.0,
+          "image": "magnet_pendulum-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "magnet_pendulum-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Magnet pendulum \u2014 basin coloring of which magnet wins",
+      "setup_ms": 0.01,
+      "mean_ms": 1.476,
+      "p95_ms": 7.01,
+      "max_ms": 9.056,
+      "unique_frames": 33,
+      "frames": 451
+    },
+    {
+      "name": "magnet_pendulum",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "magnet_pendulum-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "magnet_pendulum-5fps-5.png",
+          "lit_pixels": 640
+        },
+        {
+          "seconds": 5.0,
+          "image": "magnet_pendulum-5fps-25.png",
+          "lit_pixels": 3200
+        },
+        {
+          "seconds": 15.0,
+          "image": "magnet_pendulum-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Magnet pendulum \u2014 basin coloring of which magnet wins",
+      "setup_ms": 0.009,
+      "mean_ms": 3.962,
+      "p95_ms": 9.079,
+      "max_ms": 10.722,
+      "unique_frames": 33,
+      "frames": 76
+    },
+    {
+      "name": "matrix",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "matrix-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "matrix-30fps-30.png",
+          "lit_pixels": 55
+        },
+        {
+          "seconds": 5.0,
+          "image": "matrix-30fps-150.png",
+          "lit_pixels": 386
+        },
+        {
+          "seconds": 15.0,
+          "image": "matrix-30fps-450.png",
+          "lit_pixels": 317
+        }
+      ],
+      "description": "Matrix code rain \u2014 green glyph streams down the panel",
+      "setup_ms": 0.005,
+      "mean_ms": 0.214,
+      "p95_ms": 0.274,
+      "max_ms": 5.034,
+      "unique_frames": 444,
+      "frames": 451
+    },
+    {
+      "name": "matrix",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "matrix-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "matrix-5fps-5.png",
+          "lit_pixels": 12
+        },
+        {
+          "seconds": 5.0,
+          "image": "matrix-5fps-25.png",
+          "lit_pixels": 99
+        },
+        {
+          "seconds": 15.0,
+          "image": "matrix-5fps-75.png",
+          "lit_pixels": 78
+        }
+      ],
+      "description": "Matrix code rain \u2014 green glyph streams down the panel",
+      "setup_ms": 0.006,
+      "mean_ms": 0.153,
+      "p95_ms": 0.208,
+      "max_ms": 0.222,
+      "unique_frames": 75,
+      "frames": 76
+    },
+    {
+      "name": "maze",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "maze-30fps-0.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 1.0,
+          "image": "maze-30fps-30.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 5.0,
+          "image": "maze-30fps-150.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 15.0,
+          "image": "maze-30fps-450.png",
+          "lit_pixels": 3969
+        }
+      ],
+      "description": "Maze \u2014 DFS generator \u2192 BFS solver, on repeat",
+      "setup_ms": 0.009,
+      "mean_ms": 0.618,
+      "p95_ms": 0.693,
+      "max_ms": 2.617,
+      "unique_frames": 391,
+      "frames": 451
+    },
+    {
+      "name": "maze",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "maze-5fps-0.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 1.0,
+          "image": "maze-5fps-5.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 5.0,
+          "image": "maze-5fps-25.png",
+          "lit_pixels": 3969
+        },
+        {
+          "seconds": 15.0,
+          "image": "maze-5fps-75.png",
+          "lit_pixels": 3969
+        }
+      ],
+      "description": "Maze \u2014 DFS generator \u2192 BFS solver, on repeat",
+      "setup_ms": 0.006,
+      "mean_ms": 0.58,
+      "p95_ms": 0.614,
+      "max_ms": 0.624,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "metaballs",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "metaballs-30fps-0.png",
+          "lit_pixels": 2769
+        },
+        {
+          "seconds": 1.0,
+          "image": "metaballs-30fps-30.png",
+          "lit_pixels": 2719
+        },
+        {
+          "seconds": 5.0,
+          "image": "metaballs-30fps-150.png",
+          "lit_pixels": 3544
+        },
+        {
+          "seconds": 15.0,
+          "image": "metaballs-30fps-450.png",
+          "lit_pixels": 3288
+        }
+      ],
+      "description": "Metaballs \u2014 drifting blobs join into amoeba shapes",
+      "setup_ms": 0.013,
+      "mean_ms": 2.185,
+      "p95_ms": 2.356,
+      "max_ms": 2.488,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "metaballs",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "metaballs-5fps-0.png",
+          "lit_pixels": 2769
+        },
+        {
+          "seconds": 1.0,
+          "image": "metaballs-5fps-5.png",
+          "lit_pixels": 2719
+        },
+        {
+          "seconds": 5.0,
+          "image": "metaballs-5fps-25.png",
+          "lit_pixels": 3559
+        },
+        {
+          "seconds": 15.0,
+          "image": "metaballs-5fps-75.png",
+          "lit_pixels": 3316
+        }
+      ],
+      "description": "Metaballs \u2014 drifting blobs join into amoeba shapes",
+      "setup_ms": 0.013,
+      "mean_ms": 2.223,
+      "p95_ms": 2.443,
+      "max_ms": 2.578,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "moire",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "moire-30fps-0.png",
+          "lit_pixels": 3777
+        },
+        {
+          "seconds": 1.0,
+          "image": "moire-30fps-30.png",
+          "lit_pixels": 3770
+        },
+        {
+          "seconds": 5.0,
+          "image": "moire-30fps-150.png",
+          "lit_pixels": 3761
+        },
+        {
+          "seconds": 15.0,
+          "image": "moire-30fps-450.png",
+          "lit_pixels": 3847
+        }
+      ],
+      "description": "Moire \u2014 two rotating sine grids beat into shifting patterns",
+      "setup_ms": 0.0,
+      "mean_ms": 2.701,
+      "p95_ms": 2.804,
+      "max_ms": 3.013,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "moire",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "moire-5fps-0.png",
+          "lit_pixels": 3777
+        },
+        {
+          "seconds": 1.0,
+          "image": "moire-5fps-5.png",
+          "lit_pixels": 3770
+        },
+        {
+          "seconds": 5.0,
+          "image": "moire-5fps-25.png",
+          "lit_pixels": 3761
+        },
+        {
+          "seconds": 15.0,
+          "image": "moire-5fps-75.png",
+          "lit_pixels": 3847
+        }
+      ],
+      "description": "Moire \u2014 two rotating sine grids beat into shifting patterns",
+      "setup_ms": 0.001,
+      "mean_ms": 2.711,
+      "p95_ms": 2.825,
+      "max_ms": 2.962,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "mosaic",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "mosaic-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "mosaic-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "mosaic-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "mosaic-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Mosaic \u2014 drifting tile colors with sparkle highlights",
+      "setup_ms": 0.013,
+      "mean_ms": 0.655,
+      "p95_ms": 0.681,
+      "max_ms": 0.72,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "mosaic",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "mosaic-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "mosaic-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "mosaic-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "mosaic-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Mosaic \u2014 drifting tile colors with sparkle highlights",
+      "setup_ms": 0.01,
+      "mean_ms": 0.647,
+      "p95_ms": 0.675,
+      "max_ms": 0.737,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "nbody",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "nbody-30fps-0.png",
+          "lit_pixels": 15
+        },
+        {
+          "seconds": 1.0,
+          "image": "nbody-30fps-30.png",
+          "lit_pixels": 26
+        },
+        {
+          "seconds": 5.0,
+          "image": "nbody-30fps-150.png",
+          "lit_pixels": 70
+        },
+        {
+          "seconds": 15.0,
+          "image": "nbody-30fps-450.png",
+          "lit_pixels": 83
+        }
+      ],
+      "description": "3-body figure-8 choreography with fading trails",
+      "setup_ms": 0.008,
+      "mean_ms": 0.121,
+      "p95_ms": 0.158,
+      "max_ms": 0.173,
+      "unique_frames": 372,
+      "frames": 451
+    },
+    {
+      "name": "nbody",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "nbody-5fps-0.png",
+          "lit_pixels": 15
+        },
+        {
+          "seconds": 1.0,
+          "image": "nbody-5fps-5.png",
+          "lit_pixels": 26
+        },
+        {
+          "seconds": 5.0,
+          "image": "nbody-5fps-25.png",
+          "lit_pixels": 70
+        },
+        {
+          "seconds": 15.0,
+          "image": "nbody-5fps-75.png",
+          "lit_pixels": 83
+        }
+      ],
+      "description": "3-body figure-8 choreography with fading trails",
+      "setup_ms": 0.007,
+      "mean_ms": 0.424,
+      "p95_ms": 0.466,
+      "max_ms": 0.47,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "newton",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "newton-30fps-0.png",
+          "lit_pixels": 4086
+        },
+        {
+          "seconds": 1.0,
+          "image": "newton-30fps-30.png",
+          "lit_pixels": 4083
+        },
+        {
+          "seconds": 5.0,
+          "image": "newton-30fps-150.png",
+          "lit_pixels": 4084
+        },
+        {
+          "seconds": 15.0,
+          "image": "newton-30fps-450.png",
+          "lit_pixels": 4087
+        }
+      ],
+      "description": "Newton basins \u2014 z^3-1 with drifting view",
+      "setup_ms": 0.0,
+      "mean_ms": 13.005,
+      "p95_ms": 13.81,
+      "max_ms": 15.901,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "newton",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "newton-5fps-0.png",
+          "lit_pixels": 4086
+        },
+        {
+          "seconds": 1.0,
+          "image": "newton-5fps-5.png",
+          "lit_pixels": 4083
+        },
+        {
+          "seconds": 5.0,
+          "image": "newton-5fps-25.png",
+          "lit_pixels": 4084
+        },
+        {
+          "seconds": 15.0,
+          "image": "newton-5fps-75.png",
+          "lit_pixels": 4087
+        }
+      ],
+      "description": "Newton basins \u2014 z^3-1 with drifting view",
+      "setup_ms": 0.001,
+      "mean_ms": 13.116,
+      "p95_ms": 13.971,
+      "max_ms": 14.56,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "pathfind",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pathfind-30fps-0.png",
+          "lit_pixels": 1164
+        },
+        {
+          "seconds": 1.0,
+          "image": "pathfind-30fps-30.png",
+          "lit_pixels": 1655
+        },
+        {
+          "seconds": 5.0,
+          "image": "pathfind-30fps-150.png",
+          "lit_pixels": 2059
+        },
+        {
+          "seconds": 15.0,
+          "image": "pathfind-30fps-450.png",
+          "lit_pixels": 1511
+        }
+      ],
+      "description": "Pathfind \u2014 A* expansion + path, fresh map every cycle",
+      "setup_ms": 1.281,
+      "mean_ms": 0.381,
+      "p95_ms": 0.421,
+      "max_ms": 1.676,
+      "unique_frames": 254,
+      "frames": 451
+    },
+    {
+      "name": "pathfind",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pathfind-5fps-0.png",
+          "lit_pixels": 1164
+        },
+        {
+          "seconds": 1.0,
+          "image": "pathfind-5fps-5.png",
+          "lit_pixels": 1396
+        },
+        {
+          "seconds": 5.0,
+          "image": "pathfind-5fps-25.png",
+          "lit_pixels": 1655
+        },
+        {
+          "seconds": 15.0,
+          "image": "pathfind-5fps-75.png",
+          "lit_pixels": 1655
+        }
+      ],
+      "description": "Pathfind \u2014 A* expansion + path, fresh map every cycle",
+      "setup_ms": 1.267,
+      "mean_ms": 0.33,
+      "p95_ms": 0.35,
+      "max_ms": 0.404,
+      "unique_frames": 49,
+      "frames": 76
+    },
+    {
+      "name": "pendulum",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pendulum-30fps-0.png",
+          "lit_pixels": 90
+        },
+        {
+          "seconds": 1.0,
+          "image": "pendulum-30fps-30.png",
+          "lit_pixels": 114
+        },
+        {
+          "seconds": 5.0,
+          "image": "pendulum-30fps-150.png",
+          "lit_pixels": 169
+        },
+        {
+          "seconds": 15.0,
+          "image": "pendulum-30fps-450.png",
+          "lit_pixels": 127
+        }
+      ],
+      "description": "double pendulum \u2014 N copies (default 1) with chaos divergence",
+      "setup_ms": 0.007,
+      "mean_ms": 0.251,
+      "p95_ms": 0.292,
+      "max_ms": 0.317,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "pendulum",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pendulum-5fps-0.png",
+          "lit_pixels": 90
+        },
+        {
+          "seconds": 1.0,
+          "image": "pendulum-5fps-5.png",
+          "lit_pixels": 117
+        },
+        {
+          "seconds": 5.0,
+          "image": "pendulum-5fps-25.png",
+          "lit_pixels": 370
+        },
+        {
+          "seconds": 15.0,
+          "image": "pendulum-5fps-75.png",
+          "lit_pixels": 363
+        }
+      ],
+      "description": "double pendulum \u2014 N copies (default 1) with chaos divergence",
+      "setup_ms": 0.007,
+      "mean_ms": 0.53,
+      "p95_ms": 0.661,
+      "max_ms": 0.681,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "pendulum_wave",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pendulum_wave-30fps-0.png",
+          "lit_pixels": 560
+        },
+        {
+          "seconds": 1.0,
+          "image": "pendulum_wave-30fps-30.png",
+          "lit_pixels": 568
+        },
+        {
+          "seconds": 5.0,
+          "image": "pendulum_wave-30fps-150.png",
+          "lit_pixels": 596
+        },
+        {
+          "seconds": 15.0,
+          "image": "pendulum_wave-30fps-450.png",
+          "lit_pixels": 776
+        }
+      ],
+      "description": "Pendulum wave \u2014 detuned pendulums drift in/out of phase",
+      "setup_ms": 0.004,
+      "mean_ms": 0.163,
+      "p95_ms": 0.189,
+      "max_ms": 0.216,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "pendulum_wave",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pendulum_wave-5fps-0.png",
+          "lit_pixels": 560
+        },
+        {
+          "seconds": 1.0,
+          "image": "pendulum_wave-5fps-5.png",
+          "lit_pixels": 568
+        },
+        {
+          "seconds": 5.0,
+          "image": "pendulum_wave-5fps-25.png",
+          "lit_pixels": 596
+        },
+        {
+          "seconds": 15.0,
+          "image": "pendulum_wave-5fps-75.png",
+          "lit_pixels": 776
+        }
+      ],
+      "description": "Pendulum wave \u2014 detuned pendulums drift in/out of phase",
+      "setup_ms": 0.003,
+      "mean_ms": 0.165,
+      "p95_ms": 0.196,
+      "max_ms": 0.205,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "phyllotaxis",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "phyllotaxis-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "phyllotaxis-30fps-30.png",
+          "lit_pixels": 216
+        },
+        {
+          "seconds": 5.0,
+          "image": "phyllotaxis-30fps-150.png",
+          "lit_pixels": 270
+        },
+        {
+          "seconds": 15.0,
+          "image": "phyllotaxis-30fps-450.png",
+          "lit_pixels": 244
+        }
+      ],
+      "description": "Phyllotaxis \u2014 sunflower spiral built one seed at a time",
+      "setup_ms": 0.001,
+      "mean_ms": 0.183,
+      "p95_ms": 0.25,
+      "max_ms": 0.263,
+      "unique_frames": 49,
+      "frames": 451
+    },
+    {
+      "name": "phyllotaxis",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "phyllotaxis-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "phyllotaxis-5fps-5.png",
+          "lit_pixels": 30
+        },
+        {
+          "seconds": 5.0,
+          "image": "phyllotaxis-5fps-25.png",
+          "lit_pixels": 179
+        },
+        {
+          "seconds": 15.0,
+          "image": "phyllotaxis-5fps-75.png",
+          "lit_pixels": 270
+        }
+      ],
+      "description": "Phyllotaxis \u2014 sunflower spiral built one seed at a time",
+      "setup_ms": 0.001,
+      "mean_ms": 0.119,
+      "p95_ms": 0.187,
+      "max_ms": 0.193,
+      "unique_frames": 49,
+      "frames": 76
+    },
+    {
+      "name": "plasma",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "plasma-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "plasma-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "plasma-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "plasma-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Sine-sum plasma drifting through a rainbow palette",
+      "setup_ms": 0.001,
+      "mean_ms": 0.776,
+      "p95_ms": 0.822,
+      "max_ms": 0.925,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "plasma",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "plasma-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "plasma-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "plasma-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "plasma-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Sine-sum plasma drifting through a rainbow palette",
+      "setup_ms": 0.001,
+      "mean_ms": 0.782,
+      "p95_ms": 0.839,
+      "max_ms": 0.87,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "pong_ai",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pong_ai-30fps-0.png",
+          "lit_pixels": 56
+        },
+        {
+          "seconds": 1.0,
+          "image": "pong_ai-30fps-30.png",
+          "lit_pixels": 57
+        },
+        {
+          "seconds": 5.0,
+          "image": "pong_ai-30fps-150.png",
+          "lit_pixels": 57
+        },
+        {
+          "seconds": 15.0,
+          "image": "pong_ai-30fps-450.png",
+          "lit_pixels": 57
+        }
+      ],
+      "description": "Pong \u2014 two AI paddles rally forever",
+      "setup_ms": 0.005,
+      "mean_ms": 0.01,
+      "p95_ms": 0.01,
+      "max_ms": 0.02,
+      "unique_frames": 358,
+      "frames": 451
+    },
+    {
+      "name": "pong_ai",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "pong_ai-5fps-0.png",
+          "lit_pixels": 56
+        },
+        {
+          "seconds": 1.0,
+          "image": "pong_ai-5fps-5.png",
+          "lit_pixels": 57
+        },
+        {
+          "seconds": 5.0,
+          "image": "pong_ai-5fps-25.png",
+          "lit_pixels": 57
+        },
+        {
+          "seconds": 15.0,
+          "image": "pong_ai-5fps-75.png",
+          "lit_pixels": 57
+        }
+      ],
+      "description": "Pong \u2014 two AI paddles rally forever",
+      "setup_ms": 0.004,
+      "mean_ms": 0.01,
+      "p95_ms": 0.011,
+      "max_ms": 0.013,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "random_walks",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "random_walks-30fps-0.png",
+          "lit_pixels": 79
+        },
+        {
+          "seconds": 1.0,
+          "image": "random_walks-30fps-30.png",
+          "lit_pixels": 540
+        },
+        {
+          "seconds": 5.0,
+          "image": "random_walks-30fps-150.png",
+          "lit_pixels": 947
+        },
+        {
+          "seconds": 15.0,
+          "image": "random_walks-30fps-450.png",
+          "lit_pixels": 1602
+        }
+      ],
+      "description": "1D random walks \u2014 histogram of positions becomes Gaussian",
+      "setup_ms": 0.002,
+      "mean_ms": 0.293,
+      "p95_ms": 0.418,
+      "max_ms": 0.434,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "random_walks",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "random_walks-5fps-0.png",
+          "lit_pixels": 79
+        },
+        {
+          "seconds": 1.0,
+          "image": "random_walks-5fps-5.png",
+          "lit_pixels": 272
+        },
+        {
+          "seconds": 5.0,
+          "image": "random_walks-5fps-25.png",
+          "lit_pixels": 498
+        },
+        {
+          "seconds": 15.0,
+          "image": "random_walks-5fps-75.png",
+          "lit_pixels": 781
+        }
+      ],
+      "description": "1D random walks \u2014 histogram of positions becomes Gaussian",
+      "setup_ms": 0.002,
+      "mean_ms": 0.163,
+      "p95_ms": 0.215,
+      "max_ms": 0.217,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "raymarch",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "raymarch-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "raymarch-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "raymarch-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "raymarch-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Raymarched SDF sphere bouncing over a checker plane",
+      "setup_ms": 0.004,
+      "mean_ms": 10.401,
+      "p95_ms": 10.696,
+      "max_ms": 15.799,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "raymarch",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "raymarch-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "raymarch-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "raymarch-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "raymarch-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Raymarched SDF sphere bouncing over a checker plane",
+      "setup_ms": 0.003,
+      "mean_ms": 10.485,
+      "p95_ms": 10.808,
+      "max_ms": 11.502,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "rotozoom",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "rotozoom-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "rotozoom-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "rotozoom-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "rotozoom-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Rotozoom \u2014 spinning, zooming colorful texture",
+      "setup_ms": 0.46,
+      "mean_ms": 0.68,
+      "p95_ms": 0.736,
+      "max_ms": 0.783,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "rotozoom",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "rotozoom-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "rotozoom-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "rotozoom-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "rotozoom-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Rotozoom \u2014 spinning, zooming colorful texture",
+      "setup_ms": 0.456,
+      "mean_ms": 0.678,
+      "p95_ms": 0.695,
+      "max_ms": 0.7,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "sand",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sand-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "sand-30fps-30.png",
+          "lit_pixels": 131
+        },
+        {
+          "seconds": 5.0,
+          "image": "sand-30fps-150.png",
+          "lit_pixels": 627
+        },
+        {
+          "seconds": 15.0,
+          "image": "sand-30fps-450.png",
+          "lit_pixels": 1917
+        }
+      ],
+      "description": "Falling sand \u2014 gravity-driven piles in shifting colors",
+      "setup_ms": 0.008,
+      "mean_ms": 0.29,
+      "p95_ms": 0.453,
+      "max_ms": 0.507,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "sand",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sand-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "sand-5fps-5.png",
+          "lit_pixels": 22
+        },
+        {
+          "seconds": 5.0,
+          "image": "sand-5fps-25.png",
+          "lit_pixels": 110
+        },
+        {
+          "seconds": 15.0,
+          "image": "sand-5fps-75.png",
+          "lit_pixels": 311
+        }
+      ],
+      "description": "Falling sand \u2014 gravity-driven piles in shifting colors",
+      "setup_ms": 0.007,
+      "mean_ms": 0.131,
+      "p95_ms": 0.156,
+      "max_ms": 0.159,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "sandpile",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sandpile-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "sandpile-30fps-30.png",
+          "lit_pixels": 1024
+        },
+        {
+          "seconds": 5.0,
+          "image": "sandpile-30fps-150.png",
+          "lit_pixels": 1256
+        },
+        {
+          "seconds": 15.0,
+          "image": "sandpile-30fps-450.png",
+          "lit_pixels": 1740
+        }
+      ],
+      "description": "Abelian sandpile \u2014 center drops topple into a fractal",
+      "setup_ms": 0.007,
+      "mean_ms": 2.846,
+      "p95_ms": 6.166,
+      "max_ms": 7.291,
+      "unique_frames": 57,
+      "frames": 451
+    },
+    {
+      "name": "sandpile",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sandpile-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "sandpile-5fps-5.png",
+          "lit_pixels": 180
+        },
+        {
+          "seconds": 5.0,
+          "image": "sandpile-5fps-25.png",
+          "lit_pixels": 884
+        },
+        {
+          "seconds": 15.0,
+          "image": "sandpile-5fps-75.png",
+          "lit_pixels": 644
+        }
+      ],
+      "description": "Abelian sandpile \u2014 center drops topple into a fractal",
+      "setup_ms": 0.009,
+      "mean_ms": 2.342,
+      "p95_ms": 5.835,
+      "max_ms": 6.912,
+      "unique_frames": 57,
+      "frames": 76
+    },
+    {
+      "name": "schelling",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "schelling-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "schelling-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "schelling-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "schelling-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Schelling segregation \u2014 agents seek same-color neighbours",
+      "setup_ms": 0.604,
+      "mean_ms": 1.89,
+      "p95_ms": 1.929,
+      "max_ms": 5.589,
+      "unique_frames": 358,
+      "frames": 451
+    },
+    {
+      "name": "schelling",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "schelling-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "schelling-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "schelling-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "schelling-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Schelling segregation \u2014 agents seek same-color neighbours",
+      "setup_ms": 0.617,
+      "mean_ms": 1.852,
+      "p95_ms": 1.931,
+      "max_ms": 1.949,
+      "unique_frames": 63,
+      "frames": 76
+    },
+    {
+      "name": "snake_ai",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "snake_ai-30fps-0.png",
+          "lit_pixels": 2
+        },
+        {
+          "seconds": 1.0,
+          "image": "snake_ai-30fps-30.png",
+          "lit_pixels": 2
+        },
+        {
+          "seconds": 5.0,
+          "image": "snake_ai-30fps-150.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 15.0,
+          "image": "snake_ai-30fps-450.png",
+          "lit_pixels": 15
+        }
+      ],
+      "description": "Snake AI \u2014 BFS planner plays itself forever",
+      "setup_ms": 0.005,
+      "mean_ms": 0.793,
+      "p95_ms": 2.02,
+      "max_ms": 5.456,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "snake_ai",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "snake_ai-5fps-0.png",
+          "lit_pixels": 2
+        },
+        {
+          "seconds": 1.0,
+          "image": "snake_ai-5fps-5.png",
+          "lit_pixels": 2
+        },
+        {
+          "seconds": 5.0,
+          "image": "snake_ai-5fps-25.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 15.0,
+          "image": "snake_ai-5fps-75.png",
+          "lit_pixels": 15
+        }
+      ],
+      "description": "Snake AI \u2014 BFS planner plays itself forever",
+      "setup_ms": 0.007,
+      "mean_ms": 4.636,
+      "p95_ms": 12.579,
+      "max_ms": 13.929,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "snowflake",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "snowflake-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "snowflake-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "snowflake-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "snowflake-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Snowflake \u2014 6-fold symmetric crystal grows; reset when full",
+      "setup_ms": 0.014,
+      "mean_ms": 1.04,
+      "p95_ms": 1.212,
+      "max_ms": 1.261,
+      "unique_frames": 215,
+      "frames": 451
+    },
+    {
+      "name": "snowflake",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "snowflake-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "snowflake-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "snowflake-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "snowflake-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Snowflake \u2014 6-fold symmetric crystal grows; reset when full",
+      "setup_ms": 0.008,
+      "mean_ms": 0.964,
+      "p95_ms": 1.165,
+      "max_ms": 1.206,
+      "unique_frames": 64,
+      "frames": 76
+    },
+    {
+      "name": "solar_system",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "solar_system-30fps-0.png",
+          "lit_pixels": 485
+        },
+        {
+          "seconds": 1.0,
+          "image": "solar_system-30fps-30.png",
+          "lit_pixels": 505
+        },
+        {
+          "seconds": 5.0,
+          "image": "solar_system-30fps-150.png",
+          "lit_pixels": 526
+        },
+        {
+          "seconds": 15.0,
+          "image": "solar_system-30fps-450.png",
+          "lit_pixels": 549
+        }
+      ],
+      "description": "Top-down solar system \u2014 eight planets at scaled periods",
+      "setup_ms": 0.002,
+      "mean_ms": 0.201,
+      "p95_ms": 0.21,
+      "max_ms": 0.293,
+      "unique_frames": 418,
+      "frames": 451
+    },
+    {
+      "name": "solar_system",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "solar_system-5fps-0.png",
+          "lit_pixels": 485
+        },
+        {
+          "seconds": 1.0,
+          "image": "solar_system-5fps-5.png",
+          "lit_pixels": 498
+        },
+        {
+          "seconds": 5.0,
+          "image": "solar_system-5fps-25.png",
+          "lit_pixels": 520
+        },
+        {
+          "seconds": 15.0,
+          "image": "solar_system-5fps-75.png",
+          "lit_pixels": 543
+        }
+      ],
+      "description": "Top-down solar system \u2014 eight planets at scaled periods",
+      "setup_ms": 0.001,
+      "mean_ms": 0.204,
+      "p95_ms": 0.229,
+      "max_ms": 0.233,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "sort_viz",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sort_viz-30fps-0.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 1.0,
+          "image": "sort_viz-30fps-30.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 5.0,
+          "image": "sort_viz-30fps-150.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 15.0,
+          "image": "sort_viz-30fps-450.png",
+          "lit_pixels": 2080
+        }
+      ],
+      "description": "Sort viz \u2014 bubble / insertion / selection / shell",
+      "setup_ms": 0.012,
+      "mean_ms": 0.282,
+      "p95_ms": 0.311,
+      "max_ms": 0.37,
+      "unique_frames": 272,
+      "frames": 451
+    },
+    {
+      "name": "sort_viz",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "sort_viz-5fps-0.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 1.0,
+          "image": "sort_viz-5fps-5.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 5.0,
+          "image": "sort_viz-5fps-25.png",
+          "lit_pixels": 2080
+        },
+        {
+          "seconds": 15.0,
+          "image": "sort_viz-5fps-75.png",
+          "lit_pixels": 2080
+        }
+      ],
+      "description": "Sort viz \u2014 bubble / insertion / selection / shell",
+      "setup_ms": 0.01,
+      "mean_ms": 0.28,
+      "p95_ms": 0.29,
+      "max_ms": 0.292,
+      "unique_frames": 65,
+      "frames": 76
+    },
+    {
+      "name": "spirograph",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "spirograph-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "spirograph-30fps-30.png",
+          "lit_pixels": 310
+        },
+        {
+          "seconds": 5.0,
+          "image": "spirograph-30fps-150.png",
+          "lit_pixels": 433
+        },
+        {
+          "seconds": 15.0,
+          "image": "spirograph-30fps-450.png",
+          "lit_pixels": 433
+        }
+      ],
+      "description": "Spirograph \u2014 hypotrochoid curves; reseeds R/r each phase",
+      "setup_ms": 0.007,
+      "mean_ms": 0.387,
+      "p95_ms": 0.439,
+      "max_ms": 0.478,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "spirograph",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "spirograph-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "spirograph-5fps-5.png",
+          "lit_pixels": 52
+        },
+        {
+          "seconds": 5.0,
+          "image": "spirograph-5fps-25.png",
+          "lit_pixels": 261
+        },
+        {
+          "seconds": 15.0,
+          "image": "spirograph-5fps-75.png",
+          "lit_pixels": 434
+        }
+      ],
+      "description": "Spirograph \u2014 hypotrochoid curves; reseeds R/r each phase",
+      "setup_ms": 0.008,
+      "mean_ms": 0.29,
+      "p95_ms": 0.417,
+      "max_ms": 0.426,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "spring_mesh",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "spring_mesh-30fps-0.png",
+          "lit_pixels": 880
+        },
+        {
+          "seconds": 1.0,
+          "image": "spring_mesh-30fps-30.png",
+          "lit_pixels": 854
+        },
+        {
+          "seconds": 5.0,
+          "image": "spring_mesh-30fps-150.png",
+          "lit_pixels": 857
+        },
+        {
+          "seconds": 15.0,
+          "image": "spring_mesh-30fps-450.png",
+          "lit_pixels": 858
+        }
+      ],
+      "description": "Spring mesh \u2014 pinned cloth grid jiggles under gravity",
+      "setup_ms": 0.017,
+      "mean_ms": 1.412,
+      "p95_ms": 1.443,
+      "max_ms": 1.495,
+      "unique_frames": 321,
+      "frames": 451
+    },
+    {
+      "name": "spring_mesh",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "spring_mesh-5fps-0.png",
+          "lit_pixels": 880
+        },
+        {
+          "seconds": 1.0,
+          "image": "spring_mesh-5fps-5.png",
+          "lit_pixels": 755
+        },
+        {
+          "seconds": 5.0,
+          "image": "spring_mesh-5fps-25.png",
+          "lit_pixels": 817
+        },
+        {
+          "seconds": 15.0,
+          "image": "spring_mesh-5fps-75.png",
+          "lit_pixels": 819
+        }
+      ],
+      "description": "Spring mesh \u2014 pinned cloth grid jiggles under gravity",
+      "setup_ms": 0.012,
+      "mean_ms": 1.4,
+      "p95_ms": 1.442,
+      "max_ms": 1.455,
+      "unique_frames": 62,
+      "frames": 76
+    },
+    {
+      "name": "starfield",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "starfield-30fps-0.png",
+          "lit_pixels": 43
+        },
+        {
+          "seconds": 1.0,
+          "image": "starfield-30fps-30.png",
+          "lit_pixels": 54
+        },
+        {
+          "seconds": 5.0,
+          "image": "starfield-30fps-150.png",
+          "lit_pixels": 69
+        },
+        {
+          "seconds": 15.0,
+          "image": "starfield-30fps-450.png",
+          "lit_pixels": 36
+        }
+      ],
+      "description": "3D starfield \u2014 flying forward through space",
+      "setup_ms": 0.067,
+      "mean_ms": 1.326,
+      "p95_ms": 1.742,
+      "max_ms": 2.099,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "starfield",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "starfield-5fps-0.png",
+          "lit_pixels": 43
+        },
+        {
+          "seconds": 1.0,
+          "image": "starfield-5fps-5.png",
+          "lit_pixels": 52
+        },
+        {
+          "seconds": 5.0,
+          "image": "starfield-5fps-25.png",
+          "lit_pixels": 86
+        },
+        {
+          "seconds": 15.0,
+          "image": "starfield-5fps-75.png",
+          "lit_pixels": 34
+        }
+      ],
+      "description": "3D starfield \u2014 flying forward through space",
+      "setup_ms": 0.066,
+      "mean_ms": 0.892,
+      "p95_ms": 1.507,
+      "max_ms": 1.952,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "string_art",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "string_art-30fps-0.png",
+          "lit_pixels": 1820
+        },
+        {
+          "seconds": 1.0,
+          "image": "string_art-30fps-30.png",
+          "lit_pixels": 1850
+        },
+        {
+          "seconds": 5.0,
+          "image": "string_art-30fps-150.png",
+          "lit_pixels": 1904
+        },
+        {
+          "seconds": 15.0,
+          "image": "string_art-30fps-450.png",
+          "lit_pixels": 1907
+        }
+      ],
+      "description": "String art \u2014 modular i\u2192i*k connections; k drifts cardioid \u2192 nephroid",
+      "setup_ms": 0.027,
+      "mean_ms": 1.4,
+      "p95_ms": 1.445,
+      "max_ms": 1.492,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "string_art",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "string_art-5fps-0.png",
+          "lit_pixels": 1820
+        },
+        {
+          "seconds": 1.0,
+          "image": "string_art-5fps-5.png",
+          "lit_pixels": 1850
+        },
+        {
+          "seconds": 5.0,
+          "image": "string_art-5fps-25.png",
+          "lit_pixels": 1904
+        },
+        {
+          "seconds": 15.0,
+          "image": "string_art-5fps-75.png",
+          "lit_pixels": 1907
+        }
+      ],
+      "description": "String art \u2014 modular i\u2192i*k connections; k drifts cardioid \u2192 nephroid",
+      "setup_ms": 0.02,
+      "mean_ms": 1.404,
+      "p95_ms": 1.454,
+      "max_ms": 1.466,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "tetris_ai",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tetris_ai-30fps-0.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 1.0,
+          "image": "tetris_ai-30fps-30.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 5.0,
+          "image": "tetris_ai-30fps-150.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 15.0,
+          "image": "tetris_ai-30fps-450.png",
+          "lit_pixels": 2774
+        }
+      ],
+      "description": "Tetris AI \u2014 Dellacherie heuristic plays itself",
+      "setup_ms": 0.436,
+      "mean_ms": 0.574,
+      "p95_ms": 0.583,
+      "max_ms": 1.487,
+      "unique_frames": 226,
+      "frames": 451
+    },
+    {
+      "name": "tetris_ai",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tetris_ai-5fps-0.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 1.0,
+          "image": "tetris_ai-5fps-5.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 5.0,
+          "image": "tetris_ai-5fps-25.png",
+          "lit_pixels": 2774
+        },
+        {
+          "seconds": 15.0,
+          "image": "tetris_ai-5fps-75.png",
+          "lit_pixels": 2774
+        }
+      ],
+      "description": "Tetris AI \u2014 Dellacherie heuristic plays itself",
+      "setup_ms": 0.414,
+      "mean_ms": 0.583,
+      "p95_ms": 0.606,
+      "max_ms": 1.423,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "tron",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tron-30fps-0.png",
+          "lit_pixels": 262
+        },
+        {
+          "seconds": 1.0,
+          "image": "tron-30fps-30.png",
+          "lit_pixels": 290
+        },
+        {
+          "seconds": 5.0,
+          "image": "tron-30fps-150.png",
+          "lit_pixels": 409
+        },
+        {
+          "seconds": 15.0,
+          "image": "tron-30fps-450.png",
+          "lit_pixels": 351
+        }
+      ],
+      "description": "Tron \u2014 two AI light cycles play to the death",
+      "setup_ms": 0.004,
+      "mean_ms": 0.221,
+      "p95_ms": 0.304,
+      "max_ms": 0.702,
+      "unique_frames": 202,
+      "frames": 451
+    },
+    {
+      "name": "tron",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tron-5fps-0.png",
+          "lit_pixels": 262
+        },
+        {
+          "seconds": 1.0,
+          "image": "tron-5fps-5.png",
+          "lit_pixels": 270
+        },
+        {
+          "seconds": 5.0,
+          "image": "tron-5fps-25.png",
+          "lit_pixels": 310
+        },
+        {
+          "seconds": 15.0,
+          "image": "tron-5fps-75.png",
+          "lit_pixels": 409
+        }
+      ],
+      "description": "Tron \u2014 two AI light cycles play to the death",
+      "setup_ms": 0.003,
+      "mean_ms": 0.195,
+      "p95_ms": 0.202,
+      "max_ms": 0.208,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "truchet",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "truchet-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "truchet-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "truchet-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "truchet-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Truchet tiles \u2014 quarter-arc curves flowing across the grid",
+      "setup_ms": 0.046,
+      "mean_ms": 0.928,
+      "p95_ms": 0.971,
+      "max_ms": 1.007,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "truchet",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "truchet-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "truchet-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "truchet-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "truchet-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Truchet tiles \u2014 quarter-arc curves flowing across the grid",
+      "setup_ms": 0.04,
+      "mean_ms": 0.96,
+      "p95_ms": 1.017,
+      "max_ms": 1.052,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "tsp",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tsp-30fps-0.png",
+          "lit_pixels": 595
+        },
+        {
+          "seconds": 1.0,
+          "image": "tsp-30fps-30.png",
+          "lit_pixels": 228
+        },
+        {
+          "seconds": 5.0,
+          "image": "tsp-30fps-150.png",
+          "lit_pixels": 228
+        },
+        {
+          "seconds": 15.0,
+          "image": "tsp-30fps-450.png",
+          "lit_pixels": 228
+        }
+      ],
+      "description": "TSP \u2014 2-opt swap detangler, restarts on convergence",
+      "setup_ms": 0.02,
+      "mean_ms": 0.419,
+      "p95_ms": 0.44,
+      "max_ms": 0.513,
+      "unique_frames": 4,
+      "frames": 451
+    },
+    {
+      "name": "tsp",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tsp-5fps-0.png",
+          "lit_pixels": 595
+        },
+        {
+          "seconds": 1.0,
+          "image": "tsp-5fps-5.png",
+          "lit_pixels": 228
+        },
+        {
+          "seconds": 5.0,
+          "image": "tsp-5fps-25.png",
+          "lit_pixels": 228
+        },
+        {
+          "seconds": 15.0,
+          "image": "tsp-5fps-75.png",
+          "lit_pixels": 228
+        }
+      ],
+      "description": "TSP \u2014 2-opt swap detangler, restarts on convergence",
+      "setup_ms": 0.019,
+      "mean_ms": 0.42,
+      "p95_ms": 0.433,
+      "max_ms": 0.505,
+      "unique_frames": 4,
+      "frames": 76
+    },
+    {
+      "name": "tunnel",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tunnel-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "tunnel-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "tunnel-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "tunnel-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Texture-mapped tunnel \u2014 depth fade + rotation",
+      "setup_ms": 1.126,
+      "mean_ms": 0.895,
+      "p95_ms": 0.982,
+      "max_ms": 2.834,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "tunnel",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "tunnel-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "tunnel-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "tunnel-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "tunnel-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Texture-mapped tunnel \u2014 depth fade + rotation",
+      "setup_ms": 1.106,
+      "mean_ms": 1.144,
+      "p95_ms": 1.921,
+      "max_ms": 2.255,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "ulam",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ulam-30fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "ulam-30fps-30.png",
+          "lit_pixels": 2401
+        },
+        {
+          "seconds": 5.0,
+          "image": "ulam-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "ulam-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Ulam prime spiral \u2014 primes glow on a square integer spiral",
+      "setup_ms": 0.001,
+      "mean_ms": 0.623,
+      "p95_ms": 0.782,
+      "max_ms": 0.84,
+      "unique_frames": 53,
+      "frames": 451
+    },
+    {
+      "name": "ulam",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "ulam-5fps-0.png",
+          "lit_pixels": 1
+        },
+        {
+          "seconds": 1.0,
+          "image": "ulam-5fps-5.png",
+          "lit_pixels": 401
+        },
+        {
+          "seconds": 5.0,
+          "image": "ulam-5fps-25.png",
+          "lit_pixels": 2001
+        },
+        {
+          "seconds": 15.0,
+          "image": "ulam-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Ulam prime spiral \u2014 primes glow on a square integer spiral",
+      "setup_ms": 0.001,
+      "mean_ms": 0.494,
+      "p95_ms": 0.76,
+      "max_ms": 0.781,
+      "unique_frames": 53,
+      "frames": 76
+    },
+    {
+      "name": "unicorn",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "unicorn-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "unicorn-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "unicorn-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "unicorn-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "sky + rainbow + clouds, a unicorn walks along the meadow",
+      "setup_ms": 0.001,
+      "mean_ms": 1.297,
+      "p95_ms": 1.439,
+      "max_ms": 2.674,
+      "unique_frames": 364,
+      "frames": 451
+    },
+    {
+      "name": "unicorn",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "unicorn-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "unicorn-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "unicorn-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "unicorn-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "sky + rainbow + clouds, a unicorn walks along the meadow",
+      "setup_ms": 0.001,
+      "mean_ms": 1.301,
+      "p95_ms": 1.41,
+      "max_ms": 1.43,
+      "unique_frames": 73,
+      "frames": 76
+    },
+    {
+      "name": "voronoi",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "voronoi-30fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "voronoi-30fps-30.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "voronoi-30fps-150.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "voronoi-30fps-450.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Voronoi cells \u2014 drifting sites with edge highlights",
+      "setup_ms": 0.078,
+      "mean_ms": 5.378,
+      "p95_ms": 5.679,
+      "max_ms": 7.052,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "voronoi",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "voronoi-5fps-0.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 1.0,
+          "image": "voronoi-5fps-5.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 5.0,
+          "image": "voronoi-5fps-25.png",
+          "lit_pixels": 4096
+        },
+        {
+          "seconds": 15.0,
+          "image": "voronoi-5fps-75.png",
+          "lit_pixels": 4096
+        }
+      ],
+      "description": "Voronoi cells \u2014 drifting sites with edge highlights",
+      "setup_ms": 0.017,
+      "mean_ms": 5.38,
+      "p95_ms": 5.602,
+      "max_ms": 5.711,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "waves",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "waves-30fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "waves-30fps-30.png",
+          "lit_pixels": 488
+        },
+        {
+          "seconds": 5.0,
+          "image": "waves-30fps-150.png",
+          "lit_pixels": 3197
+        },
+        {
+          "seconds": 15.0,
+          "image": "waves-30fps-450.png",
+          "lit_pixels": 3566
+        }
+      ],
+      "description": "2D wave equation \u2014 ripples spread, interfere, decay",
+      "setup_ms": 0.011,
+      "mean_ms": 1.149,
+      "p95_ms": 1.338,
+      "max_ms": 1.418,
+      "unique_frames": 439,
+      "frames": 451
+    },
+    {
+      "name": "waves",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "waves-5fps-0.png",
+          "lit_pixels": 0
+        },
+        {
+          "seconds": 1.0,
+          "image": "waves-5fps-5.png",
+          "lit_pixels": 61
+        },
+        {
+          "seconds": 5.0,
+          "image": "waves-5fps-25.png",
+          "lit_pixels": 910
+        },
+        {
+          "seconds": 15.0,
+          "image": "waves-5fps-75.png",
+          "lit_pixels": 3492
+        }
+      ],
+      "description": "2D wave equation \u2014 ripples spread, interfere, decay",
+      "setup_ms": 0.01,
+      "mean_ms": 0.845,
+      "p95_ms": 1.259,
+      "max_ms": 1.283,
+      "unique_frames": 75,
+      "frames": 76
+    },
+    {
+      "name": "wireworld",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "wireworld-30fps-0.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 1.0,
+          "image": "wireworld-30fps-30.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 5.0,
+          "image": "wireworld-30fps-150.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 15.0,
+          "image": "wireworld-30fps-450.png",
+          "lit_pixels": 336
+        }
+      ],
+      "description": "Wireworld \u2014 copper squares with electron pulses orbiting",
+      "setup_ms": 0.022,
+      "mean_ms": 0.156,
+      "p95_ms": 0.379,
+      "max_ms": 0.418,
+      "unique_frames": 98,
+      "frames": 451
+    },
+    {
+      "name": "wireworld",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "wireworld-5fps-0.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 1.0,
+          "image": "wireworld-5fps-5.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 5.0,
+          "image": "wireworld-5fps-25.png",
+          "lit_pixels": 336
+        },
+        {
+          "seconds": 15.0,
+          "image": "wireworld-5fps-75.png",
+          "lit_pixels": 336
+        }
+      ],
+      "description": "Wireworld \u2014 copper squares with electron pulses orbiting",
+      "setup_ms": 0.019,
+      "mean_ms": 0.453,
+      "p95_ms": 0.665,
+      "max_ms": 0.674,
+      "unique_frames": 76,
+      "frames": 76
+    },
+    {
+      "name": "worm",
+      "fps": 30,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "worm-30fps-0.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 1.0,
+          "image": "worm-30fps-30.png",
+          "lit_pixels": 54
+        },
+        {
+          "seconds": 5.0,
+          "image": "worm-30fps-150.png",
+          "lit_pixels": 48
+        },
+        {
+          "seconds": 15.0,
+          "image": "worm-30fps-450.png",
+          "lit_pixels": 53
+        }
+      ],
+      "description": "Worm \u2014 segmented body curves around the toroidal screen",
+      "setup_ms": 0.005,
+      "mean_ms": 0.05,
+      "p95_ms": 0.051,
+      "max_ms": 0.064,
+      "unique_frames": 451,
+      "frames": 451
+    },
+    {
+      "name": "worm",
+      "fps": 5,
+      "seconds": 15,
+      "status": "ok",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "image": "worm-5fps-0.png",
+          "lit_pixels": 5
+        },
+        {
+          "seconds": 1.0,
+          "image": "worm-5fps-5.png",
+          "lit_pixels": 30
+        },
+        {
+          "seconds": 5.0,
+          "image": "worm-5fps-25.png",
+          "lit_pixels": 120
+        },
+        {
+          "seconds": 15.0,
+          "image": "worm-5fps-75.png",
+          "lit_pixels": 120
+        }
+      ],
+      "description": "Worm \u2014 segmented body curves around the toroidal screen",
+      "setup_ms": 0.003,
+      "mean_ms": 0.05,
+      "p95_ms": 0.052,
+      "max_ms": 0.058,
+      "unique_frames": 76,
+      "frames": 76
+    }
+  ]
+}

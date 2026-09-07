@@ -6,6 +6,31 @@ as a network-attached framebuffer. Host runs code, frames push to the device.
 
 ## Current state
 
+Updated 2026-09-05. `README.md` is the current launch/control guide;
+`PROTOCOL.md` contains measured hardware constraints. The architecture/roadmap
+sections below retain historical design ideas and are **not** a list of missing
+features or required dependencies.
+
+The implemented runtime is stdlib-only: `Program.setup()` (no ctx),
+`update(dt, events)`, `render()` returning a 64×64 RGB `Frame`; `Runner` composes
+ANSI terminal, independent HTTP device workers, and PNG snapshot drivers.
+`render_worlds()` defaults to one frame; Mosslight Works overrides it for a
+workshop and greenhouse. `status()` provides terminal control hints. Programs
+are discovered from modules automatically, not registered manually.
+
+There are 73 programs. `./pixoo run workshop` launches Mosslight Works locally;
+`--arg worlds=2` previews both worlds. `--mirror` adds the selected device;
+repeated `--ip` explicitly selects the workshop and greenhouse in that order.
+`--snap PATH` supports headless output, `--duration SECONDS` stops cleanly,
+and repeated `--arg KEY=VALUE` passes string parameters to programs.
+The workshop uses an 8 fps host preview, separate 4 fps device workers and a
+brightness cap of 20. Clean shutdown restores brightness, then screen power.
+
+`make test` runs 38 regression checks, including real PTY input, device recovery,
+cleanup and story progression. `docs/PROJECT_REVIEW.md` preserves the catalog's
+baseline audit and identifies remaining program-specific repairs; workshop
+recordings and hardware evidence are under `docs/workshop/`.
+
 Stdlib-only CLI (`./pixoo`) with:
 - `discover` — port-scans the local /24, fingerprints via `Channel/GetIndex`,
   menu-picks one, caches to `.pixoo-state.json`.
@@ -34,9 +59,12 @@ Keep this list honest — these are the things that will burn time.
   happen. Not a bug in your program.
 - **PicID must increase monotonically** across `Draw/SendHttpGif` calls. Reset
   via `Draw/ResetHttpGifId` at session start, or when the counter grows large.
-- **Frame rate ceiling ~12–15 fps over WiFi.** A frame is ~12KB of base64
-  RGB. Don't pursue 30fps on the device; throttle device pushes separately
-  from simulation tick.
+- **Fresh live upload is about 4–5 fps.** A frame is 12,288 raw RGB bytes,
+  16,384 base64 bytes, and about 16.5 KB of JSON. The measured 10–12 fps
+  playback applies to preloaded loops. Device pushes run separately from
+  simulation ticks and reset PicID every 32 frames; see `PROTOCOL.md`.
+- **Setting brightness wakes the screen.** Restore brightness before power
+  when unwinding a demonstration. This ordering was verified on hardware.
 - **Onboard mic is firmware-walled.** The mic only drives built-in EQ /
   noise-meter channels. No API exposes samples/dB/spectrum. Any audio-
   reactive program we build captures on the host.
@@ -50,7 +78,7 @@ Keep this list honest — these are the things that will burn time.
   PicID bookkeeping and Pillow→frame conversion; worth vendoring when we
   add image/GIF push.
 
-## Planned architecture
+## Historical planned architecture (superseded by current implementation)
 
 **Program ↔ Driver split.** A `Program` produces frames and consumes input
 events; it doesn't know whether output is a real Pixoo or a terminal
@@ -129,7 +157,7 @@ webhook triggers, Home Assistant integration.
 from pixoolib.runtime import Program, Frame
 
 class Dot(Program):
-    def setup(self, ctx):
+    def setup(self):
         self.x, self.y = 32, 32
 
     def update(self, dt, events):
@@ -145,7 +173,7 @@ class Dot(Program):
         return f
 ```
 
-Register in `programs/__init__.py`. Programs import only from `pixoolib`,
+The CLI discovers the Program subclass in `programs/<name>.py`. Programs import only from `pixoolib`,
 never from drivers — that's the invariant that keeps them portable.
 
 ## Dev workflow
@@ -161,8 +189,9 @@ terminal, runtime is broken — fix that before anything else.
 ## Dep policy
 
 - Fast path stays stdlib — zero imports outside cpython.
-- `run` path adds Pillow (image/text rasterization), Textual (TUI), numpy
-  (numeric programs). Lazy-install into `.venv/` on first `run`.
+- The regular `run` path currently needs no pip packages. The separate
+  `mandelbrot_zoom.py` tour requires NumPy. Recording tools optionally use
+  ffmpeg. There is no lazy dependency installer or Textual runtime.
 - Add new deps only when a specific program needs them. No preemptive
   vendoring.
 

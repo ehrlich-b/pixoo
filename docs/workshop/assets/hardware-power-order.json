@@ -1,0 +1,35 @@
+[
+  {
+    "command": {
+      "Command": "Channel/OnOffScreen",
+      "OnOff": 0
+    },
+    "response": {
+      "error_code": 0
+    },
+    "Brightness": 100,
+    "LightSwitch": 0
+  },
+  {
+    "command": {
+      "Command": "Channel/SetBrightness",
+      "Brightness": 100
+    },
+    "response": {
+      "error_code": 0
+    },
+    "Brightness": 100,
+    "LightSwitch": 1
+  },
+  {
+    "command": {
+      "Command": "Channel/OnOffScreen",
+      "OnOff": 0
+    },
+    "response": {
+      "error_code": 0
+    },
+    "Brightness": 100,
+    "LightSwitch": 0
+  }
+]

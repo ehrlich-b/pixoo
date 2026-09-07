@@ -5,9 +5,6 @@ IP     := 192.168.4.111
 
 .PHONY: restart stop logs status watch on off test
 
-test:
-	python3 -m unittest discover -v
-
 regen-goldens:
 	PIXOO_REGEN_GOLDENS=1 python3 -m unittest tests.test_goldens -v
 

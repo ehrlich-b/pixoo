@@ -200,3 +200,16 @@ latest frame when ready to push.
 - **One-POST multi-frame** (N frames in one body): crashes past ~16KB.
 - **30fps** or even **15fps** live: not achievable over this protocol on
   this firmware.
+
+## Screen-power restoration (measured 2026-09-05)
+
+`Channel/SetBrightness` also turns the screen on, including when setting it to
+the existing brightness value. Verified on the selected Pixoo by alternating
+`OnOffScreen {OnOff:0}` → `GetAllConf` (`LightSwitch:0`) →
+`SetBrightness {Brightness:100}` → `GetAllConf` (`LightSwitch:1`).
+
+For an office session that temporarily caps brightness, restore **brightness
+first, screen power last**. `LightSwitch` and `OnOff` have the same polarity
+(0 off, 1 on); apparent inversion was a side effect of command ordering. The
+workshop hardware probe checks both fields after shutdown and reports whether
+they match the saved state. Evidence: `docs/workshop/assets/hardware-power-order.json`.

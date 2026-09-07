@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import time
+import math
+import sys
 from dataclasses import dataclass
 from typing import Optional, Protocol
 
@@ -36,6 +38,9 @@ class Program:
     Keeping the parsing on the program side keeps the CLI type-agnostic."""
 
     DESCRIPTION: str = ""
+    FPS = 30.0
+    MAX_WORLDS = 1
+    DEVICE_BRIGHTNESS = None
 
     def __init__(self, **params: str) -> None:
         self.params: dict[str, str] = params
@@ -49,38 +54,59 @@ class Program:
     def render(self) -> Frame:
         raise NotImplementedError
 
+    def render_worlds(self) -> list[Frame]:
+        return [self.render()]
+
+    def status(self) -> str:
+        return self.DESCRIPTION + " | q / Esc to quit"
+
 
 class Runner:
     def __init__(self, program: Program, drivers: list[Driver], fps: float = 30.0):
+        if not math.isfinite(fps) or fps <= 0:
+            raise ValueError("fps must be finite and greater than zero")
         self.program = program
         self.drivers = drivers
         self.target_dt = 1.0 / fps
 
-    def run(self) -> None:
-        for d in self.drivers:
-            d.start()
+    def run(self, duration: float | None = None) -> None:
+        if duration is not None and (not math.isfinite(duration) or duration <= 0):
+            raise ValueError("duration must be finite and greater than zero")
+        started = []
         try:
+            # Reject invalid program parameters before taking over a terminal
+            # or changing a device. Starting drivers belongs inside cleanup.
             self.program.setup()
-            last = time.monotonic()
+            for driver in self.drivers:
+                started.append(driver)
+                driver.start()
+            began = last = time.monotonic()
             while True:
-                events: list[Event] = []
-                for d in self.drivers:
-                    events.extend(d.events())
-                for e in events:
-                    if e.kind == "key" and e.key in QUIT_KEYS:
-                        return
+                events = [event for d in self.drivers for event in d.events()]
+                if any(e.kind == "key" and e.key in QUIT_KEYS for e in events):
+                    return
                 now = time.monotonic()
-                dt = now - last
+                if duration is not None and now - began >= duration:
+                    return
+                self.program.update(now - last, events)
                 last = now
-                self.program.update(dt, events)
-                frame = self.program.render()
-                for d in self.drivers:
-                    d.render(frame)
+                frames = self.program.render_worlds()
+                for driver in self.drivers:
+                    if hasattr(driver, "render_worlds"):
+                        driver.render_worlds(frames)
+                    else:
+                        index = getattr(driver, "world_index", 0)
+                        driver.render(frames[index])
                 slack = self.target_dt - (time.monotonic() - now)
                 if slack > 0:
                     time.sleep(slack)
         except KeyboardInterrupt:
             pass
         finally:
-            for d in reversed(self.drivers):
-                d.stop()
+            # A failed stop must not prevent restoration of the terminal or
+            # shutdown of independent device workers.
+            for driver in reversed(started):
+                try:
+                    driver.stop()
+                except Exception as exc:
+                    print(f"driver cleanup failed: {exc}", file=sys.stderr)

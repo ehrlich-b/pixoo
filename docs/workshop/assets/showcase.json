@@ -1,0 +1,1885 @@
+{
+  "worlds": 2,
+  "fps": 4,
+  "seconds": 96,
+  "seed": 7,
+  "source": "offline Program.update/render_worlds; no hardware",
+  "trace": [
+    {
+      "time": 0.0,
+      "episode": "build",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        -11.0,
+        "walk",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 1.0,
+      "episode": "build",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        -6.9375,
+        "walk",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 2.0,
+      "episode": "build",
+      "elapsed": 2.0,
+      "courier": [
+        0,
+        2.0,
+        "walk",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 3.0,
+      "episode": "build",
+      "elapsed": 3.0,
+      "courier": [
+        0,
+        10.9375,
+        "walk",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 4.0,
+      "episode": "build",
+      "elapsed": 4.0,
+      "courier": [
+        0,
+        15.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 5.0,
+      "episode": "build",
+      "elapsed": 5.0,
+      "courier": [
+        0,
+        15.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 6.0,
+      "episode": "build",
+      "elapsed": 6.0,
+      "courier": [
+        0,
+        15.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 7.0,
+      "episode": "build",
+      "elapsed": 7.0,
+      "courier": [
+        0,
+        19.5,
+        "walk",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 8.0,
+      "episode": "build",
+      "elapsed": 8.0,
+      "courier": [
+        0,
+        24.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 9.0,
+      "episode": "build",
+      "elapsed": 9.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 10.0,
+      "episode": "build",
+      "elapsed": 10.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 11.0,
+      "episode": "build",
+      "elapsed": 11.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 12.0,
+      "episode": "build",
+      "elapsed": 12.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 13.0,
+      "episode": "build",
+      "elapsed": 13.0,
+      "courier": [
+        0,
+        24.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 14.0,
+      "episode": "build",
+      "elapsed": 14.0,
+      "courier": [
+        0,
+        24.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 15.0,
+      "episode": "build",
+      "elapsed": 15.0,
+      "courier": [
+        0,
+        24.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 16.0,
+      "episode": "build",
+      "elapsed": 16.0,
+      "courier": [
+        0,
+        24.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 17.0,
+      "episode": "build",
+      "elapsed": 17.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 18.0,
+      "episode": "build",
+      "elapsed": 18.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 19.0,
+      "episode": "build",
+      "elapsed": 19.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 20.0,
+      "episode": "build",
+      "elapsed": 20.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 21.0,
+      "episode": "build",
+      "elapsed": 21.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 22.0,
+      "episode": "build",
+      "elapsed": 22.0,
+      "courier": [
+        0,
+        24.0,
+        "cheer",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 23.0,
+      "episode": "build",
+      "elapsed": 23.0,
+      "courier": [
+        0,
+        24.0,
+        "cheer",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 24.0,
+      "episode": "build",
+      "elapsed": 24.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 25.0,
+      "episode": "build",
+      "elapsed": 25.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 26.0,
+      "episode": "idle",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        -1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 27.0,
+      "episode": "idle",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        -1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 28.0,
+      "episode": "delivery",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        24.0,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 29.0,
+      "episode": "delivery",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        26.19140625,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 30.0,
+      "episode": "delivery",
+      "elapsed": 2.0,
+      "courier": [
+        0,
+        31.96875,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 31.0,
+      "episode": "delivery",
+      "elapsed": 3.0,
+      "courier": [
+        0,
+        40.13671875,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 32.0,
+      "episode": "delivery",
+      "elapsed": 4.0,
+      "courier": [
+        0,
+        49.5,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 33.0,
+      "episode": "delivery",
+      "elapsed": 5.0,
+      "courier": [
+        0,
+        58.86328125,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 34.0,
+      "episode": "delivery",
+      "elapsed": 6.0,
+      "courier": [
+        0,
+        67.03125,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 35.0,
+      "episode": "delivery",
+      "elapsed": 7.0,
+      "courier": [
+        0,
+        72.80859375,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 36.0,
+      "episode": "delivery",
+      "elapsed": 8.0,
+      "courier": null,
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 37.0,
+      "episode": "delivery",
+      "elapsed": 9.0,
+      "courier": null,
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 38.0,
+      "episode": "delivery",
+      "elapsed": 10.0,
+      "courier": [
+        1,
+        -12.0,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 39.0,
+      "episode": "delivery",
+      "elapsed": 11.0,
+      "courier": [
+        1,
+        -9.088,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 40.0,
+      "episode": "delivery",
+      "elapsed": 12.0,
+      "courier": [
+        1,
+        -2.1439999999999984,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 41.0,
+      "episode": "delivery",
+      "elapsed": 13.0,
+      "courier": [
+        1,
+        6.144000000000002,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 42.0,
+      "episode": "delivery",
+      "elapsed": 14.0,
+      "courier": [
+        1,
+        13.088000000000005,
+        "walk",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 43.0,
+      "episode": "delivery",
+      "elapsed": 15.0,
+      "courier": [
+        1,
+        16.0,
+        "lift",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 44.0,
+      "episode": "delivery",
+      "elapsed": 16.0,
+      "courier": [
+        1,
+        16.0,
+        "lift",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 45.0,
+      "episode": "delivery",
+      "elapsed": 17.0,
+      "courier": [
+        1,
+        16.0,
+        "lift",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 46.0,
+      "episode": "delivery",
+      "elapsed": 18.0,
+      "courier": [
+        1,
+        16.0,
+        "lift",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 47.0,
+      "episode": "delivery",
+      "elapsed": 19.0,
+      "courier": [
+        1,
+        16.0,
+        "lift",
+        1
+      ],
+      "seed": "honey",
+      "flowers": [
+        [],
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 48.0,
+      "episode": "delivery",
+      "elapsed": 20.0,
+      "courier": [
+        1,
+        16.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 49.0,
+      "episode": "delivery",
+      "elapsed": 21.0,
+      "courier": [
+        1,
+        16.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 50.0,
+      "episode": "delivery",
+      "elapsed": 22.0,
+      "courier": [
+        1,
+        16.0,
+        "cheer",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 51.0,
+      "episode": "delivery",
+      "elapsed": 23.0,
+      "courier": [
+        1,
+        16.0,
+        "cheer",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 52.0,
+      "episode": "delivery",
+      "elapsed": 24.0,
+      "courier": [
+        1,
+        16.0,
+        "cheer",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 53.0,
+      "episode": "delivery",
+      "elapsed": 25.0,
+      "courier": [
+        1,
+        16.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 54.0,
+      "episode": "delivery",
+      "elapsed": 26.0,
+      "courier": [
+        1,
+        16.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 55.0,
+      "episode": "delivery",
+      "elapsed": 27.0,
+      "courier": [
+        1,
+        11.46875,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 56.0,
+      "episode": "delivery",
+      "elapsed": 28.0,
+      "courier": [
+        1,
+        1.5,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 57.0,
+      "episode": "delivery",
+      "elapsed": 29.0,
+      "courier": [
+        1,
+        -8.46875,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 58.0,
+      "episode": "delivery",
+      "elapsed": 30.0,
+      "courier": null,
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 59.0,
+      "episode": "delivery",
+      "elapsed": 31.0,
+      "courier": null,
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 60.0,
+      "episode": "delivery",
+      "elapsed": 32.0,
+      "courier": [
+        0,
+        64.0,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 61.0,
+      "episode": "delivery",
+      "elapsed": 33.0,
+      "courier": [
+        0,
+        59.839999999999996,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 62.0,
+      "episode": "delivery",
+      "elapsed": 34.0,
+      "courier": [
+        0,
+        49.919999999999995,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 63.0,
+      "episode": "delivery",
+      "elapsed": 35.0,
+      "courier": [
+        0,
+        38.08,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 64.0,
+      "episode": "delivery",
+      "elapsed": 36.0,
+      "courier": [
+        0,
+        28.159999999999997,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 65.0,
+      "episode": "delivery",
+      "elapsed": 37.0,
+      "courier": [
+        0,
+        24.0,
+        "walk",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 66.0,
+      "episode": "idle",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 67.0,
+      "episode": "idle",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 68.0,
+      "episode": "biscuit",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 69.0,
+      "episode": "biscuit",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 70.0,
+      "episode": "biscuit",
+      "elapsed": 2.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 71.0,
+      "episode": "biscuit",
+      "elapsed": 3.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 72.0,
+      "episode": "biscuit",
+      "elapsed": 4.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 73.0,
+      "episode": "biscuit",
+      "elapsed": 5.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 74.0,
+      "episode": "biscuit",
+      "elapsed": 6.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 75.0,
+      "episode": "biscuit",
+      "elapsed": 7.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 76.0,
+      "episode": "biscuit",
+      "elapsed": 8.0,
+      "courier": [
+        0,
+        22.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 77.0,
+      "episode": "biscuit",
+      "elapsed": 9.0,
+      "courier": [
+        0,
+        19.666666666666668,
+        "surprise",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 78.0,
+      "episode": "biscuit",
+      "elapsed": 10.0,
+      "courier": [
+        0,
+        15.333333333333334,
+        "surprise",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 79.0,
+      "episode": "biscuit",
+      "elapsed": 11.0,
+      "courier": [
+        0,
+        13.0,
+        "surprise",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 80.0,
+      "episode": "biscuit",
+      "elapsed": 12.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 81.0,
+      "episode": "biscuit",
+      "elapsed": 13.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 82.0,
+      "episode": "biscuit",
+      "elapsed": 14.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 83.0,
+      "episode": "biscuit",
+      "elapsed": 15.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 84.0,
+      "episode": "biscuit",
+      "elapsed": 16.0,
+      "courier": [
+        0,
+        13.0,
+        "crouch",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 85.0,
+      "episode": "biscuit",
+      "elapsed": 17.0,
+      "courier": [
+        0,
+        13.0,
+        "crouch",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 86.0,
+      "episode": "biscuit",
+      "elapsed": 18.0,
+      "courier": [
+        0,
+        13.0,
+        "crouch",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 87.0,
+      "episode": "biscuit",
+      "elapsed": 19.0,
+      "courier": [
+        0,
+        13.0,
+        "crouch",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 88.0,
+      "episode": "biscuit",
+      "elapsed": 20.0,
+      "courier": [
+        0,
+        13.0,
+        "crouch",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 89.0,
+      "episode": "biscuit",
+      "elapsed": 21.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 90.0,
+      "episode": "biscuit",
+      "elapsed": 22.0,
+      "courier": [
+        0,
+        13.0,
+        "cheer",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 91.0,
+      "episode": "biscuit",
+      "elapsed": 23.0,
+      "courier": [
+        0,
+        13.0,
+        "cheer",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 92.0,
+      "episode": "biscuit",
+      "elapsed": 24.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 93.0,
+      "episode": "biscuit",
+      "elapsed": 25.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 94.0,
+      "episode": "biscuit",
+      "elapsed": 26.0,
+      "courier": [
+        0,
+        13.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    },
+    {
+      "time": 95.0,
+      "episode": "idle",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        24.0,
+        "idle",
+        -1
+      ],
+      "seed": null,
+      "flowers": [
+        [],
+        [
+          "honey"
+        ]
+      ],
+      "friend": true,
+      "tea": 0
+    }
+  ],
+  "events": [
+    [
+      9.0,
+      "gear installed",
+      "build"
+    ],
+    [
+      16.0,
+      "hat caught",
+      "build"
+    ],
+    [
+      21.0,
+      "seed made",
+      "build"
+    ],
+    [
+      26.0,
+      "rest",
+      "build"
+    ],
+    [
+      28.0,
+      "start",
+      "delivery"
+    ],
+    [
+      36.0,
+      "courier departed",
+      "delivery"
+    ],
+    [
+      38.0,
+      "courier arrived",
+      "delivery"
+    ],
+    [
+      48.0,
+      "seed planted",
+      "delivery"
+    ],
+    [
+      58.0,
+      "courier heading home",
+      "delivery"
+    ],
+    [
+      60.0,
+      "courier returned",
+      "delivery"
+    ],
+    [
+      66.0,
+      "rest",
+      "delivery"
+    ],
+    [
+      68.0,
+      "start",
+      "biscuit"
+    ],
+    [
+      88.0,
+      "biscuit shared",
+      "biscuit"
+    ],
+    [
+      95.0,
+      "rest",
+      "biscuit"
+    ]
+  ]
+}

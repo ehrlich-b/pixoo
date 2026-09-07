@@ -5,6 +5,14 @@ the brainstorm universe; this file is the work list.
 
 ## Shipped
 
+- [x] Mosslight Works: original workshop, persistent stories, one/two-world
+      delivery, showcase controls and recordings. See `README.md`.
+- [x] ANSI terminal, Program/Frame runtime, mirror and PNG snapshot drivers;
+      repeated `--arg KEY=VALUE` parameters and finite `--duration` runs.
+- [x] Unbuffered arrow/space input, protected cleanup, separate device workers,
+      4 fps uploads, recovery, periodic PicID resets and target-specific priming.
+- [x] 38 regression checks, a complete catalog review and physical single-device
+      verification. Two-device hardware handoff still needs selected addresses.
 - [x] CLI fast-path: `discover`, `info`, `text`, `channel`, `brightness`,
       `clear`, `raw`.
 - [x] `programs/ball.py` — bouncing ball smoke test.
@@ -130,13 +138,17 @@ the brainstorm universe; this file is the work list.
 
 ## Infra / ergonomics backlog
 
+- [ ] DLA: bounded incremental growth, visible completion hold, then reseed.
+- [ ] TSP: reject degenerate reversals, preserve route-length invariants, restart.
+- [ ] Magnetic pendulum: make completed-map hold/reseed reachable; verify two cycles.
+- [ ] Normalize simulation timing by family and review full cycles at 4–5 fps.
+      Reproductions and acceptance checks: `docs/PROJECT_REVIEW.md`.
 - [ ] `./pixoo run --random` — pick a program uniformly at random.
 - [ ] `./pixoo run --playlist` — cycle programs on a timer.
 - [ ] `./pixoo stop` — pkill the running daemon (mirrors Makefile `stop`).
-- [ ] Program arg-passing — let programs declare argparse specs and receive
-      them (e.g. `./pixoo run eca --rule 110`).
+- [ ] Typed per-program argument help beyond the shipped `--arg KEY=VALUE`.
 - [ ] Dep lazy-install into `.venv/` on first `run` of a program that needs
-      numpy / Pillow / sounddevice. (Per CLAUDE.md plan.)
+      numpy / Pillow / sounddevice, only when a concrete new program needs it.
 
 ## Cut / parked
 

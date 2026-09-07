@@ -1,0 +1,531 @@
+{
+  "worlds": 1,
+  "fps": 4,
+  "seconds": 30,
+  "seed": 7,
+  "source": "offline Program.update/render_worlds; no hardware",
+  "trace": [
+    {
+      "time": 0.0,
+      "episode": "tea",
+      "elapsed": 0.0,
+      "courier": [
+        0,
+        14.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 1.0,
+      "episode": "tea",
+      "elapsed": 1.0,
+      "courier": [
+        0,
+        15.40625,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 2.0,
+      "episode": "tea",
+      "elapsed": 2.0,
+      "courier": [
+        0,
+        18.5,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 3.0,
+      "episode": "tea",
+      "elapsed": 3.0,
+      "courier": [
+        0,
+        21.59375,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 4.0,
+      "episode": "tea",
+      "elapsed": 4.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 5.0,
+      "episode": "tea",
+      "elapsed": 5.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 6.0,
+      "episode": "tea",
+      "elapsed": 6.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 7.0,
+      "episode": "tea",
+      "elapsed": 7.0,
+      "courier": [
+        0,
+        23.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 8.0,
+      "episode": "tea",
+      "elapsed": 8.0,
+      "courier": [
+        0,
+        23.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 9.0,
+      "episode": "tea",
+      "elapsed": 9.0,
+      "courier": [
+        0,
+        23.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 10.0,
+      "episode": "tea",
+      "elapsed": 10.0,
+      "courier": [
+        0,
+        23.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 11.0,
+      "episode": "tea",
+      "elapsed": 11.0,
+      "courier": [
+        0,
+        23.0,
+        "lift",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 12.0,
+      "episode": "tea",
+      "elapsed": 12.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 13.0,
+      "episode": "tea",
+      "elapsed": 13.0,
+      "courier": [
+        0,
+        23.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 14.0,
+      "episode": "tea",
+      "elapsed": 14.0,
+      "courier": [
+        0,
+        23.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 15.0,
+      "episode": "tea",
+      "elapsed": 15.0,
+      "courier": [
+        0,
+        23.0,
+        "surprise",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 16.0,
+      "episode": "tea",
+      "elapsed": 16.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 17.0,
+      "episode": "tea",
+      "elapsed": 17.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 18.0,
+      "episode": "tea",
+      "elapsed": 18.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 19.0,
+      "episode": "tea",
+      "elapsed": 19.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 20.0,
+      "episode": "tea",
+      "elapsed": 20.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 21.0,
+      "episode": "tea",
+      "elapsed": 21.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 22.0,
+      "episode": "tea",
+      "elapsed": 22.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 0
+    },
+    {
+      "time": 23.0,
+      "episode": "tea",
+      "elapsed": 23.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 24.0,
+      "episode": "tea",
+      "elapsed": 24.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 25.0,
+      "episode": "tea",
+      "elapsed": 25.0,
+      "courier": [
+        0,
+        23.0,
+        "cheer",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 26.0,
+      "episode": "tea",
+      "elapsed": 26.0,
+      "courier": [
+        0,
+        23.0,
+        "cheer",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 27.0,
+      "episode": "tea",
+      "elapsed": 27.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 28.0,
+      "episode": "tea",
+      "elapsed": 28.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    },
+    {
+      "time": 29.0,
+      "episode": "tea",
+      "elapsed": 29.0,
+      "courier": [
+        0,
+        23.0,
+        "idle",
+        1
+      ],
+      "seed": null,
+      "flowers": [
+        []
+      ],
+      "friend": false,
+      "tea": 1
+    }
+  ],
+  "events": [
+    [
+      0.0,
+      "start",
+      "tea"
+    ],
+    [
+      23.0,
+      "tea served",
+      "tea"
+    ]
+  ]
+}

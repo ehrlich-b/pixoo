@@ -1,0 +1,4118 @@
+{
+  "ip": "192.168.4.111",
+  "mode": "physical single-device acknowledged frame uploads; appearance requires observation",
+  "requested_seconds": 75.0,
+  "before": {
+    "error_code": 0,
+    "Brightness": 100,
+    "RotationFlag": 0,
+    "ClockTime": 60,
+    "GalleryTime": 60,
+    "SingleGalleyTime": -1,
+    "PowerOnChannelId": 1,
+    "GalleryShowTimeFlag": 0,
+    "CurClockId": 1067,
+    "Time24Flag": 0,
+    "TemperatureMode": 1,
+    "GyrateAngle": 0,
+    "MirrorFlag": 0,
+    "LightSwitch": 0
+  },
+  "after": {
+    "error_code": 0,
+    "Brightness": 100,
+    "RotationFlag": 0,
+    "ClockTime": 60,
+    "GalleryTime": 60,
+    "SingleGalleyTime": -1,
+    "PowerOnChannelId": 1,
+    "GalleryShowTimeFlag": 0,
+    "CurClockId": 1067,
+    "Time24Flag": 0,
+    "TemperatureMode": 1,
+    "GyrateAngle": 0,
+    "MirrorFlag": 0,
+    "LightSwitch": 1
+  },
+  "sent": 293,
+  "failures": 0,
+  "dropped_stale_frames": 207,
+  "frame_requests": 293,
+  "acknowledged_frames": 293,
+  "story_events": [
+    [
+      9.0,
+      "gear installed",
+      "build"
+    ],
+    [
+      16.0,
+      "hat caught",
+      "build"
+    ],
+    [
+      21.0,
+      "seed made",
+      "build"
+    ],
+    [
+      26.0,
+      "rest",
+      "build"
+    ],
+    [
+      28.0,
+      "start",
+      "delivery"
+    ],
+    [
+      40.0,
+      "seed planted",
+      "delivery"
+    ],
+    [
+      66.0,
+      "rest",
+      "delivery"
+    ],
+    [
+      68.0,
+      "start",
+      "biscuit"
+    ]
+  ],
+  "requests": [
+    {
+      "command": "Channel/GetAllConf",
+      "began": 1355858.44881425,
+      "bytes": 33,
+      "timeout": 3.0,
+      "response": {
+        "error_code": 0,
+        "Brightness": 100,
+        "RotationFlag": 0,
+        "ClockTime": 60,
+        "GalleryTime": 60,
+        "SingleGalleyTime": -1,
+        "PowerOnChannelId": 1,
+        "GalleryShowTimeFlag": 0,
+        "CurClockId": 1067,
+        "Time24Flag": 0,
+        "TemperatureMode": 1,
+        "GyrateAngle": 0,
+        "MirrorFlag": 0,
+        "LightSwitch": 0
+      },
+      "elapsed_ms": 111.044
+    },
+    {
+      "command": "Channel/GetAllConf",
+      "began": 1355858.565910875,
+      "bytes": 33,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0,
+        "Brightness": 100,
+        "RotationFlag": 0,
+        "ClockTime": 60,
+        "GalleryTime": 60,
+        "SingleGalleyTime": -1,
+        "PowerOnChannelId": 1,
+        "GalleryShowTimeFlag": 0,
+        "CurClockId": 1067,
+        "Time24Flag": 0,
+        "TemperatureMode": 1,
+        "GyrateAngle": 0,
+        "MirrorFlag": 0,
+        "LightSwitch": 0
+      },
+      "elapsed_ms": 99.291
+    },
+    {
+      "command": "Channel/SetBrightness",
+      "began": 1355858.665225166,
+      "bytes": 54,
+      "timeout": 1.0,
+      "Brightness": 20,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 90.553
+    },
+    {
+      "command": "Channel/OnOffScreen",
+      "began": 1355858.755797208,
+      "bytes": 46,
+      "timeout": 1.0,
+      "OnOff": 1,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 75.395
+    },
+    {
+      "command": "Channel/SetIndex",
+      "began": 1355858.831210375,
+      "bytes": 49,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 85.578
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355858.916822708,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 87.867
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355859.004853208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "2a96f674de966ffe13dc7635d23c96bedc02c79a084d5804d65e3f48a7094607",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 146.971
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355859.199402041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "244aace396b698ff41cf7d939a6936c7f98e6e54571e814f7fb42c9cafdb75e2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 131.006
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355859.451937416,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "cf08b72894ca0925743090f4916968736d3233aaac186b20e638dd88f497ab7d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.425
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355859.706727083,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "27c46cce94e18030fbbbac2e65bd009d839ec36dab3417118a895c5c604be82d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.9
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355859.956907125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "5d2121e4255dae675c868a44db6ce63e2ae83554692751d435362f3525aa0f38",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.467
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355860.211605666,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "4f0c675d3970aa88d31bde6de080774363308ac07e5e9398d59cad5449fd05eb",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.444
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355860.466529833,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "8e1602fd2c1ddf31c1bbb8817e75fed235ad952cdaf15944d7045dbceae24b26",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.037
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355860.721014166,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "1064b3ace5315678846e1ba2dc690d1dbf40dd532934f42736e4eb36e56a3b66",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.669
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355860.973403625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "a3173105db895a9949ca969ebfb6303ac297a936cfef194e6817899f89ed7a7d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.587
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355861.225885833,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "0a59ef8b252c5272dd7a4fd323523a64c9c76f1a2b21e77063fe4487de4acd95",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.6
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355861.480859666,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "de9c9b46a7d6db30e42dd0f4ddf262536aa790ef59b7289b8f02a2d053bfa978",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.511
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355861.735748833,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "145dcdc9f6e863c28d2021d9d375d6834dfb6e1d21281a96b5bfb8890dbfba18",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 198.279
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355861.986724291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "dfced47d3cb9fc8436e070cccbc87fdf83dd39779a9cba7514b91e3e39b9065c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.432
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355862.239120583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "cd9d50df2f65db718d7014149921ac58ef5070fd2a1fadb2e5965b128396a8c1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.122
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355862.494642875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "2bf6dcb77fbe6f9551b1d1f61954fc239a35684ee48a1109fe153b3dd30010ff",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.844
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355862.746905083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "237fad10914d68c717dc8391d7133249cb9a5e25222fbaafe5071a50089ab664",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.473
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355863.001498541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "0bac4984d3276f810dcc999b4848c224c5f07e183bba8fba93c824c765de9098",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.917
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355863.255731875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "0bac4984d3276f810dcc999b4848c224c5f07e183bba8fba93c824c765de9098",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.506
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355863.508970333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "563fda0f9b56ff800dc0356f139e3c2d2cfd40f2b169c7e7f25108ede4a845a4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.478
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355863.763243958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "0bac4984d3276f810dcc999b4848c224c5f07e183bba8fba93c824c765de9098",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.108
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355864.016097583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "0e44ba7cd382abbd5600d24e2a511fd8d57ca6c1f2799583b297e7c908e7ca81",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.816
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355864.267367208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "0e44ba7cd382abbd5600d24e2a511fd8d57ca6c1f2799583b297e7c908e7ca81",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.107
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355864.521083041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "0e44ba7cd382abbd5600d24e2a511fd8d57ca6c1f2799583b297e7c908e7ca81",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 205.249
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355864.774789458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "a9798f490769a34f77c5692fe42f49ba262a02df2783d50af9bc60a84e760fc1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.712
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355865.029776,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "81b275e0e12b61960ac65f89ee661f8cce24f349fdc5a46970c97ba8d3f0fb65",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.864
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355865.283602583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "2844cc538ac6d3a0c64fd262060d835c943ce79f65209c0454b55aa54f5b9e3d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.026
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355865.534919541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "460efe0fba6e612a642a43d33b00fe7c26c51b5d9d664926c8d5379248586519",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.12
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355865.7880865,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "8d3b586945ede0abb713775b0d169a2fcc56c397b020259a25fcb374be77072a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.592
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355866.03815075,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "1597c00fc174198cf2e4731b5421e05523cda3725a5d9abb4c3331c0bd67ade2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.978
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355866.289125416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "2b3e39dd835b3ad56967d10a77e632b97bd9bade610c4e039bed4d11015377ec",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.119
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355866.539726833,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "f12c1f2a243b9f2337c3e23b9952af3072b461e3986fade257a01fb4aeb5a8ab",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 168.519
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355866.790558708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "cb9517a28dcf27116ac493c5a0f438917568825e7b2241829640965ac40c3533",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 206.808
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355867.04089975,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 53.774
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355867.094789375,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "0db527d01a0398bd407758de39b72f0fdf61c2ff95cce95d4fc48e058d7be9f2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 166.485
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355867.30152425,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "0143e0c83add61c29c0d7c692593f913759e2ea309c226d72d212cf771f40ae7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 196.877
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355867.554288291,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "20b78a24f700fe909443b17490171ee40565e36a59cd276e9efb7d8364a958bd",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.697
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355867.810163083,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "fff917c54f6ef7470c1e57049e52eebb47db0570d9b98f9866c904af29209670",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.906
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355868.065196541,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "86fd0a8a2fdb3fcb7cf76cb6089d5d643d977a0fdc6a61d52f82e0d9153c55ba",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.874
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355868.320003458,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "df05292f1a3b17be5086f8820208e509e03f7fd68d4818c2c558306d8c3cb74f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.61
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355868.57502675,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "531f87e02850600e308277959167f7865dc9849156f0793ae9dc371f6134d34a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.727
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355868.830113583,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "67364b93712fe12af7480e59a7eae19f7bb57d9421f120f5cb1dae2daffb5f47",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 202.952
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355869.085156291,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "7561f28dc6de338b7da0ceb6935ee5b0f91507d2ca84b23f9e484a3e9ed542f8",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.797
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355869.339100875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "e27db0e3d7144cc0f1df409c32384987c39672c2b27016287688f9d452e29911",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.4
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355869.589591125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "8e87768f7f8c3cba7366aaaa137b99e01f75b5fd0f19d96eb2713a029e451233",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.899
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355869.844613166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "8ffff9532bef59284afcb4d366e31d9cd08293382e977eee249cc42d0dea7c04",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 200.409
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355870.096818333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "b54c5b32f26df58d88882c243e3c2c7173b5cee74c662ce572790ebd368d07c0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.562
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355870.350741208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "a53fba14b42951533c41df1bee77c94deb21868caf0c0923cca44a419faf523c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 201.569
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355870.605769708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "7456f6493b54773290bffa977d428a2de1be91b529d885ccacd95f7f3627818b",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 206.601
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355870.856656958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "a0a068658fc7b0511fbb17fb29f66c34b6938dc35e7536c4672fe60fdcbfd380",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 201.016
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355871.111677291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "722aa2272c2807141815eb7a4079c00102ddc20ba20b9231a12841c6c65f9da8",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.623
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355871.36671125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "11c0c904fafaa82db64c07e6294390f45f9ab69068d4c716f9664bcbd84182ef",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 174.039
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355871.621726125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "ad07c87922a9ca60f1f86ac56ade35b9803b59cc07f22e06bd6c56a8b32b1da7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.354
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355871.874333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "a465e377e5cd34e02359c7583a05058f17e936202369b6ba0fb353f2f984fd60",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.49
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355872.124716333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "a13f18aba97d71c2116b0ca87588f853de2d9bc5830248ea3c571fd0edc68fe5",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.051
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355872.374775791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "b64f6fa2f913d5929531f969fcda0506d7afe316cac606f34208dc4b5219fba4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 174.994
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355872.629787166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "47b63a62409da70240f04d9821028d791fb2f563b31fa97f25e9aa24c66bac11",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 170.505
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355872.884814041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "2e65a5eac12e3e24e84b82323fd76ce84d4aca9d858dac373058dfb174b3ae8a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 174.508
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355873.139478541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "f22d6383e5e733dfdf18b9b09851b6ce5dfa74b2ebd585b5dab3f106af65a3de",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 209.625
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355873.393180583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "68266f0c368c7302139211dcdd6785f80a2a1df87ffe9f76ddc65903e1fa252f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 210.842
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355873.649130875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "2aadf351fb6ad2b010c9bf26798ed1619b455c3130bdb9e21b399a1ed0b72a14",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 173.842
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355873.900174083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "492527c9a18e7605a62de9231e0aed23a64df8de0a423ffddb60717d67c49c2a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.957
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355874.154061041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "91b1455d560fe6c84cfac4f1c019bbf76e89ffe5f6ecc5b16a3213cae59ce45a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.304
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355874.407841291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "f2583c60d1e02cb2dd255bd6d3c5cecbf85b1ccf6f4c8496c8f9dc3e54fb8f14",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 225.999
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355874.679054875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "f932eae7731f8fce8a95bc96f043fa422c9d4cda15bd8efb7a0dc50c6f828037",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.303
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355874.929400333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "f2ce648659ba3779ac186e18ef74ac9f86656906c722bd2cf4592f3b034fcefc",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.497
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355875.183312958,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 47.424
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355875.230805958,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "131c4768005745d9b9ec1aa902b6cf8d0c49fbb057fe4cab15571cb3c7af6a77",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.475
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355875.469964791,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "19d9124752bb6c0125e5905182191f69e5ee563168b10785290d21d35741201b",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.112
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355875.72406325,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "abff4f7b47cea074b0203b5cde4dc79dfa1dc00b9178915a8d4a969cae83ca53",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.927
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355875.978292208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "cc6e15759159a41c5ff89291dc16c855e60d885b5d8a4d3bd725bc77608e63d9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.898
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355876.232462416,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "cb4aa6aefb5a8d70765dbefbfbfe792d3a9d5ae63e8e59a41fa86b22d01f3b54",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 173.453
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355876.484510208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "28d808c13ed23ea09939802fae9dda4f34d3fb1dae5779e4750e94654f03df28",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 175.403
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355876.73692825,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "a976ad3c2dbde7ced87004a00d41416897aca6f8d665ac745e69b906bb039db6",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 171.867
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355876.987007041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "abff4f7b47cea074b0203b5cde4dc79dfa1dc00b9178915a8d4a969cae83ca53",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.932
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355877.241290458,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "cc6e15759159a41c5ff89291dc16c855e60d885b5d8a4d3bd725bc77608e63d9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.89
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355877.496312416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "cb4aa6aefb5a8d70765dbefbfbfe792d3a9d5ae63e8e59a41fa86b22d01f3b54",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 198.817
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355877.748272041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "89809ee06f97999615f13b75e9eaa4d3e249432b94087e87b43f12104cad889f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.366
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355878.001729708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "cd7da7a8bb47948647b4b88a45ccc87b9a0501aeb52a4930b207be7f66eea92d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 200.693
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355878.254647,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "2fc25d82506d51e6db41ffcd357fc4ab3d6a93e38dc91c79763155802d1b1ba2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.119
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355878.504708208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "714da7faa48bc79039d74e5bf6cc43854e2b583de3493280ef2848c9c8c12228",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 191.817
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355878.755465708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "db2f10a9ee22076aca96d5f5c0b0fc306412cbec9d6c3c9a84934ccbef7ea2f2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.079
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355879.005681625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "4788228a371659ba3dbd5aa4e7bacd04da49a156f8070064d5c611381f4923c2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.477
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355879.260517333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "350fbd16f10eac56a7eb364e30f54daf5602e46b754ccf5faab321e3368cab54",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.222
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355879.513986791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "24222081b552ae8c7c7402f9264787d8124773e3619107ff7c42d651dede9dca",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.454
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355879.768305791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "80a296207a94732012bb7bd2efee00412619dc7ff719b020e5e56faf0c1fdabe",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.254
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355880.022980458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "df7814a9aef25396212388839f8e4c2ef6b32ac376b6b93c7c2972d6c523811b",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.805
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355880.277997916,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "2f89e33bdcd0bfbded695502999576fa118aa28fbba78a0d247c310b422d19f1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.604
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355880.532924666,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "b6fa5842d2bf1d8a00719fcee15d862d21ad9317d3c2d63dd268908d28a496a4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.515
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355880.784722708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "9449e4def0e55a342522c318c55d15064c80f9784ed10ac0e39a45db47a0a12c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.16
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355881.037695708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "1ebaad1aa8b2738044032e736dde1051a1dd6f5325fb2524559ec6c09034e202",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.323
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355881.290904625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "4525083f1de8317c40e350be19c5e16da7bc04019054e636aabd9be82aabcf7a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.264
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355881.545927083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "4d16bfde871939a19f52ba1c609a67cbea1b08ed52a4e650a06a0fd039dbb0bf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.431
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355881.798835958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "86fe462f0bb1b95eb23e7c79ce6c0609dd6f7cc40f76ce0132344dd89798dd37",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.196
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355882.048961208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "e3e380bbe1e82efa6c0065052ed8dd46c5ab0f6bb27b164c2d8b4948c1c6fe84",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.584
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355882.30323425,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "afa1cbe6314cbaf2d60febea899e5a4e770ebe6e0b2756986715ef525bab3055",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.426
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355882.557916583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "e1d9d80895b469568e1277e7147d79ad9e1235d0f52d3c63ea5af2a929c6459d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.499
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355882.808465208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 238.019
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355883.091611583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.162
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355883.342881208,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 51.812
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355883.394762,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.829
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355883.624572416,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.603
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355883.879600541,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.347
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355884.13028,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 196.999
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355884.384703458,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 198.321
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355884.636695083,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.711
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355884.89170825,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "24257e4ca1aef931c51d40dc14eab610ebaeb2fddc322e4d1ddda06b1bd478cf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 175.327
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355885.14573375,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "24257e4ca1aef931c51d40dc14eab610ebaeb2fddc322e4d1ddda06b1bd478cf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.354
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355885.399901166,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "24257e4ca1aef931c51d40dc14eab610ebaeb2fddc322e4d1ddda06b1bd478cf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.718
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355885.652639541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "24257e4ca1aef931c51d40dc14eab610ebaeb2fddc322e4d1ddda06b1bd478cf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 247.006
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355885.943007333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "c863e1d599dacc2600c9ce49c62315ca1fe3ddc486b5abd8dc483fe2347da038",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 169.48
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355886.19627475,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "a511e495c34334c5d5e419cc78a67c0ba003ad677f21f0cdc42d47a9065c21ca",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.105
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355886.449019333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "7648522cdd77179329bf99e7bd0068347990ba8bb5dde6bb4256caa4e885fe15",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.852
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355886.704049583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 203.318
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355886.959072333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 177.402
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355887.214124875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "13edb5da1ad3599a89b89efd773c145166296f4c48d123265dcb0f93186fed6a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.634
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355887.468308958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "045d3a0e283e842c23a4ee75994f8c89bdcc0cb6441d1de3e7e3409535180e10",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.586
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355887.72325975,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "610be9a639e7123238a24b7ab2dc00ffef2d777254e263a3354640090c247115",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.322
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355887.977781166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "d95e020258dced541db5add00b9d2b6c0efadc04da23d4acd5b187cd099559ec",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 173.413
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355888.232784958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "e0624e42edc0f74d1c63380dc4514c90f81211e8e7abf311d68e7c263d921a51",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.023
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355888.486511041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "0eceb66623f5d1059a616f2ba262548faebbf45b5344aeaf4c6575172fd286a3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 177.752
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355888.74103375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "97ea05f6dd4531e93688efce21386337da60b184a5e9284d8a6a0cf3c249eded",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.324
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355888.994768958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "f8dc0949e1b30a30ebaaaf77efbdb913335418d49106f3b86e762d1318ca20a0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 222.464
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355889.261003041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "06b601b02c419baaab9ce0b8372754ac34dd68245f532853f8fd99cc070a1e61",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.389
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355889.516037458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "60ca55baed07fe61449c09d1a7b2a8521ba34af65d2edbe2172d3d38f9f5147e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.345
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355889.770979166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "e5af263bc284b5a925858efa0063726a4f3245ab60534065fb936c5602a460b3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 196.109
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355890.024519708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "e11687218246d451904e47c674d6b150553c509634a3e5a9cca70500bb43bb29",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.919
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355890.279201291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "5979441703ac5b651c9aee2e74b0987eaeda00adf023a0dfb3a11c21e66aae88",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.342
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355890.534212166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "c0e9ce08b3b2f9a8efe2260791a62603af7abce439be24ee896e68c947a9a059",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.942
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355890.7852885,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "745c747f03a98f11ab8e727efe3f089f52407529afffea8f3a82395c1142d6ed",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.036
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355891.039506958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "0cc4f1097e9fd32a6b6e87024d399abdc35162dddb4d78cef6706e5e4da6db80",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 212.62
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355891.293136375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "7f0db0754327f2b6a36359cf50af428249cd6f7aecde54c8055d6430f27ba990",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.439
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355891.548097541,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 68.189
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355891.616407833,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "9d831b5f6864513041b86154c51608b0b29b73ef305d473ab954fb176b1eb620",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.513
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355891.855170625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "cde88e2bdd29f2ae4882743665018eecd1497fa1051e670fcc3a0fbdceecb8aa",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.35
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355892.110181041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "f916377d07e377a1be75f3817ded8732fde0539e884984904a7cf123a036072a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.517
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355892.364547083,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "65d2e90f0418ddaf8133eaa4a8345c7cf0480bd9d009d83e6a53608bc90e5acd",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.885
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355892.619371583,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "0ef3949c2a832187d7b4ac41ca89ab9a31cb01905859d07d50581ca6c8f73925",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.964
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355892.874000041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.66
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355893.129030208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 201.846
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355893.379861125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 174.088
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355893.63238625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.027
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355893.886481333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.377
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355894.13980175,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 211.56
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355894.396474791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.224
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355894.651508541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 174.08
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355894.906536083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 172.729
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355895.161462791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 217.624
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355895.419445125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "589787ec02da3d1b41f0fafafc7bab221a046138eb401c95a8e8c33ebce1a45e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.301
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355895.674462375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "503c2007f821be6bd2eff6c33262a2c3aede95e2f6eaa9aeec6c4d8153626522",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 202.457
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355895.928306375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "0008fe0255b6233e1dc165c67b25f3e1fe1d27ed28c2124314c90652edcf7737",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.446
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355896.178851,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "1e8b9b7c919dc072f510d14d55cbcc7c597c59a75a16aa63f89867f10dfd3853",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.688
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355896.431789416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "68c2bb6630a891db50f95fbacf493c9bbc6cdcc894fc3fb9237d0e4709ec2bc4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 177.832
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355896.686453291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "eae6c0dbac21b0a06bef66f0f3afd288028b99a74e5789fc4847908c4b86aa50",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.09
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355896.940843916,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "ea250c3266f35a57c59c7bc212c2711b95cfda58bbe0006350d01d64d9230cd8",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.74
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355897.193283833,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "37b7191aca5d1c1ed0c9a52108ac43ecbff04ec5126c30592cf8e6e4dab3d15e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.957
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355897.443554208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "624813cbcd90da411f25c6b83a5f46225f3dddce18d33d8d8057127f03ef3ccf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.168
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355897.694316625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "905c902a1fa4da48082a4396f4a94722dc70843c89d2aa04ff27ee4b79883d21",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.727
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355897.945229375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "4e1bc7c38722f616c56c0494cef8be276ca4b469c0f7e3bd880067909353bd3d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.987
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355898.19970125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "cf3af1b555fdc84f8b75e39525e90fb7dcc41f362ba0f177da9a7f852dff2d66",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.598
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355898.450007,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "916aaed575cb0c19c5a03184357625be9fc094cd932adf1d1e9e0a5947848695",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.714
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355898.703121583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "de2a39b86db5177665c2f48af3d3b5fa80365be213659adeb853eaced9de01f6",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 176.654
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355898.954305666,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "354a69bcaf49993607efbc2a132124142f60814104fa31fefeae99b269ba177f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 173.299
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355899.20932475,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "58aa6b295e584caaa8d83c87d04da5a96400a2d3b393a6cf6a59381b1f822099",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 207.657
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355899.461421,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "58aa6b295e584caaa8d83c87d04da5a96400a2d3b393a6cf6a59381b1f822099",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 191.091
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355899.71552875,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 59.443
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355899.775036333,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "41e939d9e41c32b622d07313d1946b52397e5bb2ac59d6299b1ea1d2e4b515c3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.666
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355900.007716583,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "6ebb5bf0e4ac97dd3fc2ab221cf2aeb2524d1c37bf8965e1ba226ac911929f15",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.624
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355900.261417666,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "6cd926c22a5090f770341629bed36a88d19056b6efa350a77cdac2cd2437d98a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 196.005
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355900.516445625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "13ea60b5a78699a9cd2f3d1c5a7d0433573f3e2fbf79175a53356f0fc4ff2bbd",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.307
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355900.771482375,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "ecc4d05190112b88b21106634b56d5b1f7c8f64975d08407e56039f9c09ccd14",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.301
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355901.024549208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "eec005b32eff1ce243e48abdb644ad98980232df56cc6d5c3793b4fcdda7b549",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.678
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355901.278827041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "f0532ef9463ecacb12bc0ac0e812dddc02e46fd1ad6280f390050c3d5fd70a68",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.592
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355901.531117583,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "98ac8d074119e89ac7a16d8801ffde24180cb8f1621a48ca3f5c53fce4435492",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 196.758
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355901.7819675,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "094a24aff40e324d6dd185fc1be5d7bb41b6ea0731acf3995d8289cab94dd2d9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.196
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355902.034086375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "6e697cd5bd05390149e5939f9434c158b2c5068c9e615f81a8e8116af745a6d4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 204.64
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355902.284570125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "5002f5f9e87506e4e751aa399e96a42c0049eb17de9a596d0d6de5319a184367",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 197.767
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355902.536389958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "c72ba0e16b71a0fe6f68406ddb474339d4e974f8dfdc994174f330269a26818f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 197.787
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355902.791102166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "8a11ae1d8ec79e956627169727236011e649940dfc69c648721aed7f5c988187",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 233.45
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355903.069677083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "5ddfe57705de55271e5c5ac1e2e118aa0de4d630dec6f5f3c14f715f8e9441f3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 197.113
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355903.32141625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "705a4c99c6d2c8d9267b2b3c78a20a81fd1b1942ce1910209eac1f562bbda985",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.45
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355903.576134583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "0e7610cf7e1cd339a1a8d3294fc41b4b1f25a2bb40df37d0cbdd037ba0eae83e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.882
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355903.826956541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "9981ed330c1cad59a560eab4cb92ef2bda849d4838bd93430d0eeef13419441d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.583
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355904.081147958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "c3c649e8e1f70d4c079381a5384215f27badf9d0cd737b7ae2878b8dddb758a7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.26
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355904.332278958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "b6fa4bff1a59f3bc38edebebadc12e2c60941fc2e41cd3a69ead3c7ff315e71b",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.409
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355904.587273166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "397baef500ac8284e13dd2d8a264df62f84e4b9668519e0b82ea51714a11910d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 177.451
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355904.8410655,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "47ea350509919daf8f4d20837e1cc9360f7247e02e1804dd1291bf066932b2cf",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.678
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355905.094699,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "98783439eeec434d3c2102adfb52d3185577d2a8284dee331977286c0e5cb243",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.452
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355905.345910125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "99a03cdd2068d15f15e51339ae7f2d98747858d74b052681eabb0f904d8970d7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.877
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355905.600929166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "23c60804d5ecd9aa7b8990bc65992b2c82c0844c147246c23ea8b1a4111393de",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.1
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355905.853064625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "2fe9ffe85b1bb513aa67e1d99970b33574bdb0dd006f35d209eee3c7d8668a86",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.912
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355906.107685,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "4eee209c0451ea23d2376c2eea077f3b4fe33e124d451994bdb3f65c3fa95e77",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.343
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355906.359471208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "3d9bb8a83d370c2e6c861783c97f219f808966b4222b5aa786df3cf35cea4a0d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 167.963
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355906.61294075,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "c99816a09e7346a857ad461bb2095d48c7b7764e46006f78dd36cac814459423",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 181.58
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355906.86697,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "c2cb846a2c272efc791d29550d79c2b3a9f82eccdf2affa89e4bf8d08516f614",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 229.065
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355907.141145708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "d0456c72d81d621d2de33efbe21e8ca4bfa4f4e70aa981878a6feda414828c59",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.125
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355907.394712416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "3fdfeb411f383d9255f6df58423d8668c6ed68e397d42ad5e24eabc3e6b31cf9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.716
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355907.649378583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "f5bb92171ea4fbf978d27a12e57e0d79e1e991068518f9fdf85e684ff1e7b1df",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.392
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355907.9043485,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 63.148
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355907.967562333,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "15bef6ba1b3b048a53de75a8318ac35ecf1746a9ffbbf56c1f713ccebd232ce1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.333
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355908.194698875,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "089f57a04675b3afca9a225ac8cebc53f704a439a6e5a446d41f67fa8e569c74",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 175.339
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355908.445763541,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "ee0f5a2d80965c6fd9778c716ae88daf9433e3127ec5bc70eedc2103faf4fab1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 210.13
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355908.699941708,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "863d3608464ef1cee5c8a30ec1ab4f80ece57ab9a857ad2f689fe7907b746631",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 193.122
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355908.954963125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "863d3608464ef1cee5c8a30ec1ab4f80ece57ab9a857ad2f689fe7907b746631",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.209
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355909.209988333,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "737ef0f6a73f8728065d523fa2bd4bec4a34a92328c3b9065141efd4872871ea",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 197.832
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355909.462748958,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "737ef0f6a73f8728065d523fa2bd4bec4a34a92328c3b9065141efd4872871ea",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.46
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355909.713631833,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "737ef0f6a73f8728065d523fa2bd4bec4a34a92328c3b9065141efd4872871ea",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.212
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355909.967703125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "737ef0f6a73f8728065d523fa2bd4bec4a34a92328c3b9065141efd4872871ea",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.614
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355910.220081166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "737ef0f6a73f8728065d523fa2bd4bec4a34a92328c3b9065141efd4872871ea",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.604
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355910.47399925,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "f2d3c4a8c86778947798a273e2332864dae39fe6ab58c42ee698cf9f86997eb7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 208.785
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355910.728781416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "f2d3c4a8c86778947798a273e2332864dae39fe6ab58c42ee698cf9f86997eb7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.383
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355910.983841625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "20fa65728018d0366fee3ace1e7e134089ea71936367bf5553815c62e395db35",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.985
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355911.235827291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "f2d3c4a8c86778947798a273e2332864dae39fe6ab58c42ee698cf9f86997eb7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.713
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355911.488692458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "f575c5211677b1ab8d11f1e9507b6fbcc5e86e00178df8ee37bb098b68e89ec5",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.138
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355911.741939541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "5a562786a7ad14d4e70667b2797e1704ebbf5ccf17fd03dbc60d6a129635083e",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.56
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355911.995960333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "0ecede2fc5b58d992946e843c962450a8a96538de7dbedcd9eddc0c657a019b6",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 170.178
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355912.250980583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "70d108a31dde7a2100d9c9cfeda1b7006113e4cedb327e9c835cf5f80bb957c0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.43
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355912.503253541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "b37c1371e0f63087c6e6632515bc8b3da81e6aba2559b0935252b846aaeef998",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.682
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355912.756013541,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "4e2943c28b9c7bd8677156766ceb3123f752d503d337601635e80c9a9469d8af",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 216.894
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355913.015709,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "780773bf066b42883dc389568b4285132162d75a75b8f211b243fde35caf3df1",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.386
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355913.269653708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "89685cbaba9611c2963649e28aa64450c46a62aaff4741c14e6e52f8789d1cb6",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.274
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355913.520158458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "4d74379473d437bdaa58b463f7a694e79c2560a0a925e3315b2deaf1a7f5ada9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.074
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355913.774371208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "5c812be0b8691a13bc5afd9c06e0a143c1a5504faf79538ae4d5bf706aec9fe4",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 203.895
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355914.025932083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "e71128fa4a4339c1e1ee3c02cc479dc1381f795cea2d570d954ecbecd810f695",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.857
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355914.277972708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "fe991986072262adf21ba608395ce7b7967db4399023973ba2e91c2531f3df9d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 292.255
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355914.612072583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "afb20b79d507dbf3d36debf8a6986a3912ece05aa43233e7d0b4aa790aec2395",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 205.351
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355914.867087583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "22afe69da12f3292728639811add25d700cfb5ba55833ecb0820feb85690b310",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 200.981
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355915.122125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "c71aa1849f50496287f4dfa951bc1cd2ca0b588d924ce81ac7ccc483c14bf937",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.17
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355915.374529375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "642832c31eff782954bcb4cb4ac98e09ab7ca01fc8eccf83d448f637d546e1aa",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 170.809
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355915.627966416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "0a045789315aa44d584af1697cc7d9310e0c855c1f1efb6d3f8ad228ee472689",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.069
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355915.881919958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "fac4311d7d716454854415bdff5fbe099f4af4e157ab604beaa33dba28ee6566",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 201.478
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355916.13688925,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 59.931
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355916.196890791,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "9466a27cd5992ce74126fd444ce11fe9de07b1eef65033e6aa63ab10ecefbe8a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.636
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355916.422706916,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 221.063
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355916.688889625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.62
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355916.941311041,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.732
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355917.193618666,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.513
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355917.448634958,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.682
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355917.702948916,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.795
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355917.957975416,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.29
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355918.212175625,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 175.374
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355918.4672165,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.425
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355918.721031125,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.803
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355918.972223708,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.308
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355919.222200625,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.704
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355919.476586083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.408
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355919.731609208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.384
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355919.986540875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.198
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355920.238487416,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.054
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355920.489630958,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "46c12a2a95d5752ad1809df4e080976ac8e983ea676b00bc03a1c90d308d6a90",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 212.233
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355920.744466166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "c03336f18993836a0c617cdce9a91255de5a11dac694d289af0b756225b2fc36",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 206.983
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355920.999487583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.399
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355921.25066875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 180.878
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355921.502943333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "a7640699e528e2e84f64f0274949dedbeabfb785f0de2db201db038b395f755a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.372
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355921.7547155,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "5b8003456f3c6e9e5e94660cfbaf6a91581cca0cf09ece170cd53ea646926397",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.813
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355922.006491458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "a9e8afb14ffcda993fc49c76dd691c021d706148ad925f7723dba93b040c85b7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 191.516
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355922.261514666,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "a9e8afb14ffcda993fc49c76dd691c021d706148ad925f7723dba93b040c85b7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.295
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355922.511713791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "b31a2cb9925572c771627c8cb77d5d1ffabe063797346b0aa5cc49faf4a9acc0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.681
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355922.76602,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "a9e8afb14ffcda993fc49c76dd691c021d706148ad925f7723dba93b040c85b7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 178.34
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355923.016778083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "b31a2cb9925572c771627c8cb77d5d1ffabe063797346b0aa5cc49faf4a9acc0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 204.201
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355923.26742925,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "b31a2cb9925572c771627c8cb77d5d1ffabe063797346b0aa5cc49faf4a9acc0",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 166.406
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355923.517531166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "a9e8afb14ffcda993fc49c76dd691c021d706148ad925f7723dba93b040c85b7",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 204.029
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355923.772522208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 173.974
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355924.023778375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.901
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355924.278741833,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 47.987
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355924.326803833,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.883
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355924.553293458,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "282bd134b8a330bb5fe87082d5be5d285e49757c7151cfd56998e1b4b90618d2",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 200.674
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355924.806482166,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "9cb00f32070db410c18649d47a5c06e65ceb9cc761581497e65011c339b93960",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 205.018
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355925.061265208,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "242d794226483373f5fab3ab57eb9e4aafb533f7fdcb274cf0b1223a752b75f9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 227.085
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355925.328880333,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "242d794226483373f5fab3ab57eb9e4aafb533f7fdcb274cf0b1223a752b75f9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 197.119
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355925.582065375,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 6,
+      "PicSpeed": 250,
+      "rgb_sha256": "242d794226483373f5fab3ab57eb9e4aafb533f7fdcb274cf0b1223a752b75f9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 167.398
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355925.836246708,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 7,
+      "PicSpeed": 250,
+      "rgb_sha256": "242d794226483373f5fab3ab57eb9e4aafb533f7fdcb274cf0b1223a752b75f9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 221.035
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355926.099649791,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 8,
+      "PicSpeed": 250,
+      "rgb_sha256": "49e203ff98a2f98ad19bf844aae5f529f0094fd2a8953835652177dbefe11703",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 205.046
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355926.353965125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 9,
+      "PicSpeed": 250,
+      "rgb_sha256": "49e203ff98a2f98ad19bf844aae5f529f0094fd2a8953835652177dbefe11703",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.839
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355926.607387083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 10,
+      "PicSpeed": 250,
+      "rgb_sha256": "a64087a72c4eaa76ac243263530b70e34e787a1c698b73bef2662e57bb9ea7fb",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.966
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355926.862401,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 11,
+      "PicSpeed": 250,
+      "rgb_sha256": "eadd6503c9d7eec4459427b38dbd008b9a02df03508afc2c9443b00798a406cc",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 192.352
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355927.115905833,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 12,
+      "PicSpeed": 250,
+      "rgb_sha256": "9a55c905d7bb4cf42ddc23234403c310e76f0447dbfa9ddf05585614a43bf0ab",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.521
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355927.370924375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 13,
+      "PicSpeed": 250,
+      "rgb_sha256": "519215305b7d70394831761f410370601b74e36c394fc1339031b2c91e7aa719",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 204.411
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355927.623768208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 14,
+      "PicSpeed": 250,
+      "rgb_sha256": "1f245c28ad3e52bf1ba9e09e19b37ca9b49bec8d30f4c8efac6d02b3ca243274",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.482
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355927.875947375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 15,
+      "PicSpeed": 250,
+      "rgb_sha256": "18a94c7c6f71595a70dc9cb0817889ce5ca60912ee5f03d16d2727a5b36809ab",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.519
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355928.130972166,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 16,
+      "PicSpeed": 250,
+      "rgb_sha256": "081f3b2ab1c8bb511bc463c6839200696f1c3e0dc277b4548ac7663488fc1f5c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.096
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355928.382553208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 17,
+      "PicSpeed": 250,
+      "rgb_sha256": "178ea304f05eaff7deab4a33ced1c7661de4c6cdfd925dd47d92adf9568ef5f3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 186.414
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355928.637585041,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 18,
+      "PicSpeed": 250,
+      "rgb_sha256": "8e6bf53069886b9641200de0aeeb081cce215b4eb07c41ce06d72af9fd91d236",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 179.473
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355928.890881083,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 19,
+      "PicSpeed": 250,
+      "rgb_sha256": "09bb0641dede859e53b79ad62a55dc1c820a4c1d293d2928195ae033acefec1f",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 195.622
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355929.144532375,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 20,
+      "PicSpeed": 250,
+      "rgb_sha256": "f6daf880ddf9807a8678e46a9eba248a9f0ef0ea060288a5bebe0134713b9c78",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.436
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355929.399558791,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 21,
+      "PicSpeed": 250,
+      "rgb_sha256": "418b4b06435120090b34c1a37849dc253b6348b32bd98fe1eaac9c3ded937769",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 207.348
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355929.651594916,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 22,
+      "PicSpeed": 250,
+      "rgb_sha256": "439746cae3d643f21e76b69eb91ebe2e94c403bac25ddeaebb388927a495ffab",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.14
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355929.90433875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 23,
+      "PicSpeed": 250,
+      "rgb_sha256": "4626561eed068cd3d33b503aecc0352b61ab9cc66c2b03e9a5ee368a79dac9ae",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 183.321
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355930.156586208,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 24,
+      "PicSpeed": 250,
+      "rgb_sha256": "1495e7ab596f5aaf1765c58692795455065805c50bd8448fcc18ab6684fada28",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 199.501
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355930.408441875,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 25,
+      "PicSpeed": 250,
+      "rgb_sha256": "5db0186fe42c29d0dd08ccbcbbe0eeeac2ad745f90c958c03820efd71bab8a2d",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 182.559
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355930.659653458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 26,
+      "PicSpeed": 250,
+      "rgb_sha256": "42dcbea5291fe99bbb1b80b68e7975bbc1321ee3fe66ed2e82eff851b9070c7c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 177.951
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355930.9136475,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 27,
+      "PicSpeed": 250,
+      "rgb_sha256": "a1c67786987b60ae501d76860be4d054c0fa5bb94cc9510a8f2f0f37cd35b875",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.589
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355931.167607291,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 28,
+      "PicSpeed": 250,
+      "rgb_sha256": "fb5398e1266359664f9e419a42d4f6d7d6208cbf19645b45d7c61fa417af25ba",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 207.676
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355931.422631458,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 29,
+      "PicSpeed": 250,
+      "rgb_sha256": "bd08f186d9c71130e640fbc95e9f25f43c981da55d824abc0751eeae28188dad",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 194.996
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355931.674195333,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 30,
+      "PicSpeed": 250,
+      "rgb_sha256": "43c2f6341f8689a19b7a5cbdd9f07ec7263a7d54e1383fa6c10e03336a1b6b23",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 189.466
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355931.929226916,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 31,
+      "PicSpeed": 250,
+      "rgb_sha256": "a131e2686ac2b23a6a7610567c46f23dd9d223092387231e5bd0e4120ba38d1c",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 185.117
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355932.183301583,
+      "bytes": 16505,
+      "timeout": 1.0,
+      "PicID": 32,
+      "PicSpeed": 250,
+      "rgb_sha256": "9fdc6fa78a1506d7657b4345140481868fe57e67cd5ebea50762644862bbf5c5",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 211.682
+    },
+    {
+      "command": "Draw/ResetHttpGifId",
+      "began": 1355932.439493166,
+      "bytes": 34,
+      "timeout": 1.0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 59.38
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355932.498942458,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 1,
+      "PicSpeed": 250,
+      "rgb_sha256": "6144701b6c8de16a7ea88889f6dd6e1ca4c9aadf94964472e157b9fdcc55b5be",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 190.699
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355932.734759166,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 2,
+      "PicSpeed": 250,
+      "rgb_sha256": "74045ca60137d09efe0783fc85b21e281a4a7d5eaacd1a7e1b8525c1fb2ffcd9",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 187.087
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355932.987700291,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 3,
+      "PicSpeed": 250,
+      "rgb_sha256": "e7275e6e85b517880cb7b2470f1ed4d64b7c8cfdb0d90842f68629af3ab40572",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 184.74
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355933.24217125,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 4,
+      "PicSpeed": 250,
+      "rgb_sha256": "fda8608141bdf901efcafece6f5178a1b0343cbf64a97bb907dafb458770935a",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 171.549
+    },
+    {
+      "command": "Draw/SendHttpGif",
+      "began": 1355933.492918666,
+      "bytes": 16504,
+      "timeout": 1.0,
+      "PicID": 5,
+      "PicSpeed": 250,
+      "rgb_sha256": "96d1cb21b2ab4390ef11588c19a77a6b7a79d3c51f8b48937ec948ec9e61dff3",
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 188.161
+    },
+    {
+      "command": "Channel/OnOffScreen",
+      "began": 1355933.681109,
+      "bytes": 46,
+      "timeout": 1.0,
+      "OnOff": 0,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 61.589
+    },
+    {
+      "command": "Channel/SetBrightness",
+      "began": 1355933.742715833,
+      "bytes": 55,
+      "timeout": 1.0,
+      "Brightness": 100,
+      "response": {
+        "error_code": 0
+      },
+      "elapsed_ms": 55.175
+    },
+    {
+      "command": "Channel/GetAllConf",
+      "began": 1355933.7979575,
+      "bytes": 33,
+      "timeout": 3.0,
+      "response": {
+        "error_code": 0,
+        "Brightness": 100,
+        "RotationFlag": 0,
+        "ClockTime": 60,
+        "GalleryTime": 60,
+        "SingleGalleyTime": -1,
+        "PowerOnChannelId": 1,
+        "GalleryShowTimeFlag": 0,
+        "CurClockId": 1067,
+        "Time24Flag": 0,
+        "TemperatureMode": 1,
+        "GyrateAngle": 0,
+        "MirrorFlag": 0,
+        "LightSwitch": 1
+      },
+      "elapsed_ms": 72.578
+    }
+  ]
+}

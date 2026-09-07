@@ -1,0 +1,33 @@
+{
+  "mode": "accelerated local update + render soak; no device I/O",
+  "worlds": 2,
+  "simulated_seconds": 3600,
+  "cadence_fps": 4,
+  "frame_pairs": 14400,
+  "elapsed_wall_seconds": 9.349,
+  "update_render_p50_ms": 0.643,
+  "update_render_p95_ms": 0.704,
+  "update_render_max_ms": 5.871,
+  "unique_frame_pairs": 14370,
+  "sampled_episode_counts": {
+    "build": 2599,
+    "idle": 3448,
+    "delivery": 3781,
+    "biscuit": 2052,
+    "tea": 2520
+  },
+  "completed_stories": 89,
+  "builds": 25,
+  "deliveries": 25,
+  "biscuits": 19,
+  "tea": 21,
+  "event_history_length": 128,
+  "flowers_per_room": [
+    0,
+    3
+  ],
+  "cups_per_room": [
+    3,
+    0
+  ]
+}

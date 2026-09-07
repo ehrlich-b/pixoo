@@ -1,0 +1,42 @@
+{
+  "reason": "Restore original LightSwitch=0 after discovering inverse report/command polarity",
+  "before": {
+    "error_code": 0,
+    "Brightness": 100,
+    "RotationFlag": 0,
+    "ClockTime": 60,
+    "GalleryTime": 60,
+    "SingleGalleyTime": -1,
+    "PowerOnChannelId": 1,
+    "GalleryShowTimeFlag": 0,
+    "CurClockId": 1067,
+    "Time24Flag": 0,
+    "TemperatureMode": 1,
+    "GyrateAngle": 0,
+    "MirrorFlag": 0,
+    "LightSwitch": 1
+  },
+  "command": {
+    "Command": "Channel/OnOffScreen",
+    "OnOff": 1
+  },
+  "response": {
+    "error_code": 0
+  },
+  "after": {
+    "error_code": 0,
+    "Brightness": 100,
+    "RotationFlag": 0,
+    "ClockTime": 60,
+    "GalleryTime": 60,
+    "SingleGalleyTime": -1,
+    "PowerOnChannelId": 1,
+    "GalleryShowTimeFlag": 0,
+    "CurClockId": 1067,
+    "Time24Flag": 0,
+    "TemperatureMode": 1,
+    "GyrateAngle": 0,
+    "MirrorFlag": 0,
+    "LightSwitch": 1
+  }
+}

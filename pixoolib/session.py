@@ -13,7 +13,8 @@ def get_client(rediscover: bool = False) -> PixooClient:
         return PixooClient(ip)
     if not rediscover:
         if cached := state.load():
-            return PixooClient(cached["ip"])
+            if cached.get("ip"):
+                return PixooClient(cached["ip"])
     d = pick(discover())
     state.save(d)
     return PixooClient(d["ip"])
@@ -21,7 +22,7 @@ def get_client(rediscover: bool = False) -> PixooClient:
 
 def ensure_primed(c: PixooClient) -> None:
     """Auto-prime once per (device, channel) so text overlays actually render."""
-    if (state.load() or {}).get("primed"):
+    if state.is_primed(c.ip):
         return
     c.prime()
-    state.set_primed(True)
+    state.set_primed(True,c.ip)

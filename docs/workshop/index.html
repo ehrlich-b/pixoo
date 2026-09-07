@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mosslight Works</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101c23;color:#e8dab8;font:16px system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:32px 24px}header{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:24px}h1{font:normal 38px Georgia,serif;margin:0}p{color:#a9b7aa;line-height:1.6}button,a{font:inherit;color:#e8dab8;background:#223831;border:1px solid #516450;border-radius:6px;padding:8px 14px;cursor:pointer}button[aria-pressed=true]{background:#4e5940;border-color:#b7a36e}nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}video{display:block;max-width:100%;height:auto;background:#0d161d;image-rendering:pixelated;border:1px solid #425344}#stage{min-height:170px;display:flex;align-items:center;justify-content:center;padding:22px;background:#0b151b;border-radius:12px;overflow:auto}.caption{font-size:14px}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}a{text-decoration:none}h2{font-size:18px;margin-top:30px}#native{display:flex;gap:12px;align-items:center}#native img{width:64px;height:64px;image-rendering:pixelated}footer{border-top:1px solid #35483f;margin-top:28px;padding-top:12px;font-size:14px}
+</style>
+<main>
+<header><h1>Mosslight Works</h1><span>A little invention. A little mischief.</span></header>
+<p>Nori and Bramble make improbable things in a burrow. Next door, Rue keeps a moonlit greenhouse.</p>
+<nav aria-label="Recordings"><button data-clip="single" aria-pressed="false">One world</button><button data-clip="showcase" aria-pressed="true">Two worlds</button><button data-clip="tea" aria-pressed="false">Umbrella tea</button></nav>
+<div id="stage"><video id="film" src="assets/showcase.mp4" controls loop playsinline muted preload="auto" aria-label="Mosslight Works recorded showcase"></video></div>
+<nav aria-label="Viewing size"><button id="large" aria-pressed="true">Enlarged</button><button id="small" aria-pressed="false">Native pixels</button><button id="delivery">Start the delivery</button></nav>
+<p class="caption">Recorded directly from the running experience at 4 frames per second. The two rooms share one story. These are local previews; the handoff has not yet been verified across two physical displays.</p>
+<h2>Original pixels</h2><div id="native"><img src="assets/showcase-22s-world1-native.png" alt="Nori holds a seed in the workshop"><img src="assets/showcase-53s-world2-native.png" alt="The delivered seed blooms in the greenhouse"><span>Each world is 64 × 64 pixels.</span></div>
+<div class="links"><a href="assets/single.mp4" download>Download one world</a><a href="assets/showcase.mp4" download>Download two worlds</a><a href="assets/tea.mp4" download>Download umbrella tea</a></div>
+<footer><code>./pixoo run workshop</code><p>Space queues the next story · 1–4 choose a story · p pauses · r resets · q stops.</p></footer>
+</main>
+<script>
+const film=document.querySelector('#film');let clip='showcase';let native=false;
+function size(){film.style.width=(native?(clip==='showcase'?132:64):(clip==='showcase'?1056:512))+'px';document.querySelector('#small').setAttribute('aria-pressed',native);document.querySelector('#large').setAttribute('aria-pressed',!native)}
+for(const button of document.querySelectorAll('[data-clip]'))button.onclick=()=>{clip=button.dataset.clip;film.src='assets/'+clip+'.mp4';for(const b of document.querySelectorAll('[data-clip]'))b.setAttribute('aria-pressed',b===button);size();film.play()};
+document.querySelector('#small').onclick=()=>{native=true;size()};document.querySelector('#large').onclick=()=>{native=false;size()};
+document.querySelector('#delivery').onclick=()=>{if(clip!=='showcase'){document.querySelector('[data-clip=showcase]').click();film.addEventListener('loadedmetadata',()=>{film.currentTime=28;film.play()},{once:true})}else{film.currentTime=28;film.play()}};size();
+</script>
+</html>

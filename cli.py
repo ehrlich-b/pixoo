@@ -41,8 +41,9 @@ def cmd_clear(_: argparse.Namespace) -> None:
 
 
 def cmd_channel(args: argparse.Namespace) -> None:
-    print(json.dumps(get_client().set_channel(args.index)))
-    state.set_primed(False)  # channel switch invalidates the HTTP frame buffer
+    client = get_client()
+    print(json.dumps(client.set_channel(args.index)))
+    state.set_primed(False, client.ip)  # channel switch invalidates the HTTP frame buffer
 
 
 def cmd_brightness(args: argparse.Namespace) -> None:
@@ -271,33 +272,62 @@ def _menu_pick_program() -> str:
 
 
 def cmd_run(args: argparse.Namespace) -> None:
+    import ipaddress
+    import signal
+    from pathlib import Path
     from pixoolib.term import TerminalDriver
 
     name = args.program or _menu_pick_program()
     prog_cls = _resolve_program(name)
-    # --snap alone runs headless (no TTY required); --mirror forces terminal on.
-    use_term = args.mirror or not (args.device or args.snap)
-    use_device = args.device or args.mirror
-    drivers = []
-    if use_term:
-        drivers.append(TerminalDriver())
-    if use_device:
-        from pixoolib.device import PixooDriver
-
-        drivers.append(PixooDriver(get_client()))
-        state.set_primed(True)  # PixooDriver.start() primes the buffer
-    if args.snap:
-        from pixoolib.snapshot import SnapshotDriver
-
-        drivers.append(SnapshotDriver(args.snap))
     params: dict[str, str] = {}
     for kv in args.arg or []:
-        k, sep, v = kv.partition("=")
-        if not sep:
-            print(f"bad --arg {kv!r}: expected KEY=VALUE", file=sys.stderr)
-            sys.exit(1)
-        params[k] = v
-    Runner(prog_cls(**params), drivers, fps=args.fps).run()
+        key, sep, value = kv.partition("=")
+        if not sep or not key:
+            raise ValueError(f"bad --arg {kv!r}: expected KEY=VALUE")
+        params[key] = value
+    ips = [str(ipaddress.IPv4Address(ip)) for ip in args.ip or []]
+    if len(set(ips)) != len(ips):
+        raise ValueError("select each Pixoo IP only once")
+    if len(ips) > prog_cls.MAX_WORLDS:
+        raise ValueError(f"{name} supports at most {prog_cls.MAX_WORLDS} display(s)")
+    if ips and prog_cls.MAX_WORLDS > 1:
+        if "worlds" in params and int(params["worlds"]) != len(ips):
+            raise ValueError("worlds must match the number of explicitly selected --ip addresses")
+        params["worlds"] = str(len(ips))
+    count = int(params.get("worlds", "1")) if prog_cls.MAX_WORLDS > 1 else 1
+    if not 1 <= count <= prog_cls.MAX_WORLDS:
+        raise ValueError(f"worlds must be between 1 and {prog_cls.MAX_WORLDS}")
+    use_device = bool(ips) or args.device or args.mirror
+    if use_device and count > 1 and not ips:
+        raise ValueError("two-world device mode requires --ip FIRST_IP --ip SECOND_IP")
+    use_term = args.mirror or not (use_device or args.snap)
+    program = prog_cls(**params)
+    drivers = []
+    if use_term:
+        drivers.append(TerminalDriver(status=program.status))
+    if use_device:
+        from pixoolib.device import PixooDriver
+        clients = [PixooClient(ip) for ip in ips] if ips else [get_client()]
+        brightness = args.device_brightness if args.device_brightness is not None else prog_cls.DEVICE_BRIGHTNESS
+        for i, client in enumerate(clients):
+            drivers.append(PixooDriver(client, fps=args.device_fps, world_index=i, brightness=brightness))
+    if args.snap:
+        from pixoolib.snapshot import SnapshotDriver
+        path = Path(args.snap)
+        for i in range(count):
+            target = path if i == 0 else path.with_name(f"{path.stem}-{i+1}{path.suffix}")
+            driver = SnapshotDriver(str(target))
+            driver.world_index = i
+            drivers.append(driver)
+    fps = args.fps if args.fps is not None else prog_cls.FPS
+    runner = Runner(program, drivers, fps=fps)
+    def terminate(*_):
+        raise KeyboardInterrupt
+    previous = signal.signal(signal.SIGTERM, terminate)
+    try:
+        runner.run(duration=args.duration)
+    finally:
+        signal.signal(signal.SIGTERM, previous)
 
 
 def main() -> None:
@@ -351,7 +381,11 @@ def main() -> None:
                     metavar="PATH",
                     help="write latest frame PNG to PATH (default /tmp/pixoo-latest.png); "
                          "implies headless unless --mirror is also set")
-    rn.add_argument("--fps", type=float, default=30.0)
+    rn.add_argument("--fps", type=float, default=None, help="host preview fps (program default)")
+    rn.add_argument("--ip", action="append", metavar="IP", help="explicit device IP; repeat for workshop + greenhouse in that order")
+    rn.add_argument("--device-fps", type=float, default=4.0, help="live upload limit, at most 5 fps (default 4)")
+    rn.add_argument("--device-brightness", type=int, default=None, metavar="0-100", help="brightness cap; restored on stop (workshop default 20)")
+    rn.add_argument("--duration", type=float, help="stop automatically after this many seconds")
     rn.add_argument("--arg", action="append", default=[], metavar="KEY=VALUE",
                     help="program param, repeatable (e.g. --arg n=3)")
 
@@ -376,6 +410,9 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
+    except (ValueError, RuntimeError) as e:
+        print(f"error: {e}", file=sys.stderr)
+        sys.exit(2)
     except urllib.error.URLError as e:
         print(f"network error: {e}", file=sys.stderr)
         sys.exit(1)
